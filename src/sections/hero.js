@@ -6,7 +6,7 @@ import Subheading from "../components/subheading"
 import { Button } from '../components/button'
 import { device } from "../global/mediaQueries"
 import SocialMedia from '../components/socialMedia'
-import img from '../images/stars.svg';
+import img from '../images/stars100.svg';
 
 const Wrapper = styled.div`
   position: relative;
@@ -17,15 +17,20 @@ const Wrapper = styled.div`
   @media ${device.tablet} {
     max-height: 100vw;
   }
-  @media ${device.mobile} {
-    background-image: url(${img});
-    background-repeat: no-repeat;
-    background-position: left center;
-  }
-  @media ${device.desktop} {
-    background-repeat: repeat;
-  }
 `
+
+const StarBackground = styled.div`
+  background-image: url(${img});
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+`
+
 const ImageWrapper = styled.div`
   display: none;
   @media ${device.tablet} {
@@ -100,6 +105,7 @@ const SocialContainer = styled.div`
 const Hero = () => {
   return (
     <Wrapper id="home">
+      <StarBackground />
       <ImageWrapper><Image filename="hero" traced="true" loading="eager" alt="Simplistic drawing of 2 planets and 2 moons in grayscale"></Image></ImageWrapper>
       <Container>
         <Subheading normal>HI, I'M KELLIE PETERSEN</Subheading>
