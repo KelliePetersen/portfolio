@@ -9,6 +9,7 @@ const theme = {
   background: "#1a1a1a",
   lightBackground: "#1f1f1f",
   color: "white",
+  grey: "#ccc",
   primary: "#85e7af",
   secondary: "#06747b",
   gradient: "linear-gradient(to right, #85e7af, #06747b)",
