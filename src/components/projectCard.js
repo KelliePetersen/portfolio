@@ -23,7 +23,12 @@ const ProjectCard = ({ title, role, description, image, link }) => {
       <Subheading>{role}</Subheading>
       <Heading style={{margin: '10px 0 15px'}}>{title}</Heading>
       <Paragraph>{description}</Paragraph>
-      <Button as="a" href="https://www.google.com" target="_blank">VIEW WEBSITE</Button>
+      <Button 
+        as="a" href="https://www.google.com" target="_blank"
+        style={{padding: "0px 30px 0px 0px", border: "none"}}
+      >
+      VIEW WEBSITE
+      </Button>
     </Container>
   )
 }
