@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import styled, { ThemeProvider } from "styled-components"
 import Footer from "./footer"
 import Header from "./header"
@@ -27,23 +26,13 @@ const Wrapper = styled.div`
 `
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <ThemeProvider theme={theme}>
       <Container>
         <Wrapper>
           <Header />
           <main>{children}</main>
-          <Footer siteTitle={data.site.siteMetadata?.title || `Kellie Petersen`} />
+          <Footer />
         </Wrapper>
       </Container>
     </ThemeProvider>
