@@ -7,6 +7,7 @@ import "./layout.css"
 
 const theme = {
   background: "#1a1a1a",
+  lightBackground: "#1f1f1f",
   color: "white",
   primary: "#85e7af",
   secondary: "#06747b",
