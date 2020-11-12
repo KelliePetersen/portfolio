@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import SocialMedia from "./socialMedia"
 
 const Wrapper = styled.footer`
   margin-top: 50px;
@@ -19,6 +20,7 @@ const Text = styled.p`
 
 const Footer = () => (
   <Wrapper>
+    <SocialMedia />
     <Text>© Copyright {new Date().getFullYear()} &bull; Kellie Petersen. <span>All Rights Reserved.</span></Text>
   </Wrapper>
 )
