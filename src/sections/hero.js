@@ -1,19 +1,31 @@
 import React from 'react'
 import { Link } from "gatsby"
-import Image from "../components/image"
+import styled from "styled-components"
+import { Heading } from "../components/heading"
+import Subheading from "../components/subheading"
+
+const Wrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+`
+
+const Container = styled.div`
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+`
 
 const Hero = () => {
   return (
-    <div>
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </div>
+    <Wrapper>
+      <Container>
+        <Subheading weight="400" color="#999">JAVASCRIPT DEVELOPER</Subheading>
+        <Heading>Bask in my total shocking tagline you.</Heading>
+        <Link to="#projects">MY WORK</Link>
+      </Container>
+    </Wrapper>
   )
 }
 
