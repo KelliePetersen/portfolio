@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import Heading from "../components/heading"
-import Subheading from "../components/subheading"
-import Paragraph from "../components/paragraph"
-import Button from '../components/button'
+import ProjectCard from '../components/projectCard'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -13,7 +10,7 @@ const Wrapper = styled.div`
 const Projects = () => {
   return (
     <Wrapper>
-      projects
+      <ProjectCard />
     </Wrapper>
   )
 }
