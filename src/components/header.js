@@ -12,6 +12,7 @@ const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: ${props => props.theme.headingFont};
 `
 
 const Logo = styled(Link)`
@@ -19,7 +20,6 @@ const Logo = styled(Link)`
   text-decoration: none;
   color: ${props => props.theme.color};
   font-size: 3rem;
-  font-weight: bold;
 `
 
 const Menu = styled.button`
