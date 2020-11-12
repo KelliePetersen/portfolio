@@ -1,23 +1,26 @@
-import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
 
-const Footer = ({ siteTitle }) => (
-  <footer style={{
-    marginTop: `2rem`
-  }}>
-    © {new Date().getFullYear()}, Built with
-    {` `}
-    <a href="https://www.gatsbyjs.com">Gatsby</a>,
-    {siteTitle}
-  </footer>
+const Wrapper = styled.footer`
+  margin-top: 50px;
+`
+
+const Text = styled.p`
+  font-size: 0.75rem;
+  color: #b3b3b3;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.35;
+
+  & > span {
+    display: block;
+  }
+`
+
+const Footer = () => (
+  <Wrapper>
+    <Text>© Copyright {new Date().getFullYear()} &bull; Kellie Petersen. <span>All Rights Reserved.</span></Text>
+  </Wrapper>
 )
-
-Footer.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Footer.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Footer
