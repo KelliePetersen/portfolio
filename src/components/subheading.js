@@ -10,6 +10,7 @@ const Subheading = styled.p`
   font-weight: ${props => props.weight ? props.weight : "bold"};
   background-color: ${props => props.color ? props.color : props.theme.primary};
   background-image: ${props => props.color ? "" : props.theme.gradient};
+  margin: 0;
 `
 
 export default Subheading;
