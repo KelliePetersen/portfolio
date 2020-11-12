@@ -6,9 +6,13 @@ import Header from "./header"
 import "./layout.css"
 
 const theme = {
-  main: "mediumseagreen",
   background: "#1a1a1a",
-  text: "white"
+  text: "white",
+  primary: "#85e7af",
+  secondary: "#06747b",
+  gradient: "linear-gradient(to right, #85e7af, #06747b)",
+  horizontalMargin: "30px",
+  verticalMargin: "20px"
 };
 
 const Container = styled.div`
@@ -21,8 +25,8 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   max-width: 1720px;
-  margin: 0 30px;
-  padding: 20px 0;
+  margin: 0 ${props => props.theme.horizontalMargin};
+  padding: 0 0 ${props => props.theme.verticalMargin};
 `
 
 const Layout = ({ children }) => {
