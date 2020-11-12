@@ -17,7 +17,7 @@ const Container = styled.header`
 const Logo = styled(Link)`
   margin: 0;
   text-decoration: none;
-  color: ${props => props.theme.text};
+  color: ${props => props.theme.color};
   font-size: 3rem;
   font-weight: bold;
 `
@@ -39,7 +39,7 @@ const MenuBar = styled.div`
   transform: ${props => props.center ? "translateY(-50%)" : ""};
   width: 100%;
   height: 3px;
-  background-color: ${props => props.theme.text};
+  background-color: ${props => props.theme.color};
 `
 
 const Header = () => (  

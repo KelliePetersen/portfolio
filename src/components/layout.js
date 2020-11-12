@@ -7,12 +7,14 @@ import "./layout.css"
 
 const theme = {
   background: "#1a1a1a",
-  text: "white",
+  color: "white",
   primary: "#85e7af",
   secondary: "#06747b",
   gradient: "linear-gradient(to right, #85e7af, #06747b)",
   horizontalMargin: "30px",
-  verticalMargin: "20px"
+  verticalMargin: "20px",
+  headingFont: "Manrope",
+  textFont: "Lato"
 };
 
 const Container = styled.div`
@@ -20,7 +22,8 @@ const Container = styled.div`
   margin: 0;
   padding: 0;
   background: ${props => props.theme.background};
-  color: ${props => props.theme.text};
+  color: ${props => props.theme.color};
+  font-family: ${props => props.theme.textFont};
 `
 
 const Wrapper = styled.div`
