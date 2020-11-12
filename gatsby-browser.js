@@ -4,5 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/browser-apis/
  */
 
-import "fontsource-manrope"
-import "fontsource-lato"
+import "fontsource-manrope/700-normal.css"
+import "fontsource-lato/400-normal.css"
+import "fontsource-lato/700-normal.css"
