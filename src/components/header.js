@@ -18,11 +18,13 @@ const Logo = styled(Link)`
   margin: 0;
   text-decoration: none;
   color: ${props => props.theme.text};
+  font-size: 3rem;
+  font-weight: bold;
 `
 
 const Menu = styled.button`
   width: 40px;
-  height: 50px;
+  height: 26px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -31,9 +33,10 @@ const Menu = styled.button`
 
 const MenuBar = styled.div`
   position: absolute;
-  top: 50%;
   right: 0;
-  transform: translateY(-50%);
+  top: ${props => props.top || "auto"};
+  bottom: ${props => props.bottom || "auto"};
+  transform: ${props => props.center ? "translateY(-50%)" : ""};
   width: 100%;
   height: 3px;
   background-color: ${props => props.theme.text};
@@ -43,7 +46,9 @@ const Header = () => (
   <Container>
     <Logo to="/">K</Logo>
     <Menu>
-      <MenuBar />
+      <MenuBar top="0" />
+      <MenuBar top="50%" center />
+      <MenuBar bottom="0" />
     </Menu>
   </Container>
 )
