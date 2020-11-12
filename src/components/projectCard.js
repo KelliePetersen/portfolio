@@ -6,17 +6,24 @@ import Paragraph from "../components/paragraph"
 import Button from '../components/button'
 
 const Container = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 `
 
-const ProjectCard = () => {
+const ImageWrapper = styled.div`
+  background-color: #333;
+  width: 100%;
+  height: calc(100vw - 60px);
+  margin-bottom: 20px;
+`
+
+const ProjectCard = ({ title, role, description, image, link }) => {
   return (
     <Container>
-      <Subheading>DESIGN / DEVELOPMENT</Subheading>
-      <Heading>Parceley</Heading>
-      <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. 
-      Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna. </Paragraph>
-      <Button as="a" href="https://www.google.com">MY WORK</Button>
+      <ImageWrapper />
+      <Subheading>{role}</Subheading>
+      <Heading style={{margin: '10px 0 15px'}}>{title}</Heading>
+      <Paragraph>{description}</Paragraph>
+      <Button as="a" href="https://www.google.com" target="_blank">VIEW WEBSITE</Button>
     </Container>
   )
 }
