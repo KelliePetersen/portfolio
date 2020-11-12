@@ -22,7 +22,7 @@ const Hero = () => {
     <Wrapper>
       <Container>
         <Subheading weight="400" color="#999">JAVASCRIPT DEVELOPER</Subheading>
-        <Heading large>Bask in my total shocking tagline you.</Heading>
+        <Heading large as="h1">Bask in my total shocking tagline you.</Heading>
         <Button to="#projects" primary>MY WORK</Button>
       </Container>
     </Wrapper>
