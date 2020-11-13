@@ -1,11 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
+import { device } from "../global/mediaQueries"
 
 const Container = styled.header`
   position: fixed;
-  top: 20px;
+  z-index: 20;
+  top: 10px;
   left: 0;
   padding: 0 30px;
   width: 100%;
@@ -13,6 +14,17 @@ const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   font-family: ${props => props.theme.headingFont};
+  @media ${device.mobileL} {
+    top: 20px;
+    padding: 0 50px;
+  }
+  @media ${device.laptop} {
+    top: 30px;
+    padding: 0 75px;
+  }
+  @media ${device.laptopL} {
+    padding: 0 100px;
+  }
 `
 
 const Logo = styled(Link)`
