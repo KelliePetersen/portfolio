@@ -30,6 +30,9 @@ const Wrapper = styled.div`
   @media ${device.laptopL} {
     margin: 0 100px;
   }
+  @media ${device.desktopL} {
+    margin: 0 auto;
+  }
 `
 
 const Layout = ({ children }) => {
