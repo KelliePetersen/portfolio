@@ -7,8 +7,8 @@ import Paragraph from '../components/paragraph'
 const Wrapper = styled.section`
   background-color: ${props => props.theme.lightBackground};
   width: 100vw;
-  margin-left: -${props => props.theme.horizontalMargin};
-  padding: 70px ${props => props.theme.horizontalMargin};
+  margin-left: -30px;
+  padding: 70px 30px;
 `
 
 const Grid = styled.div`

@@ -5,9 +5,9 @@ import styled from "styled-components"
 
 const Container = styled.header`
   position: fixed;
-  top: ${props => props.theme.verticalMargin};
+  top: 20px;
   left: 0;
-  padding: 0 ${props => props.theme.horizontalMargin};
+  padding: 0 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;

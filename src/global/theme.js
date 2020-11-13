@@ -10,8 +10,6 @@ const theme = {
   secondary: "#3aa390",
   tertiary: "#06747b",
   gradient: "linear-gradient(to right, #85e7af, #06747b)",
-  horizontalMargin: "30px",
-  verticalMargin: "20px",
   headingFont: "Manrope",
   textFont: "Lato"
 }

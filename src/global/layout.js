@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Footer from "../components/footer"
 import Header from "../components/header"
 import Theme from "./theme"
+import { device } from "./mediaQueries"
 import "./layout.css"
 
 const Container = styled.div`
@@ -17,8 +18,15 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   max-width: 1720px;
-  margin: 0 ${props => props.theme.horizontalMargin};
-  padding: 0 0 ${props => props.theme.verticalMargin};
+  margin: 0 30px;
+  padding: 0 0 20px;
+
+  @media ${device.tablet} {
+    margin: 0 50px;
+  }
+  @media ${device.laptop} {
+    margin: 0 100px;
+  }
 `
 
 const Layout = ({ children }) => {
