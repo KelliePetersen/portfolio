@@ -11,7 +11,7 @@ const Button = styled(Link)`
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1.75px;
-  padding: 15px 30px 15px 25px;
+  padding: 20px 30px 20px 25px;
   display: inline-block;
 
   &::after {
