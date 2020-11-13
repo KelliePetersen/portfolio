@@ -1,24 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled, { ThemeProvider } from "styled-components"
+import styled from "styled-components"
 import Footer from "../components/footer"
 import Header from "../components/header"
+import Theme from "./theme"
 import "./layout.css"
-
-const theme = {
-  background: "#1a1a1a",
-  lightBackground: "#1f1f1f",
-  color: "white",
-  grey: "#ccc",
-  primary: "#85e7af",
-  secondary: "#3aa390",
-  tertiary: "#06747b",
-  gradient: "linear-gradient(to right, #85e7af, #06747b)",
-  horizontalMargin: "30px",
-  verticalMargin: "20px",
-  headingFont: "Manrope",
-  textFont: "Lato"
-};
 
 const Container = styled.div`
   width: 100%;
@@ -37,7 +23,7 @@ const Wrapper = styled.div`
 
 const Layout = ({ children }) => {
   return (
-    <ThemeProvider theme={theme}>
+    <Theme>
       <Container>
         <Wrapper>
           <Header />
@@ -45,7 +31,7 @@ const Layout = ({ children }) => {
           <Footer />
         </Wrapper>
       </Container>
-    </ThemeProvider>
+    </Theme>
   )
 }
 
