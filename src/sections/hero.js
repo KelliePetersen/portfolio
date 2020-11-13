@@ -28,6 +28,7 @@ const HeadingContainer = styled.div`
     max-width: 550px;
   }
   @media ${device.desktop} {
+    margin-left: 70px;
     max-width: 700px;
   }
 `
