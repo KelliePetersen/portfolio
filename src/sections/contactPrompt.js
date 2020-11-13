@@ -40,7 +40,7 @@ const ContactPrompt = () => {
     <Wrapper>
       <Container>
         <Subheading weight="400" color="#999">CONTACT</Subheading>
-        <Heading style={{margin: "10px 0 20px"}}>Say Hello.</Heading>
+        <Heading large style={{margin: "10px 0 20px"}}>Say Hello.</Heading>
         <Paragraph>Let me know your thoughts. 
         Feel free to contact me through social media or email me at 
           <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.

@@ -38,7 +38,7 @@ const About = () => {
   return (
     <Wrapper>
       <Subheading>ABOUT ME</Subheading>
-      <Heading>Hi, I'm Kellie.</Heading>
+      <Heading large>Hi, I'm Kellie.</Heading>
       <Paragraph>I'm a <span>front-end developer</span> and hobbyist designer working at Parchot. 
       I value readable and maintainable code.</Paragraph>
       <Paragraph>My focus is vanilla <span>JavaScript</span> and <span>React</span>, including <span>Gatsby</span> and 

@@ -21,7 +21,7 @@ const ProjectCard = ({ title, role, description, image, link }) => {
     <Container>
       <ImageWrapper />
       <Subheading>{role}</Subheading>
-      <Heading style={{margin: '10px 0 15px'}}>{title}</Heading>
+      <Heading as="h3" style={{margin: '10px 0 15px'}}>{title}</Heading>
       <Paragraph>{description}</Paragraph>
       <Button 
         as="a" href="https://www.google.com" target="_blank"
