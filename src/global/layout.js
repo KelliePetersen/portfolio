@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   margin: 0 30px;
   padding: 0 0 20px;
 
-  @media ${device.mobileL} {
+  @media ${device.mobile} {
     margin: 0 50px;
   }
   @media ${device.laptop} {

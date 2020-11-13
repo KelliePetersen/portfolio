@@ -14,7 +14,7 @@ const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   font-family: ${props => props.theme.headingFont};
-  @media ${device.mobileL} {
+  @media ${device.mobile} {
     top: 20px;
     padding: 0 50px;
   }

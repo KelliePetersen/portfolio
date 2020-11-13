@@ -11,7 +11,7 @@ const Wrapper = styled.section`
   margin-left: -30px;
   padding: 70px 30px;
 
-  @media ${device.mobileL} {
+  @media ${device.mobile} {
     width: 100%;
     margin-left: 0;
     padding: 70px 50px;
