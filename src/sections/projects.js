@@ -13,26 +13,29 @@ const Projects = () => {
       <ProjectCard
         title="Parceley"
         role="DESIGN / DEVELOPMENT"
+        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor." 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. 
         Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna."
         image=""
-        link=""
+        link="https://lucid-kalam-c6958e.netlify.app/"
       />
       <ProjectCard
         title="Awaken Beauty"
         role="DESIGN / DEVELOPMENT"
+        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor." 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. 
         Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna."
         image=""
-        link=""
+        link="https://kelliepetersen.github.io/awakeningbeauty/"
       />
       <ProjectCard
         title="Rapha Walk"
         role="DESIGN / DEVELOPMENT"
+        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor." 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. 
         Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna."
         image=""
-        link=""
+        link="https://kelliepetersen.github.io/rapha-walk/"
       />
     </Wrapper>
   )

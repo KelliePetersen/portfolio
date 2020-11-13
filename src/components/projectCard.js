@@ -4,6 +4,7 @@ import Heading from "../components/heading"
 import Subheading from "../components/subheading"
 import Paragraph from "../components/paragraph"
 import Button from '../components/button'
+import { device } from "../global/mediaQueries"
 
 const Container = styled.div`
   margin-bottom: 100px;
@@ -16,15 +17,29 @@ const ImageWrapper = styled.div`
   margin-bottom: 20px;
 `
 
-const ProjectCard = ({ title, role, description, image, link }) => {
+const Summary = styled(Paragraph)`
+  @media ${device.laptop} {
+    display: none;
+  }
+`
+
+const Description = styled(Paragraph)`
+  display: none;
+  @media ${device.laptop} {
+    display: block;
+  }
+`
+
+const ProjectCard = ({ title, role, summary, description, image, link }) => {
   return (
     <Container>
-      <ImageWrapper />
+      <ImageWrapper>{image}</ImageWrapper>
       <Subheading>{role}</Subheading>
-      <Heading as="h3" style={{margin: '10px 0 15px'}}>{title}</Heading>
-      <Paragraph>{description}</Paragraph>
+      <Heading as="h3">{title}</Heading>
+      <Summary>{summary}</Summary>
+      <Description>{description}</Description>
       <Button 
-        as="a" href="https://www.google.com" target="_blank"
+        as="a" href={link} target="_blank"
         style={{padding: "0px 30px 0px 0px", border: "none"}}
       >
       VIEW WEBSITE
