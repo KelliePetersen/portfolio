@@ -15,6 +15,14 @@ const Container = styled.div`
     column-gap: 50px;
     align-items: center;
   }
+  @media ${device.desktop} {
+    margin: 150px 100px;
+    column-gap: 75px;
+  }
+  @media ${device.desktopL} {
+    margin: 150px 200px;
+    column-gap: 100px;
+  }
 `
 
 const ImageWrapper = styled.div`
@@ -51,8 +59,7 @@ const Description = styled(Paragraph)`
 `
 
 const WebsiteLink = styled(Button)`
-  padding: 0 30px 0 0;
-  border: none;
+  margin-top: 20px;
   @media ${device.mobile} {
     position: absolute;
     top: 0;
@@ -61,6 +68,11 @@ const WebsiteLink = styled(Button)`
   @media ${device.tablet} {
     position: relative;
     right: 0;
+  }
+  @media (max-width: 1280px) {
+    padding: 0 30px 0 0;
+    border: none;
+    margin-top: 0;
   }
 `
 
