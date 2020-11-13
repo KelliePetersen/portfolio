@@ -7,17 +7,33 @@ import Button from '../components/button'
 import { device } from "../global/mediaQueries"
 
 const Container = styled.div`
-  margin-bottom: 100px;
+  display: grid;
+  row-gap: 20px;
+  margin: 0 auto 100px;
+  @media ${device.tablet} {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    align-items: center;
+  }
 `
 
 const ImageWrapper = styled.div`
   background-color: #333;
   width: 100%;
   height: calc(100vw - 60px);
-  margin-bottom: 20px;
+  max-height: 300px;
+  @media ${device.tablet} {
+    height: 40vw;
+    max-height: 625px;
+  }
+`
+
+const TextWrapper = styled.div`
+  position: relative;
 `
 
 const Summary = styled(Paragraph)`
+  max-width: 300px;
   @media ${device.laptop} {
     display: none;
   }
@@ -26,7 +42,25 @@ const Summary = styled(Paragraph)`
 const Description = styled(Paragraph)`
   display: none;
   @media ${device.laptop} {
+    max-width: 400px;
     display: block;
+  }
+  @media ${device.laptopL} {
+    max-width: 450px;
+  }
+`
+
+const WebsiteLink = styled(Button)`
+  padding: 0 30px 0 0;
+  border: none;
+  @media ${device.mobile} {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  @media ${device.tablet} {
+    position: relative;
+    right: 0;
   }
 `
 
@@ -34,16 +68,13 @@ const ProjectCard = ({ title, role, summary, description, image, link }) => {
   return (
     <Container>
       <ImageWrapper>{image}</ImageWrapper>
-      <Subheading>{role}</Subheading>
-      <Heading as="h3">{title}</Heading>
-      <Summary>{summary}</Summary>
-      <Description>{description}</Description>
-      <Button 
-        as="a" href={link} target="_blank"
-        style={{padding: "0px 30px 0px 0px", border: "none"}}
-      >
-      VIEW WEBSITE
-      </Button>
+      <TextWrapper>
+        <Subheading>{role}</Subheading>
+        <Heading as="h3">{title}</Heading>
+        <Summary>{summary}</Summary>
+        <Description>{description}</Description>
+        <WebsiteLink as="a" href={link} target="_blank">VIEW WEBSITE</WebsiteLink>
+      </TextWrapper>
     </Container>
   )
 }
