@@ -16,6 +16,20 @@ const Container = styled.div`
   position: absolute;
   bottom: 75px;
   left: 0px;
+  @media ${device.tablet} {
+    bottom: 20vh;
+  }
+`
+
+const HeadingContainer = styled.div`
+  max-width: 450px;
+  @media ${device.laptop} {
+    margin-left: 50px;
+    max-width: 550px;
+  }
+  @media ${device.desktop} {
+    max-width: 700px;
+  }
 `
 
 const PageHeading = styled(Heading)`
@@ -26,6 +40,7 @@ const PageHeading = styled(Heading)`
   }
   @media ${device.desktop} {
     font-size: 4rem;
+    margin: 20px 0 35px;
   }
 `
 
@@ -34,8 +49,10 @@ const Hero = () => {
     <Wrapper>
       <Container>
         <Subheading weight="400" color="#999">JAVASCRIPT DEVELOPER</Subheading>
-        <PageHeading as="h1">Bask in my total shocking tagline you.</PageHeading>
-        <Button to="#projects" primary>MY WORK</Button>
+        <HeadingContainer>
+          <PageHeading as="h1">Bask in my total shocking tagline you.</PageHeading>
+          <Button to="#projects" primary>MY WORK</Button>
+        </HeadingContainer>
       </Container>
     </Wrapper>
   )
