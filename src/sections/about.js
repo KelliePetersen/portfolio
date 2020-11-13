@@ -3,12 +3,25 @@ import styled from "styled-components"
 import Heading from '../components/heading'
 import Subheading from '../components/subheading'
 import Paragraph from '../components/paragraph'
+import { device } from "../global/mediaQueries"
 
 const Wrapper = styled.section`
   background-color: ${props => props.theme.lightBackground};
   width: 100vw;
   margin-left: -30px;
   padding: 70px 30px;
+
+  @media ${device.mobileL} {
+    width: 100%;
+    margin-left: 0;
+    padding: 70px 50px;
+  }
+  @media ${device.laptop} {
+    padding: 70px 75px;
+  }
+  @media ${device.laptopL} {
+    padding: 100px;
+  }
 `
 
 const Grid = styled.div`

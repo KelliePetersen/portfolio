@@ -21,10 +21,13 @@ const Wrapper = styled.div`
   margin: 0 30px;
   padding: 0 0 20px;
 
-  @media ${device.tablet} {
+  @media ${device.mobileL} {
     margin: 0 50px;
   }
   @media ${device.laptop} {
+    margin: 0 75px;
+  }
+  @media ${device.laptopL} {
     margin: 0 100px;
   }
 `
