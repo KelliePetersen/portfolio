@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled, { ThemeProvider } from "styled-components"
-import Footer from "./footer"
-import Header from "./header"
+import Footer from "../components/footer"
+import Header from "../components/header"
 import "./layout.css"
 
 const theme = {
