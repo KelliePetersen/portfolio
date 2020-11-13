@@ -18,10 +18,10 @@ const Wrapper = styled.section`
     padding: 70px 50px;
   }
   @media ${device.laptop} {
-    padding: 70px 75px;
+    padding: 100px 75px;
   }
   @media ${device.laptopL} {
-    padding: 100px;
+    padding: 125px 100px;
   }
 `
 
@@ -41,7 +41,7 @@ const ContactPrompt = () => {
       <Container>
         <Subheading weight="400" color="#999">CONTACT</Subheading>
         <Heading large style={{margin: "10px 0 20px"}}>Say Hello.</Heading>
-        <Paragraph>Let me know your thoughts. 
+        <Paragraph style={{margin: "20px auto"}}>Let me know your thoughts. 
         Feel free to contact me through social media or email me at 
           <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.
         </Paragraph>
