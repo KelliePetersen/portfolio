@@ -49,11 +49,12 @@ const Grid = styled.div`
   margin-top: 60px;
   @media ${device.tablet} {
     grid-auto-rows: 100px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    max-width: 580px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 580px;
+    max-width: 100%;
   }
   @media ${device.desktop} {
-    margin-left: 20px;
+    margin-left: 50px;
   }
 `
 
