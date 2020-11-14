@@ -2,8 +2,8 @@ import React from 'react'
 import styled from "styled-components"
 
 const Social = styled.a`
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   display: block;
   margin: 0 10px;
   background-color: white;
