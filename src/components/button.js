@@ -11,7 +11,7 @@ const Button = styled(Link)`
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1.75px;
-  padding: 20px 30px 20px 25px;
+  padding: 17.5px 30px 17.5px 20px;
   display: inline-block;
 
   &::after {
@@ -21,7 +21,7 @@ const Button = styled(Link)`
     right: -30px;
     transform: translateY(-50%) scaleX(-1);
     width: 60px;
-    height: 22px;
+    height: 23px;
     border: 10px solid ${props => props.light ? props.theme.lightBackground : props.theme.background};
     background-color: ${props => props.theme.primary};
     background-image: ${props => props.theme.gradient};
