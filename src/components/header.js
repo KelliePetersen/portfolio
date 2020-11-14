@@ -26,6 +26,11 @@ const Container = styled.header`
   @media ${device.laptopL} {
     padding: 0 100px;
   }
+  @media ${device.desktop} {
+    max-width: 1920px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 `
 
 const Menu = styled.button`
@@ -35,6 +40,9 @@ const Menu = styled.button`
   border: none;
   cursor: pointer;
   position: relative;
+  @media ${device.laptop} {
+    display: none;
+  }
 `
 
 const MenuBar = styled.div`
