@@ -4,6 +4,7 @@ import Heading from "../components/heading"
 import Subheading from "../components/subheading"
 import Button from '../components/button'
 import { device } from "../global/mediaQueries"
+import SocialMedia from '../components/socialMedia'
 
 const Wrapper = styled.div`
   position: relative;
@@ -45,6 +46,16 @@ const PageHeading = styled(Heading)`
   }
 `
 
+const SocialContainer = styled.div`
+  display: none;
+  @media ${device.laptop} {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+  }
+`
+
 const Hero = () => {
   return (
     <Wrapper>
@@ -55,6 +66,7 @@ const Hero = () => {
           <Button to="#projects" primary>MY WORK</Button>
         </HeadingContainer>
       </Container>
+      <SocialContainer><SocialMedia /></SocialContainer>
     </Wrapper>
   )
 }
