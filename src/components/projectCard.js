@@ -73,6 +73,10 @@ const WebsiteLink = styled(Button)`
     padding: 0 30px 0 0;
     border: none;
     margin-top: 0;
+
+    &::before {
+      display: none;
+    }
   }
 `
 
