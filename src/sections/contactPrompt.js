@@ -52,7 +52,7 @@ const ContactPrompt = () => {
         Feel free to contact me through social media or email me at 
           <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.
         </Paragraph>
-        <Button to="/contact" light style={{marginTop: '15px'}}>GET IN TOUCH</Button>
+        <Button as="a" href="mailto:hello@kelliepetersen.com" light style={{marginTop: '15px'}}>GET IN TOUCH</Button>
       </Container>
     </Wrapper>
   )
