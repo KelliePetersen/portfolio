@@ -11,11 +11,14 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
   min-height: 500px;
+  @media ${device.tablet} {
+    max-height: 100vw;
+  }
 `
 
 const Container = styled.div`
   position: absolute;
-  bottom: 20vh;
+  bottom: 20%;
   left: 0px;
 `
 
