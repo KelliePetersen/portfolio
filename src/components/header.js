@@ -20,11 +20,12 @@ const Container = styled.header`
     padding: 0 50px;
   }
   @media ${device.laptop} {
-    top: 30px;
-    padding: 0 75px;
+    top: 0;
+    padding: 20px 75px;
+    background-color: ${props => props.theme.background};
   }
   @media ${device.laptopL} {
-    padding: 0 100px;
+    padding: 20px 100px;
   }
   @media ${device.desktop} {
     max-width: 1920px;
@@ -54,6 +55,7 @@ const MenuBar = styled.div`
   width: 100%;
   height: 3px;
   background-color: ${props => props.theme.color};
+  box-shadow: 0.5px 0.5px 1px black;
 `
 
 const Header = () => (  
