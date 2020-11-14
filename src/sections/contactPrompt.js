@@ -29,6 +29,13 @@ const Container = styled.div`
   text-align: center;
 `
 
+const HeadingContainer = styled.div`
+  margin: 10px 0 20px;
+  @media ${device.laptop} {
+    margin: 20px 0;
+  }
+`
+
 const Email = styled.a`
   color: ${props => props.theme.color};
   font-weight: bold;
@@ -40,7 +47,7 @@ const ContactPrompt = () => {
     <Wrapper>
       <Container>
         <Subheading style={{margin: "0 auto"}}>CONTACT</Subheading>
-        <Heading large style={{margin: "10px 0 20px"}}>Say Hello.</Heading>
+        <HeadingContainer><Heading large style={{margin: "0"}}>Say Hello.</Heading></HeadingContainer>
         <Paragraph style={{margin: "20px auto"}}>Let me know your thoughts. 
         Feel free to contact me through social media or email me at 
           <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.
