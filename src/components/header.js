@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
+import Nav from "./nav"
 import Logo from "./logo"
 
 const Container = styled.header`
@@ -50,6 +51,7 @@ const MenuBar = styled.div`
 const Header = () => (  
   <Container>
     <Logo />
+    <Nav />
     <Menu>
       <MenuBar top="0" />
       <MenuBar top="50%" center />
