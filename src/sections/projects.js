@@ -5,13 +5,12 @@ import ProjectCard from '../components/projectCard'
 
 const Wrapper = styled.div`
   width: 100%;
-  margin: 70px 0 0;
-  padding: 1px 0;
+  padding: 70px 0 0;
   @media ${device.tablet} {
-    margin: 120px 0 20px;
+    padding: 120px 0 20px;
   }
   @media ${device.desktop} {
-    margin: 0;
+    padding: 1px 0 0;
   }
 `
 
