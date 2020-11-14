@@ -8,10 +8,10 @@ const Subheading = styled.p`
   margin: 0;
   width: max-content;
   font-weight: ${props => props.normal ? "400" : "bold"};
-  color: ${props => props.normal ? "#999" : props.theme.secondary};
-  background-color: ${props => props.normal ? "#999" : props.theme.secondary};
-  background-image: ${props => props.normal ? "#999" : props.theme.gradient};
-  background-image: ${props => props.normal ? "#999" : props.theme.conicGradient};
+  color: ${props => props.normal ? "#bbb" : props.theme.secondary};
+  background-color: ${props => props.normal ? "#bbb" : props.theme.secondary};
+  background-image: ${props => props.normal ? "#bbb" : props.theme.gradient};
+  background-image: ${props => props.normal ? "#bbb" : props.theme.conicGradient};
   background-size: 125%;
   background-clip: text;
   text-fill-color: transparent;
