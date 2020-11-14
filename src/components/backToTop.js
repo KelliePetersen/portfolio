@@ -4,7 +4,8 @@ import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 
 const TopButton = styled(Link)`
-  position: fixed;
+  position: ${props => props.fixed ? "fixed" : ""};
+  display: ${props => props.fixed ? "block" : "none"};
   bottom: 15px;
   right: 35px;
   z-index: 20;
@@ -12,7 +13,7 @@ const TopButton = styled(Link)`
     right: 55px;
   }
   @media ${device.tablet} {
-    display: none;
+    display: ${props => props.fixed ? "none" : "block"};
   }
 `
 
@@ -25,8 +26,8 @@ const Arrow = styled.div`
   transform: rotate(45deg);
 `
 
-const BackToTop = () => (
-    <TopButton to="#">
+const BackToTop = ({ fixed }) => (
+    <TopButton fixed={fixed} to="#">
       <Arrow />
     </TopButton>
   )
