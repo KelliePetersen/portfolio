@@ -8,7 +8,8 @@ const NavBar = styled.nav`
   @media ${device.laptop} {
     display: flex;
     justify-content: ${props => props.spaced ? "space-between" : ""};
-    width: 100%;
+    width: ${props => props.spaced ? "100%" : "max-content"};
+    margin-left: auto;
   }
 `
 

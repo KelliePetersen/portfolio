@@ -6,7 +6,6 @@ const Social = styled.a`
   width: 35px;
   height: 35px;
   display: block;
-  margin: 0 10px;
   background-color: white;
   border-radius: 50%;
 `
@@ -28,7 +27,9 @@ const SocialMedia = () => {
   return (
     <Wrapper>
       <SocialLink href="https://www.github.com/kelliepetersen" label="github" />
-      <SocialLink href="https://www.linkedin.com/kelliepetersen" label="linkedIn" />
+      <div style={{margin: "0 20px"}}>
+        <SocialLink href="https://www.linkedin.com/kelliepetersen" label="linkedIn" />
+      </div>
       <SocialLink href="https://www.twitter.com/kelliecodes" label="twitter" />
     </Wrapper>
   )

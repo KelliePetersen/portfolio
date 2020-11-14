@@ -15,7 +15,7 @@ const Wrapper = styled.footer`
     align-items: center;
   }
   @media ${device.laptop} {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 38% auto;
     row-gap: 50px;
   }
 `
@@ -24,6 +24,13 @@ const LogoFooter = styled.div`
   display: none;
   @media ${device.tablet} {
     display: block;
+  }
+`
+
+const Social = styled.div`
+  @media ${device.laptop} {
+    grid-column-start span 2; 
+    margin-bottom: 10px;
   }
 `
 
@@ -50,7 +57,7 @@ const Footer = () => (
   <Wrapper>
     <LogoFooter><Logo /></LogoFooter>
     <Nav />
-    <SocialMedia />
+    <Social><SocialMedia /></Social>
     <Copyright>© Copyright {new Date().getFullYear()} &bull; Kellie Petersen. <span>All Rights Reserved.</span></Copyright>
     <div style={{margin: "0 0 0 auto" }} ><BackToTop /></div>
   </Wrapper>
