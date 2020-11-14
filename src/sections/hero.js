@@ -49,7 +49,7 @@ const Hero = () => {
   return (
     <Wrapper>
       <Container>
-        <Subheading weight="400" color="#999">JAVASCRIPT DEVELOPER</Subheading>
+        <Subheading normal>JAVASCRIPT DEVELOPER</Subheading>
         <HeadingContainer>
           <PageHeading as="h1">Bask in my total shocking tagline you.</PageHeading>
           <Button to="#projects" primary>MY WORK</Button>

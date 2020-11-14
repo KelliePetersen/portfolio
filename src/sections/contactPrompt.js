@@ -39,7 +39,7 @@ const ContactPrompt = () => {
   return (
     <Wrapper>
       <Container>
-        <Subheading weight="400" color="#999">CONTACT</Subheading>
+        <Subheading>CONTACT</Subheading>
         <Heading large style={{margin: "10px 0 20px"}}>Say Hello.</Heading>
         <Paragraph style={{margin: "20px auto"}}>Let me know your thoughts. 
         Feel free to contact me through social media or email me at 
