@@ -15,11 +15,8 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   position: absolute;
-  bottom: 75px;
+  bottom: 20vh;
   left: 0px;
-  @media ${device.tablet} {
-    bottom: 20vh;
-  }
 `
 
 const HeadingContainer = styled.div`
