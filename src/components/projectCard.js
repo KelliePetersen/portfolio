@@ -20,8 +20,8 @@ const Container = styled.div`
     column-gap: 75px;
   }
   @media ${device.desktopL} {
-    margin: 150px 200px;
-    column-gap: 100px;
+    margin: 150px;
+    column-gap: 120px;
   }
 `
 
