@@ -58,7 +58,7 @@ const SocialContainer = styled.div`
 
 const Hero = () => {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <Container>
         <Subheading normal>JAVASCRIPT DEVELOPER</Subheading>
         <HeadingContainer>

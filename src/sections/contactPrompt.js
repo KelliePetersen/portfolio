@@ -44,7 +44,7 @@ const Email = styled.a`
 
 const ContactPrompt = () => {
   return (
-    <Wrapper>
+    <Wrapper id="contact">
       <Container>
         <Subheading style={{margin: "0 auto"}}>CONTACT</Subheading>
         <HeadingContainer><Heading large style={{margin: "0"}}>Say Hello.</Heading></HeadingContainer>

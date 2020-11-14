@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 
 const Projects = () => {
   return (
-    <Wrapper>
+    <Wrapper id="projects">
       <ProjectCard
         title="Parceley"
         role="DESIGN / DEVELOPMENT"
