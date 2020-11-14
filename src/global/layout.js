@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
         <Wrapper>
           <Header />
           <main>{children}</main>
-          <BackToTop fixed />
+          <BackToTop fixed="true" />
           <Footer />
         </Wrapper>
       </Container>
