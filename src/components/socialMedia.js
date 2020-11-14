@@ -30,7 +30,7 @@ const SocialMedia = () => {
       <div style={{margin: "0 20px"}}>
         <SocialLink href="https://www.linkedin.com/in/kelliepetersen" label="linkedIn" />
       </div>
-      <SocialLink href="https://www.twitter.com/kelliecodes" label="twitter" />
+      <SocialLink href="https://www.gitlab.com/kelliepetersen" label="gitlab" />
     </Wrapper>
   )
 }
