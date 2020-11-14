@@ -1,9 +1,18 @@
 import React from "react"
 import styled from "styled-components"
+import { device } from "../global/mediaQueries"
+import Logo from "./logo"
 import SocialMedia from "./socialMedia"
 
 const Wrapper = styled.footer`
   margin-top: 50px;
+`
+
+const LogoFooter = styled.div`
+  display: none;
+  @media ${device.tablet} {
+    display: block;
+  }
 `
 
 const Text = styled.p`
@@ -20,6 +29,7 @@ const Text = styled.p`
 
 const Footer = () => (
   <Wrapper>
+    <LogoFooter><Logo /></LogoFooter>
     <SocialMedia />
     <Text>© Copyright {new Date().getFullYear()} &bull; Kellie Petersen. <span>All Rights Reserved.</span></Text>
   </Wrapper>

@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
+import Logo from "./logo"
 
 const Container = styled.header`
   position: fixed;
@@ -27,13 +27,6 @@ const Container = styled.header`
   }
 `
 
-const Logo = styled(Link)`
-  margin: 0;
-  text-decoration: none;
-  color: ${props => props.theme.color};
-  font-size: 3rem;
-`
-
 const Menu = styled.button`
   width: 40px;
   height: 26px;
@@ -56,7 +49,7 @@ const MenuBar = styled.div`
 
 const Header = () => (  
   <Container>
-    <Logo to="/">K</Logo>
+    <Logo />
     <Menu>
       <MenuBar top="0" />
       <MenuBar top="50%" center />
