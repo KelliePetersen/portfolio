@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
+import downloadResume from '../downloads/resume.pdf' 
 
 const NavBar = styled.nav`
   display: none;
@@ -38,7 +39,7 @@ const Nav = ({ spaced }) => {
     <NavBar spaced={spaced}>
       <NavList>
         <NavListItem style={{margin: "0 60px"}}>
-          <ExternalLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">Resume.</ExternalLink>
+          <ExternalLink href={downloadResume} download>Resume.</ExternalLink>
         </NavListItem>
         <NavListItem>
           <ExternalLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</ExternalLink>
@@ -46,7 +47,7 @@ const Nav = ({ spaced }) => {
       </NavList>
       <NavList>
         <NavListItem style={{margin: "0 60px"}}><NavLink to="#projects">My Work.</NavLink></NavListItem>
-        <NavListItem><NavLink to="/contact">Say Hello.</NavLink></NavListItem>
+        <NavListItem><NavLink to="#contact">Say Hello.</NavLink></NavListItem>
       </NavList>
     </NavBar>
   )
