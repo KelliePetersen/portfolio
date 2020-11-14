@@ -28,7 +28,7 @@ const SocialMedia = () => {
     <Wrapper>
       <SocialLink href="https://www.github.com/kelliepetersen" label="github" />
       <div style={{margin: "0 20px"}}>
-        <SocialLink href="https://www.linkedin.com/kelliepetersen" label="linkedIn" />
+        <SocialLink href="https://www.linkedin.com/in/kelliepetersen" label="linkedIn" />
       </div>
       <SocialLink href="https://www.twitter.com/kelliecodes" label="twitter" />
     </Wrapper>
