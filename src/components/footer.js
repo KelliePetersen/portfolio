@@ -8,6 +8,16 @@ import SocialMedia from "./socialMedia"
 
 const Wrapper = styled.footer`
   margin-top: 50px;
+  @media ${device.tablet} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    align-items: center;
+  }
+  @media ${device.laptop} {
+    grid-template-columns: 1fr 2fr;
+    row-gap: 50px;
+  }
 `
 
 const LogoFooter = styled.div`
@@ -24,8 +34,15 @@ const Copyright = styled.p`
   letter-spacing: 0.5px;
   line-height: 1.35;
 
+  @media ${device.tablet} {
+    text-align: left;
+  }
+
   & > span {
     display: block;
+    @media ${device.tablet} {
+      display: inline-block;
+    }
   }
 `
 
@@ -35,7 +52,7 @@ const Footer = () => (
     <Nav />
     <SocialMedia />
     <Copyright>© Copyright {new Date().getFullYear()} &bull; Kellie Petersen. <span>All Rights Reserved.</span></Copyright>
-    <BackToTop />
+    <div style={{margin: "0 0 0 auto" }} ><BackToTop /></div>
   </Wrapper>
 )
 

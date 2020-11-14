@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import { device } from "../global/mediaQueries"
 
 const Social = styled.a`
   width: 35px;
@@ -10,17 +11,26 @@ const Social = styled.a`
   border-radius: 50%;
 `
 
+const Wrapper = styled.div`
+  display: flex;
+  margin: 0 auto 25px;
+  width: max-content;
+  @media ${device.tablet} {
+    margin: 0 0 0 auto;
+  }
+`
+
 const SocialLink = ({ href, label }) => (
   <Social target="_blank" rel="noreferrer" href={href} aria-label={label} />
 )
 
 const SocialMedia = () => {
   return (
-    <div style={{display: 'flex', margin: '0 auto 25px', width: 'max-content'}}>
+    <Wrapper>
       <SocialLink href="https://www.github.com/kelliepetersen" label="github" />
       <SocialLink href="https://www.linkedin.com/kelliepetersen" label="linkedIn" />
       <SocialLink href="https://www.twitter.com/kelliecodes" label="twitter" />
-    </div>
+    </Wrapper>
   )
 }
 
