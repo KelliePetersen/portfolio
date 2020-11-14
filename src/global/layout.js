@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Footer from "../components/footer"
 import Header from "../components/header"
+import Footer from "../components/footer"
+import BackToTop from "../components/backToTop"
 import Theme from "./theme"
 import { device } from "./mediaQueries"
 import "./layout.css"
@@ -17,6 +18,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
+  position: relative;
   max-width: 1720px;
   margin: 0 30px;
   padding: 0 0 20px;
@@ -42,6 +44,7 @@ const Layout = ({ children }) => {
         <Wrapper>
           <Header />
           <main>{children}</main>
+          <BackToTop />
           <Footer />
         </Wrapper>
       </Container>
