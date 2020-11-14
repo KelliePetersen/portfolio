@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 import Logo from "./logo"
+import Nav from "./nav"
 import SocialMedia from "./socialMedia"
 
 const Wrapper = styled.footer`
@@ -30,6 +31,7 @@ const Text = styled.p`
 const Footer = () => (
   <Wrapper>
     <LogoFooter><Logo /></LogoFooter>
+    <Nav />
     <SocialMedia />
     <Text>© Copyright {new Date().getFullYear()} &bull; Kellie Petersen. <span>All Rights Reserved.</span></Text>
   </Wrapper>

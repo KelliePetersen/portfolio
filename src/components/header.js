@@ -59,7 +59,7 @@ const MenuBar = styled.div`
 const Header = () => (  
   <Container>
     <Logo />
-    <Nav />
+    <Nav spaced />
     <Menu>
       <MenuBar top="0" />
       <MenuBar top="50%" center />

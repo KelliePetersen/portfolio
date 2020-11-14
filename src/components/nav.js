@@ -7,7 +7,7 @@ const NavBar = styled.nav`
   display: none;
   @media ${device.laptop} {
     display: flex;
-    justify-content: space-between;
+    justify-content: ${props => props.spaced ? "space-between" : ""};
     width: 100%;
   }
 `
@@ -32,9 +32,9 @@ const NavLink = styled(Link)`
   text-decoration: none;
 `
 
-const Nav = () => {
+const Nav = ({ spaced }) => {
   return (
-    <NavBar>
+    <NavBar spaced={spaced}>
       <NavList>
         <NavListItem style={{margin: "0 60px"}}>
           <ExternalLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">Resume.</ExternalLink>
