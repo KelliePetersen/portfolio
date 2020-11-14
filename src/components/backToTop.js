@@ -27,7 +27,7 @@ const Arrow = styled.div`
 `
 
 const BackToTop = ({ fixed }) => (
-    <TopButton fixed={fixed} to="#">
+    <TopButton fixed={fixed} to="#" aria-label="back to top of page">
       <Arrow />
     </TopButton>
   )

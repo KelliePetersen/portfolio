@@ -62,7 +62,7 @@ const Header = () => (
   <Container>
     <Logo />
     <Nav spaced />
-    <Menu>
+    <Menu type="button" aria-label="open menu">
       <MenuBar top="0" />
       <MenuBar top="50%" center />
       <MenuBar bottom="0" />
