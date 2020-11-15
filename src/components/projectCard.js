@@ -27,7 +27,7 @@ const Container = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  background-color: #333;
+  background-color: #1a1a1a;
   width: 100%;
   height: calc(100vw - 60px);
   max-height: 300px;
