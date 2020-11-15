@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import Image from "../components/image"
 import Heading from "../components/heading"
 import Subheading from "../components/subheading"
 import Paragraph from "../components/paragraph"
@@ -80,10 +81,10 @@ const WebsiteLink = styled(Button)`
   }
 `
 
-const ProjectCard = ({ title, role, summary, description, image, link }) => {
+const ProjectCard = ({ title, role, summary, description, image, alt, link }) => {
   return (
     <Container>
-      <ImageWrapper>{image}</ImageWrapper>
+      <ImageWrapper><Image filename={image} alt={alt}></Image></ImageWrapper>
       <TextWrapper>
         <Subheading>{role}</Subheading>
         <Heading as="h3">{title}</Heading>

@@ -23,7 +23,8 @@ const Projects = () => {
         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor." 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. 
         Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna."
-        image=""
+        image="parceley.jpg"
+        alt="Parceley"
         link="https://lucid-kalam-c6958e.netlify.app/"
       />
       <ProjectCard
@@ -32,7 +33,8 @@ const Projects = () => {
         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor." 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. 
         Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna."
-        image=""
+        image="awaken.jpg"
+        alt="Awaken"
         link="https://kelliepetersen.github.io/awakeningbeauty/"
       />
       <ProjectCard
@@ -41,7 +43,8 @@ const Projects = () => {
         summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor." 
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. 
         Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna."
-        image=""
+        image="raphawalk.jpg"
+        alt="Rapha Walk"
         link="https://kelliepetersen.github.io/rapha-walk/"
       />
     </Wrapper>
