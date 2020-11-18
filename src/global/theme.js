@@ -11,8 +11,8 @@ const theme = {
   tertiary: "#06747b",
   gradient: "linear-gradient(to right, #85e7af, #06747b)",
   conicGradient: "conic-gradient(to right, #85e7af, #06747b)",
-  headingFont: "Manrope",
-  textFont: "Lato"
+  headingFont: ["Manrope, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif"],
+  textFont: ["Lato, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif"]
 }
 
 const Theme = ({ children }) => (
