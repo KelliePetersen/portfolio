@@ -10,9 +10,6 @@ const Paragraph = styled.p`
   
   @media ${device.laptop} {
     font-size: 1.125rem;
-  }
-  @media ${device.laptopL} {
-    font-size: 1.25rem;
     max-width: 550px;
   }
 
