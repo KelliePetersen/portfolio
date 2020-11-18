@@ -5,14 +5,21 @@ import Subheading from "../components/subheading"
 import Button from '../components/button'
 import { device } from "../global/mediaQueries"
 import SocialMedia from '../components/socialMedia'
+import img from '../images/stars.svg';
 
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
   min-height: 500px;
+  
   @media ${device.tablet} {
     max-height: 100vw;
+  }
+  @media ${device.mobile} {
+    background-image: url(${img});
+    background-repeat: no-repeat;
+    background-position: left center;
   }
 `
 
