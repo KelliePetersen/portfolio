@@ -10,7 +10,6 @@ const Paragraph = styled.p`
   
   @media ${device.laptop} {
     font-size: 1.125rem;
-    max-width: 550px;
   }
 
   & > span {
