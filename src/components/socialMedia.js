@@ -1,13 +1,29 @@
 import React from 'react'
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
+import GithubImage from '../images/github.svg';
+import GitlabImage from '../images/gitlabwhite.svg';
+import LinkedInImage from '../images/linkedinwhite.svg';
 
 const Social = styled.a`
   width: 35px;
   height: 35px;
   display: block;
-  background-color: white;
-  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+`
+
+const Github = styled(Social)`
+  background-image: url(${GithubImage});
+  background-size: 28px;
+`
+const Gitlab = styled(Social)`
+  background-image: url(${GitlabImage});
+  background-size: 28px;
+`
+const LinkedIn = styled(Social)`
+background-image: url(${LinkedInImage});
+  background-size: 26px;
 `
 
 const Wrapper = styled.div`
@@ -19,18 +35,14 @@ const Wrapper = styled.div`
   }
 `
 
-const SocialLink = ({ href, label }) => (
-  <Social target="_blank" rel="noreferrer" href={href} aria-label={label} />
-)
-
 const SocialMedia = () => {
   return (
     <Wrapper>
-      <SocialLink href="https://www.github.com/kelliepetersen" label="github" />
+      <LinkedIn href="https://www.linkedin.com/in/kelliepetersen" aria-label="linkedIn" target="_blank" rel="noreferrer" />
       <div style={{margin: "0 20px"}}>
-        <SocialLink href="https://www.linkedin.com/in/kelliepetersen" label="linkedIn" />
+      <Gitlab href="https://www.gitlab.com/kelliepetersen" aria-label="gitlab" target="_blank" rel="noreferrer" />
       </div>
-      <SocialLink href="https://www.gitlab.com/kelliepetersen" label="gitlab" />
+      <Github href="https://www.github.com/kelliepetersen" aria-label="github" target="_blank" rel="noreferrer" />
     </Wrapper>
   )
 }
