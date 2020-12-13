@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15.572mm" height="17.271mm" version="1.1" viewBox="0 0 15.572 17.271" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-68.625 -102.64)">
+  <g transform="matrix(.016742 0 0 .016742 61.408 82.106)" stroke-width="316.87">
+   <path d="m1332.5 2021.4-418.1 236.5v-184.2l260.5-143.3zm28.6-25.9v-494.6l-153 88.3v317.9zm-901.5 25.9 418.1 236.5v-184.2l-260.5-143.3zm-28.6-25.9v-494.6l153 88.3v317.9zm17.9-526.6 428.8-242.6v178.1l-274.7 151.1-2.1 1.2zm894.3 0-428.8-242.6v178.1l274.7 151.1 2.1 1.2z" fill="#4d4d4d"/>
+   <path d="m877.73 2031.8-257-141.3v-280l257 148.4v272.9m36.7 0 257-141.3v-280l-257 148.4v272.9m-276.3-453.7 258-141.9 258 141.9-258 149-258-149" fill="#333"/>
+  </g>
+ </g>
+</svg>

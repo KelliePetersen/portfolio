@@ -1,4 +1,5 @@
 import React from 'react'
+import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Heading from '../components/heading'
 import Subheading from '../components/subheading'
@@ -55,10 +56,32 @@ const Grid = styled.div`
   }
   @media ${device.desktop} {
     margin-left: 50px;
+    column-gap: 20px;
   }
 `
 
+const GridItem = styled.div`
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+`
+
 const About = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allFile(filter: {relativeDirectory: {eq: "skills"}}) {
+        edges {
+          node {
+            name
+            publicURL
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Wrapper>
       <Container>
@@ -71,21 +94,14 @@ const About = () => {
           <span> NextJS</span>. I use Node and Express for the backend. I'm also familiar with WordPress and PHP.</Paragraph>
         </div>
         <Grid>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
-          <div style={{width: "100%", height: "100%", backgroundColor: "#333"}}></div>
+        {data.allFile.edges.map((file, index) => {
+          return (
+            <GridItem key={`svg-${index}`}>
+              <div style={{display: "none"}}>{file.node.name}</div>
+              <img src={`${file.node.publicURL}`} alt={file.node.name} style={{marginBottom: 0}} />
+            </GridItem>
+          )
+        })}
         </Grid>
       </Container>
     </Wrapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11.3mm" height="15.803mm" version="1.1" viewBox="0 0 11.3 15.803" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient3005" x1="1316.6" x2="1352.2" y1="1556.2" y2="1556.2" gradientTransform="matrix(.31779 0 0 .31779 -323.7 -385.66)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#666" offset="0"/>
+   <stop stop-color="#404040" offset="1"/>
+  </linearGradient>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-94.706 -100.97)">
+  <path d="m103.12 100.97c-0.38349 0-0.42108 4e-3 -0.51703 0.0527-0.1177 0.0682-0.20579 0.1766-0.24208 0.306-0.0121 0.0566-0.0203 1.2063-0.0203 3.2567v3.1624l0.77091 1.1787 0.7659 1.1775 8e-3 -4.3566c4e-3 -3.0342 6e-5 -4.3816-0.0203-4.4466-0.0403-0.12091-0.12807-0.22616-0.24518-0.28177-0.0806-0.0465-0.14103-0.049-0.49966-0.049zm-7.5854 0.33949c-0.41914 0-0.45886 7e-3 -0.56049 0.0559-0.0682 0.0365-0.12864 0.0855-0.17751 0.14526l-0.077 0.0968-8e-3 4.8575-4e-3 4.8581 0.0527 0.10858c0.0363 0.0719 0.0925 0.13331 0.16078 0.17751l0.10918 0.0682h0.41898c0.36652 0 0.43532-7e-3 0.51206-0.0441 0.0967-0.0448 0.16932-0.12526 0.21353-0.22223 0.0443-0.0805 0.0443-0.22201 0.0527-3.7117 4e-3 -1.9923 0.0152-3.6261 0.0235-3.6261 0.8436 1.2177 1.6741 2.4444 2.5014 3.6745l2.4809 3.6757 1.9806 2.6745c0.66189 0.89678 1.3231 1.7862 1.9961 2.6745l0.79759-0.52819-1.8931-2.8644c-1.0806-1.6344-3.2793-4.9663-4.8897-7.4079-0.98452-1.505-1.9854-3.0053-2.9892-4.5018-0.12938-0.14051-0.21073-0.16078-0.70261-0.16078z" fill="url(#linearGradient3005)" style="paint-order:markers stroke fill"/>
+ </g>
+</svg>
