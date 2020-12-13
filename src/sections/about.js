@@ -41,7 +41,8 @@ const Container = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  width: 100%;
+  margin-left: -20px;
+  width: calc(100% + 20px);
   max-width: 435px;
   grid-auto-rows: 75px;
   grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
