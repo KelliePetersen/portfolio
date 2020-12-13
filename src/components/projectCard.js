@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from "styled-components"
-import Image from "../components/image"
-import Heading from "../components/heading"
-import Subheading from "../components/subheading"
-import Paragraph from "../components/paragraph"
-import Button from '../components/button'
+import Image from "./image"
+import Heading from "./heading"
+import Subheading from "./subheading"
+import Paragraph from "./paragraph"
+import ProjectLink from './projectLink'
 import { device } from "../global/mediaQueries"
 
 const Container = styled.div`
@@ -59,28 +59,6 @@ const Description = styled(Paragraph)`
   }
 `
 
-const WebsiteLink = styled(Button)`
-  margin-top: 20px;
-  @media ${device.mobile} {
-    position: absolute;
-    top: 0;
-    right: 20px;
-  }
-  @media ${device.tablet} {
-    position: relative;
-    right: 0;
-  }
-  @media (max-width: 1280px) {
-    padding: 0 30px 0 0;
-    border: none;
-    margin-top: 0;
-
-    &::before {
-      display: none;
-    }
-  }
-`
-
 const ProjectCard = ({ title, role, summary, description, image, link }) => {
   return (
     <Container>
@@ -90,7 +68,7 @@ const ProjectCard = ({ title, role, summary, description, image, link }) => {
         <Heading as="h3">{title}</Heading>
         <Summary>{summary}</Summary>
         <Description>{description}</Description>
-        <WebsiteLink as="a" href={link} target="_blank">VIEW WEBSITE</WebsiteLink>
+        <ProjectLink href={link} target="_blank">VIEW WEBSITE</ProjectLink>
       </TextWrapper>
     </Container>
   )
