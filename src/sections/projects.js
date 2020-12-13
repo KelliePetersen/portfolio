@@ -18,7 +18,7 @@ const projectsData = [
   {
     id: 1,
     title: "Parceley",
-    role: "DESIGN / DEVELOPMENT",
+    role: ["Design", "Development"],
     summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor.",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna.",
     image: "parceley.jpg",
@@ -27,7 +27,7 @@ const projectsData = [
   {
     id: 2,
     title: "Awaken Beauty",
-    role: "DESIGN / DEVELOPMENT",
+    role: ["Design", "Development"],
     summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor.",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna.",
     image: "awaken.jpg",
@@ -36,7 +36,7 @@ const projectsData = [
   {
     id: 3,
     title: "Rapha Walk",
-    role: "DESIGN / DEVELOPMENT",
+    role: ["Design", "Development"],
     summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor.",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna.",
     image: "raphawalk.jpg",

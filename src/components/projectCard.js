@@ -86,7 +86,7 @@ const ProjectCard = ({ title, role, summary, description, image, link }) => {
     <Container>
       <ImageWrapper><Image filename={image} alt={title}></Image></ImageWrapper>
       <TextWrapper>
-        <Subheading>{role}</Subheading>
+        <Subheading>{role.join(' / ').toUpperCase()}</Subheading>
         <Heading as="h3">{title}</Heading>
         <Summary>{summary}</Summary>
         <Description>{description}</Description>
