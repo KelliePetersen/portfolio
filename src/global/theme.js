@@ -2,8 +2,8 @@ import React from "react"
 import { ThemeProvider } from "styled-components"
 
 const theme = {
-  background: "#1a1a1a",
-  lightBackground: "#1f1f1f",
+  background: "#171717",
+  lightBackground: "#1c1c1c",
   color: "white",
   grey: "#ccc",
   primary: "#85e7af",
