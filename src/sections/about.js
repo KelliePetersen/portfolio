@@ -69,6 +69,7 @@ const Tooltip = styled.div`
   background-color: #333;
   padding: 10px 15px;
   border-radius: 10px;
+  width: max-content;
 `
 
 const GridItem = styled.div`
