@@ -31,9 +31,11 @@ const Container = styled.div`
 
 const HeadingContainer = styled.div`
   max-width: 450px;
+  @media ${device.tablet} {
+    max-width: 550px;
+  }
   @media ${device.laptop} {
     margin-left: 50px;
-    max-width: 550px;
   }
   @media ${device.desktop} {
     margin-left: 70px;
@@ -44,7 +46,7 @@ const HeadingContainer = styled.div`
 const PageHeading = styled(Heading)`
   font-size: 2.25rem;
   margin: 30px 0 40px;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     font-size: 3rem;
   }
   @media ${device.desktop} {
