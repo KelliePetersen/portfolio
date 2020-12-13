@@ -14,39 +14,40 @@ const Wrapper = styled.div`
   }
 `
 
+const projectsData = [
+  {
+    id: 1,
+    title: "Parceley",
+    role: "DESIGN / DEVELOPMENT",
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna.",
+    image: "parceley.jpg",
+    link: "https://lucid-kalam-c6958e.netlify.app/"
+  },
+  {
+    id: 2,
+    title: "Awaken Beauty",
+    role: "DESIGN / DEVELOPMENT",
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna.",
+    image: "awaken.jpg",
+    link: "https://kelliepetersen.github.io/awakeningbeauty/"
+  },
+  {
+    id: 3,
+    title: "Rapha Walk",
+    role: "DESIGN / DEVELOPMENT",
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna.",
+    image: "raphawalk.jpg",
+    link: "https://kelliepetersen.github.io/rapha-walk/"
+  }
+]
+
 const Projects = () => {
   return (
     <Wrapper id="projects">
-      <ProjectCard
-        title="Parceley"
-        role="DESIGN / DEVELOPMENT"
-        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor." 
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. 
-        Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna."
-        image="parceley.jpg"
-        alt="Parceley"
-        link="https://lucid-kalam-c6958e.netlify.app/"
-      />
-      <ProjectCard
-        title="Awaken Beauty"
-        role="DESIGN / DEVELOPMENT"
-        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor." 
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. 
-        Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna."
-        image="awaken.jpg"
-        alt="Awaken"
-        link="https://kelliepetersen.github.io/awakeningbeauty/"
-      />
-      <ProjectCard
-        title="Rapha Walk"
-        role="DESIGN / DEVELOPMENT"
-        summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor." 
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. 
-        Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna."
-        image="raphawalk.jpg"
-        alt="Rapha Walk"
-        link="https://kelliepetersen.github.io/rapha-walk/"
-      />
+      {projectsData.map(project => <ProjectCard {...project} />)}
     </Wrapper>
   )
 }

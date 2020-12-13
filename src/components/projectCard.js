@@ -81,10 +81,10 @@ const WebsiteLink = styled(Button)`
   }
 `
 
-const ProjectCard = ({ title, role, summary, description, image, alt, link }) => {
+const ProjectCard = ({ title, role, summary, description, image, link }) => {
   return (
     <Container>
-      <ImageWrapper><Image filename={image} alt={alt}></Image></ImageWrapper>
+      <ImageWrapper><Image filename={image} alt={title}></Image></ImageWrapper>
       <TextWrapper>
         <Subheading>{role}</Subheading>
         <Heading as="h3">{title}</Heading>
