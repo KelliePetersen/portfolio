@@ -79,6 +79,11 @@ const GridItem = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  transform: scale(0.8);
+
+  @media ${device.tablet} {
+    transform: scale(1);
+  }
 
   &:hover ${Tooltip} {
     display: block;
