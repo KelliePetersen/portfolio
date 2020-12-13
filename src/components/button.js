@@ -1,7 +1,6 @@
-import { Link } from "gatsby"
 import styled from "styled-components"
 
-const Button = styled(Link)`
+const Button = styled.a`
   position: relative;
   color: white;
   text-decoration: none;

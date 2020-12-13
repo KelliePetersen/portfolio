@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 import downloadResume from '../downloads/resume.pdf' 
@@ -29,7 +28,7 @@ const ExternalLink = styled.a`
   text-decoration: none;
 `
 
-const NavLink = styled(Link)`
+const NavLink = styled.a`
   color: ${props => props.theme.color};
   text-decoration: none;
 `
@@ -42,12 +41,13 @@ const Nav = ({ spaced }) => {
           <ExternalLink href={downloadResume} download>Resume.</ExternalLink>
         </NavListItem>
         <NavListItem>
-          <ExternalLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</ExternalLink>
+          <ExternalLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</ExternalLink>
+          {/* <ExternalLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</ExternalLink> */}
         </NavListItem>
       </NavList>
       <NavList>
-        <NavListItem style={{margin: "0 60px"}}><NavLink to="#projects">My Work.</NavLink></NavListItem>
-        <NavListItem><NavLink to="#contact">Say Hello.</NavLink></NavListItem>
+        <NavListItem style={{margin: "0 60px"}}><NavLink href="#projects">My Work.</NavLink></NavListItem>
+        <NavListItem><NavLink href="#contact">Say Hello.</NavLink></NavListItem>
       </NavList>
     </NavBar>
   )

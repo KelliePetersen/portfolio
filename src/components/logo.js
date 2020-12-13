@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from "gatsby"
 import styled from "styled-components"
 
-const LogoLink = styled(Link)`
+const LogoLink = styled.a`
   margin: 0;
   text-decoration: none;
   color: ${props => props.theme.color};
@@ -12,7 +11,7 @@ const LogoLink = styled(Link)`
 `
 
 const Logo = () => (
-  <LogoLink to="#">K</LogoLink>
+  <LogoLink href="#">K</LogoLink>
 )
 
 export default Logo;

@@ -1,9 +1,8 @@
 import React from 'react'
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 
-const TopButton = styled(Link)`
+const TopButton = styled.a`
   position: ${props => props.fixed ? "fixed" : ""};
   display: ${props => props.fixed ? "block" : "none"};
   bottom: 15px;
@@ -27,7 +26,7 @@ const Arrow = styled.div`
 `
 
 const BackToTop = ({ fixed }) => (
-    <TopButton fixed={fixed} to="#" aria-label="back to top of page">
+    <TopButton fixed={fixed} href="#" aria-label="back to top of page">
       <Arrow />
     </TopButton>
   )
