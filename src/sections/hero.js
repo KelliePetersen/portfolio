@@ -57,7 +57,7 @@ const PageHeading = styled(Heading)`
 
 const SocialContainer = styled.div`
   display: none;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     display: block;
     position: absolute;
     bottom: 50px;
