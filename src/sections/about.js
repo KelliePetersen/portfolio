@@ -60,12 +60,28 @@ const Grid = styled.div`
   }
 `
 
+const Tooltip = styled.div`
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  padding: 10px 15px;
+  border-radius: 10px;
+`
+
 const GridItem = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  &:hover ${Tooltip} {
+    display: block;
+  }
 `
 
 const About = () => {
@@ -97,7 +113,7 @@ const About = () => {
         {data.allFile.edges.map((file, index) => {
           return (
             <GridItem key={`svg-${index}`}>
-              <div style={{display: "none"}}>{file.node.name}</div>
+              <Tooltip>{file.node.name}</Tooltip>
               <img src={`${file.node.publicURL}`} alt={file.node.name} style={{marginBottom: 0}} />
             </GridItem>
           )
