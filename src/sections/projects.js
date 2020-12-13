@@ -47,7 +47,7 @@ const projectsData = [
 const Projects = () => {
   return (
     <Wrapper id="projects">
-      {projectsData.map(project => <ProjectCard {...project} />)}
+      {projectsData.map(project => <ProjectCard key={project.id} {...project} />)}
     </Wrapper>
   )
 }
