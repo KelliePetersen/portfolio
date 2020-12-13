@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { device } from "../global/mediaQueries"
 
 const Button = styled.a`
   display: inline-block;
@@ -18,6 +19,10 @@ const Button = styled.a`
   font-weight: bold;
   letter-spacing: 1.75px;
   padding: 20px 40px;
+
+  @media ${device.tablet} {
+    font-size: 1.125rem;
+  }
 `
 
 export default Button;
