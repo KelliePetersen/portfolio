@@ -12,7 +12,6 @@ const Container = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  min-height: 500px;
   background-color: ${props => props.theme.lightBackground};
   z-index: 10;
   ${({modal}) => modal && `

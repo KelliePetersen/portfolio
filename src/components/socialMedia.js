@@ -30,10 +30,14 @@ const Wrapper = styled.div`
     margin: 0 0 0 auto;
   }
   ${({modal}) => modal && `
-    position: absolute;
-    bottom: 10vh;
-    left: 50%;
-    transform: translateX(-50%);
+    display: none;
+    @media (min-height: 500px) {
+      display: flex;
+      position: absolute;
+      bottom: 10vh;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   `}
 `
 
