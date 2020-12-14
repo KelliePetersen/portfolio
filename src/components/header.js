@@ -67,7 +67,7 @@ const Header = () => {
   return (
     <>
       <Container>
-        <Logo />
+        <Logo modalOpen={modalOpen} setModalOpen={setModalOpen}  />
         <Nav spaced />
         <Menu type="button" aria-label="open menu" onClick={handleModal}>
           <MenuBar top="0" />

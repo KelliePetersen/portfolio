@@ -10,8 +10,8 @@ const LogoLink = styled.a`
   font-family: ${props => props.theme.headingFont};
 `
 
-const Logo = () => (
-  <LogoLink href="#">K</LogoLink>
+const Logo = ({ setModalOpen }) => (
+  <LogoLink href="#" onClick={() => setModalOpen(false)}>K</LogoLink>
 )
 
 export default Logo;
