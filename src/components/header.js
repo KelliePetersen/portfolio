@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 import Nav from "./nav"
 import Logo from "./logo"
+import Modal from "./modal"
 
 const Container = styled.header`
   position: fixed;
@@ -58,16 +59,25 @@ const MenuBar = styled.div`
   box-shadow: 0.5px 0.5px 1px black;
 `
 
-const Header = () => (  
-  <Container>
-    <Logo />
-    <Nav spaced />
-    <Menu type="button" aria-label="open menu">
-      <MenuBar top="0" />
-      <MenuBar top="50%" center />
-      <MenuBar bottom="0" />
-    </Menu>
-  </Container>
-)
+const Header = () => {
+  const [modalOpen, setModalOpen] = useState(false)
+
+  const handleModal = () => modalOpen ? setModalOpen(false) : setModalOpen(true)
+
+  return (
+    <>
+      <Container>
+        <Logo />
+        <Nav spaced />
+        <Menu type="button" aria-label="open menu" onClick={handleModal}>
+          <MenuBar top="0" />
+          <MenuBar top="50%" center />
+          <MenuBar bottom="0" />
+        </Menu>
+      </Container>
+      <Modal modalOpen={modalOpen} setModalOpen={setModalOpen} />
+    </>
+  )
+}
 
 export default Header
