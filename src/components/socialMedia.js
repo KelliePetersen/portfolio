@@ -33,11 +33,18 @@ const Wrapper = styled.div`
   @media ${device.tablet} {
     margin: 0 0 0 auto;
   }
+
+  ${({modal}) => modal && `
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+  `}
 `
 
-const SocialMedia = () => {
+const SocialMedia = ({ modal }) => {
   return (
-    <Wrapper>
+    <Wrapper modal={modal}>
       <LinkedIn href="https://www.linkedin.com/in/kelliepetersen" aria-label="linkedIn" target="_blank" rel="noreferrer" />
       <div style={{margin: "0 20px"}}>
         <Gitlab href="https://www.gitlab.com/kelliepetersen" aria-label="gitlab" target="_blank" rel="noreferrer" />

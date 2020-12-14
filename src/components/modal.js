@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
+import Button from './button'
 import downloadResume from '../downloads/resume.pdf' 
+import SocialMedia from './socialMedia'
 
 const Container = styled.div`
   position: fixed;
@@ -32,6 +34,15 @@ const NavList = styled.ul`
 const NavLink = styled.a`
   color: ${props => props.white ? props.theme.color : "#b3b3b3"};
   text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+`
+
+const Contact = styled(Button)`
+  display: none;
+  @media ${device.tablet} {
+    display: block;
+  }
 `
 
 const Modal = ({ modalOpen, setModalOpen }) => {
@@ -46,12 +57,14 @@ const Modal = ({ modalOpen, setModalOpen }) => {
             <li><NavLink white href="#contact">Say Hello.</NavLink></li>
             <li><NavLink href={downloadResume} download>Resume.</NavLink></li>
             <li><NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink></li>
+            <li><Contact href="mailto:hello@kelliepetersen.com" light style={{marginTop: '15px'}}>GET IN TOUCH</Contact></li>
             <li><NavLink white href="mailto:hello@kelliepetersen.com" style={{fontSize: "1.125rem", fontWeight: "bold"}}>
               hello@kelliepetersen.com
             </NavLink></li>
           </NavList>
         </nav>
       </Wrapper>
+      <SocialMedia modal />
     </Container>
   )
 }
