@@ -6,6 +6,7 @@ import downloadResume from '../downloads/resume.pdf'
 import SocialMedia from './socialMedia'
 
 const Container = styled.div`
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,6 +14,9 @@ const Container = styled.div`
   height: 100vh;
   background-color: ${props => props.theme.lightBackground};
   z-index: 10;
+  ${({modal}) => modal && `
+    display: block;
+  `}
 `
 
 const Wrapper = styled.nav`
@@ -45,28 +49,24 @@ const Contact = styled(Button)`
   }
 `
 
-const Modal = ({ modalOpen, setModalOpen }) => {
-  if (!modalOpen) return null
-
-  return (
-    <Container>
-      <Wrapper>
-        <nav>
-          <NavList>
-            <li><NavLink white href="#projects">My Work.</NavLink></li>
-            <li><NavLink white href="#contact">Say Hello.</NavLink></li>
-            <li><NavLink href={downloadResume} download>Resume.</NavLink></li>
-            <li><NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink></li>
-            <li><Contact href="mailto:hello@kelliepetersen.com" light style={{marginTop: '15px'}}>GET IN TOUCH</Contact></li>
-            <li><NavLink white href="mailto:hello@kelliepetersen.com" style={{fontSize: "1.125rem", fontWeight: "bold"}}>
-              hello@kelliepetersen.com
-            </NavLink></li>
-          </NavList>
-        </nav>
-      </Wrapper>
-      <SocialMedia modal />
-    </Container>
-  )
-}
+const Modal = ({ modalOpen, setModalOpen }) => (
+  <Container modal={modalOpen}>
+    <Wrapper>
+      <nav>
+        <NavList>
+          <li><NavLink white href="#projects" onClick={() => setModalOpen(false)}>My Work.</NavLink></li>
+          <li><NavLink white href="#contact" onClick={() => setModalOpen(false)}>Say Hello.</NavLink></li>
+          <li><NavLink href={downloadResume} download>Resume.</NavLink></li>
+          <li><NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink></li>
+          <li><Contact href="mailto:hello@kelliepetersen.com" light style={{marginTop: '15px'}}>GET IN TOUCH</Contact></li>
+          <li><NavLink white href="mailto:hello@kelliepetersen.com" style={{fontSize: "1.125rem", fontWeight: "bold"}}>
+            hello@kelliepetersen.com
+          </NavLink></li>
+        </NavList>
+      </nav>
+    </Wrapper>
+    <SocialMedia modal />
+  </Container>
+)
 
 export default Modal
