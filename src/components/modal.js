@@ -6,7 +6,6 @@ import downloadResume from '../downloads/resume.pdf'
 import SocialMedia from './socialMedia'
 
 const Container = styled.div`
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,8 +13,15 @@ const Container = styled.div`
   height: 100vh;
   background-color: ${props => props.theme.lightBackground};
   z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.6s;
+  transition-delay: 0.25s;
+  
   ${({modal}) => modal && `
-    display: block;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
   `}
 `
 
@@ -42,7 +48,7 @@ const NavLink = styled.a`
   font-weight: bold;
   display: inline-block;
   margin: 10px 0;
-  @media screen and (min-width: 768px) and (min-height: 750px) {
+  @media ${device.tablet} and (min-height: 750px) {
     font-size: 2.25rem;
     margin: 15px 0;
   }
@@ -52,14 +58,14 @@ const Email = styled(NavLink)`
   font-size: 1.125rem;
   font-weight: bold;
   margin-top: 20px;
-  @media screen and (min-width: 768px) and (min-height: 750px) {
+  @media ${device.tablet} and (min-height: 750px) {
     font-size: 1.5rem;
   }
 `
 
 const Contact = styled(Button)`
   display: none;
-  @media screen and (min-width: 768px) and (min-height: 750px) {
+  @media ${device.tablet} and (min-height: 750px) {
     display: inline-block;
     margin-top: 80px;
   }
