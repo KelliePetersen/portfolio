@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
-import GithubImage from '../images/github.svg';
-import GitlabImage from '../images/gitlab.svg';
-import LinkedInImage from '../images/linkedin.svg';
+import GitHub from '../images/github.svg';
+import GitLab from '../images/gitlab.svg';
+import LinkedIn from '../images/linkedin.svg';
 
 const Social = styled.a`
   width: 50px;
@@ -22,16 +22,6 @@ const Social = styled.a`
   }
 `
 
-const Github = styled(Social)`
-  background-image: url(${GithubImage});
-`
-const Gitlab = styled(Social)`
-  background-image: url(${GitlabImage});
-`
-const LinkedIn = styled(Social)`
-  background-image: url(${LinkedInImage});
-`
-
 const Wrapper = styled.div`
   display: flex;
   margin: 0 auto 25px;
@@ -39,7 +29,6 @@ const Wrapper = styled.div`
   @media ${device.tablet} {
     margin: 0 0 0 auto;
   }
-
   ${({modal}) => modal && `
     position: absolute;
     bottom: 10vh;
@@ -48,14 +37,18 @@ const Wrapper = styled.div`
   `}
 `
 
+const SocialLink = ({ link, name }) => (
+  <Social href={link} style={{backgroundImage: `url(${name})`}} aria-label={name} target="_blank" rel="noreferrer" />
+)
+
 const SocialMedia = ({ modal }) => {
   return (
     <Wrapper modal={modal}>
-      <LinkedIn href="https://www.linkedin.com/in/kelliepetersen" aria-label="linkedIn" target="_blank" rel="noreferrer" />
+      <SocialLink link="https://www.linkedin.com/in/kelliepetersen" name={LinkedIn} />
       <div style={{margin: '0 20px'}}>
-        <Gitlab href="https://www.gitlab.com/kelliepetersen" aria-label="gitlab" target="_blank" rel="noreferrer" />
+        <SocialLink link="https://www.gitlab.com/kelliepetersen" name={GitLab} />
       </div>
-      <Github href="https://www.github.com/kelliepetersen" aria-label="github" target="_blank" rel="noreferrer" />
+      <SocialLink link="https://www.github.com/kelliepetersen" name={GitHub} />
     </Wrapper>
   )
 }
