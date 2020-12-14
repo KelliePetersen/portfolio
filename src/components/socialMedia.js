@@ -6,24 +6,30 @@ import GitlabImage from '../images/gitlab.svg';
 import LinkedInImage from '../images/linkedin.svg';
 
 const Social = styled.a`
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   display: block;
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: 40px;
+  @media ${device.tablet} {
+    background-size: 35px;
+  }
+  @media ${device.laptop} {
+    width: 35px;
+    height: 35px;
+    background-size: 28px;
+  }
 `
 
 const Github = styled(Social)`
   background-image: url(${GithubImage});
-  background-size: 28px;
 `
 const Gitlab = styled(Social)`
   background-image: url(${GitlabImage});
-  background-size: 28px;
 `
 const LinkedIn = styled(Social)`
-background-image: url(${LinkedInImage});
-  background-size: 26px;
+  background-image: url(${LinkedInImage});
 `
 
 const Wrapper = styled.div`
@@ -46,7 +52,7 @@ const SocialMedia = ({ modal }) => {
   return (
     <Wrapper modal={modal}>
       <LinkedIn href="https://www.linkedin.com/in/kelliepetersen" aria-label="linkedIn" target="_blank" rel="noreferrer" />
-      <div style={{margin: "0 20px"}}>
+      <div style={{margin: '0 20px'}}>
         <Gitlab href="https://www.gitlab.com/kelliepetersen" aria-label="gitlab" target="_blank" rel="noreferrer" />
       </div>
       <Github href="https://www.github.com/kelliepetersen" aria-label="github" target="_blank" rel="noreferrer" />
