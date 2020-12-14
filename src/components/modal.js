@@ -22,9 +22,9 @@ const Container = styled.div`
 const Wrapper = styled.nav`
   display: block;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   text-align: center;
 `
 
@@ -40,6 +40,8 @@ const NavLink = styled.a`
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
+  display: inline-block;
+  margin: 10px 0;
 `
 
 const Contact = styled(Button)`
@@ -58,8 +60,8 @@ const Modal = ({ modalOpen, setModalOpen }) => (
           <li><NavLink white href="#contact" onClick={() => setModalOpen(false)}>Say Hello.</NavLink></li>
           <li><NavLink href={downloadResume} download>Resume.</NavLink></li>
           <li><NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink></li>
-          <li><Contact href="mailto:hello@kelliepetersen.com" light style={{marginTop: '15px'}}>GET IN TOUCH</Contact></li>
-          <li><NavLink white href="mailto:hello@kelliepetersen.com" style={{fontSize: "1.125rem", fontWeight: "bold"}}>
+          <li><Contact href="mailto:hello@kelliepetersen.com">GET IN TOUCH</Contact></li>
+          <li><NavLink white href="mailto:hello@kelliepetersen.com" style={{fontSize: "1.125rem", fontWeight: "bold", marginTop: "20px"}}>
             hello@kelliepetersen.com
           </NavLink></li>
         </NavList>
