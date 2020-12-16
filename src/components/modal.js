@@ -82,7 +82,7 @@ const Modal = ({ modalOpen, setModalOpen }) => {
         document.body.setAttribute('style', '')
         window.scrollTo(0, windowOffset)
       }
-  }, [modalOpen])
+  }, [modalOpen, windowOffset])
   
   return (
   <Container modal={modalOpen}>
