@@ -2,6 +2,16 @@ import React, {useState, useEffect} from 'react'
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 
+const Arrow = styled.div`
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-top: 3px solid ${props => props.theme.grey};
+  border-left: 3px solid ${props => props.theme.grey};
+  transform: rotate(45deg);
+  transition: transform 0.25s;
+`
+
 const TopButton = styled.a`
   position: ${props => props.fixed ? "fixed" : ""};
   display: none;
@@ -18,15 +28,13 @@ const TopButton = styled.a`
       display: ${fixed ? "none" : "block"};
     }
   `}
-`
 
-const Arrow = styled.div`
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border-top: 3px solid ${props => props.theme.grey};
-  border-left: 3px solid ${props => props.theme.grey};
-  transform: rotate(45deg);
+  &:hover ${Arrow}, &:focus ${Arrow} {
+    border-color: ${props => props.theme.tertiary};
+    border-image: ${props => props.theme.gradient};
+    border-image-slice: 1;
+    transform: rotate(45deg) scale(1.1);
+  }
 `
 
 const BackToTop = ({ fixed }) => {

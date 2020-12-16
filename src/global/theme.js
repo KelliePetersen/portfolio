@@ -12,7 +12,8 @@ const theme = {
   gradient: "linear-gradient(to right, #85e7af, #06747b)",
   conicGradient: "conic-gradient(to right, #85e7af, #06747b)",
   headingFont: ["Manrope, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif"],
-  textFont: ["Lato, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif"]
+  textFont: ["Lato, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif"],
+  boxShadow: "5px 5px 5px rgba(0,0,0,0.3)"
 }
 
 const Theme = ({ children }) => (
