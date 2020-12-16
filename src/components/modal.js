@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 import Button from './button'
@@ -71,7 +71,20 @@ const Contact = styled(Button)`
   }
 `
 
-const Modal = ({ modalOpen, setModalOpen }) => (
+const Modal = ({ modalOpen, setModalOpen }) => {
+  const [windowOffset, setWindowOffset] = useState(0)
+  
+  useEffect(() => {
+      if (modalOpen) {
+        setWindowOffset(window.scrollY)
+        document.body.setAttribute('style', `position: fixed; top: -${windowOffset}px`)
+      } else {
+        document.body.setAttribute('style', '')
+        window.scrollTo(0, windowOffset)
+      }
+  }, [modalOpen])
+  
+  return (
   <Container modal={modalOpen}>
     <Wrapper>
       <nav>
@@ -87,6 +100,6 @@ const Modal = ({ modalOpen, setModalOpen }) => (
     </Wrapper>
     <SocialMedia modal />
   </Container>
-)
+)}
 
 export default Modal
