@@ -48,6 +48,18 @@ const Menu = styled.button`
 
   ${({cross}) => cross && `
     background: rgba(0,0,0,0);
+
+    & ${MenuBar}:nth-child(1) {
+      top: 10px;
+      transform: rotate(-45deg);
+    }
+    & ${MenuBar}:nth-child(2) {
+      opacity: 0;
+    }
+    & ${MenuBar}:nth-child(3) {
+      top: 10px;
+      transform: rotate(45deg);
+    }
   `}
 `
 
@@ -62,20 +74,6 @@ const MenuBar = styled.div`
   background-color: ${props => props.theme.color};
   box-shadow: 0.5px 0.5px 1px black;
   transition: all 0.25s;
-
-  ${({crossLeft}) => crossLeft && `
-    top: 10px;
-    transform: rotate(-45deg);
-  `}
-
-  ${({crossRight}) => crossRight && `
-    top: 10px;
-    transform: rotate(45deg);
-  `}
-
-  ${({crossCenter}) => crossCenter && `
-    opacity: 0;
-  `}
 `
 
 const Header = () => {
@@ -89,9 +87,9 @@ const Header = () => {
         <Logo setModalOpen={setModalOpen}  />
         <Nav spaced />
         <Menu type="button" aria-label="open menu" onClick={handleModal} cross={modalOpen}>
-          <MenuBar top="0" crossLeft={modalOpen} />
-          <MenuBar top="50%" center crossCenter={modalOpen} />
-          <MenuBar bottom="0" crossRight={modalOpen} />
+          <MenuBar top="0" />
+          <MenuBar top="50%" center />
+          <MenuBar bottom="0" />
         </Menu>
       </Container>
       <Modal modalOpen={modalOpen} setModalOpen={setModalOpen} />
