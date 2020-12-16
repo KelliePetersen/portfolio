@@ -49,8 +49,9 @@ const Menu = styled.button`
   ${({cross}) => cross && `
     & ${MenuBar}:nth-child(1) {
       box-shadow: none;
-      top: 10px;
+      top: -2.5px;
       transform: rotate(-45deg);
+      transform-origin: right;
     }
     & ${MenuBar}:nth-child(2) {
       opacity: 0;
@@ -59,8 +60,9 @@ const Menu = styled.button`
     }
     & ${MenuBar}:nth-child(3) {
       box-shadow: none;
-      top: 10px;
+      bottom: -2.5px;
       transform: rotate(45deg);
+      transform-origin: right;
     }
   `}
 `
