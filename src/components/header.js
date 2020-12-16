@@ -38,7 +38,7 @@ const Container = styled.header`
 const Menu = styled.button`
   width: 40px;
   height: 26px;
-  background-color: transparent;
+  background: rgba(0,0,0,0);
   border: none;
   cursor: pointer;
   position: relative;
@@ -47,23 +47,25 @@ const Menu = styled.button`
   }
 
   ${({cross}) => cross && `
-    background: rgba(0,0,0,0);
-
     & ${MenuBar}:nth-child(1) {
+      box-shadow: none;
       top: 10px;
       transform: rotate(-45deg);
     }
     & ${MenuBar}:nth-child(2) {
       opacity: 0;
+      transform: scaleX(1%);
+      transform-origin: center;
     }
     & ${MenuBar}:nth-child(3) {
+      box-shadow: none;
       top: 10px;
       transform: rotate(45deg);
     }
   `}
 `
 
-const MenuBar = styled.div`
+const MenuBar = styled.span`
   position: absolute;
   right: 0;
   top: ${props => props.top || "auto"};
