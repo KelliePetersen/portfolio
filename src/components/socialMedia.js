@@ -12,6 +12,8 @@ const Social = styled.a`
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 40px;
+  transition: transform 0.25s;
+
   @media ${device.tablet} {
     background-size: 35px;
   }
@@ -19,6 +21,13 @@ const Social = styled.a`
     width: 35px;
     height: 35px;
     background-size: 28px;
+  }
+
+  &:hover, &:focus {
+    transform: scale(1.1);
+  }
+  &:focus {
+    outline: 2px dashed ${props => props.theme.secondary};
   }
 `
 
