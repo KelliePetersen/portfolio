@@ -8,8 +8,9 @@ import Paragraph from "../components/paragraph"
 import { ButtonStyle, Arrow } from "../components/button"
 
 const Container = styled.div`
-  margin: 200px auto 0;
+  margin: 20vh auto 0;
   width: max-content;
+  max-width: 80vw;
   text-align: center;
 `
 
