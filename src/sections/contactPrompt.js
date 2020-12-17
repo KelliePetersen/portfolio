@@ -40,6 +40,10 @@ const Email = styled.a`
   color: ${props => props.theme.color};
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.25s;
+  &:hover, &:focus {
+    color: ${props => props.theme.secondary};
+  }
 `
 
 const ContactPrompt = () => {
