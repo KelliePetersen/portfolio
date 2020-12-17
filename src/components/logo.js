@@ -8,6 +8,10 @@ const LogoLink = styled.a`
   font-size: 3rem;
   font-weight: bold;
   font-family: ${props => props.theme.headingFont};
+  transition: color 0.25s;
+  &:hover, &:focus {
+    color: ${props => props.theme.secondary};
+  }
 `
 
 const Logo = ({ setModalOpen }) => (
