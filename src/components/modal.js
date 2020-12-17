@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useMediaQuery } from 'react-responsive'
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 import Button from './button'
@@ -65,6 +66,14 @@ const Email = styled(NavLink)`
 
 const Modal = ({ modalOpen, setModalOpen }) => {
   const [windowOffset, setWindowOffset] = useState(0)
+  const isLaptop = useMediaQuery({ query: `${device.laptop}` })
+
+  useEffect(() => {
+    if (isLaptop) {
+      setModalOpen(false)
+      setWindowOffset(0)
+    }
+  }, [isLaptop, setModalOpen])
   
   useEffect(() => {
     if (modalOpen && !windowOffset) {
