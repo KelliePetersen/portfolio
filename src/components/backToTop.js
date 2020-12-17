@@ -47,7 +47,7 @@ const BackToTop = ({ fixed }) => {
   }, [])
 
   return (
-    <TopButton fixed={fixed} visibility={visibility} href="#" aria-label="back to top of page">
+    <TopButton fixed={fixed} visibility={visibility ? 1 : 0} href="#" aria-label="back to top of page">
       <Arrow />
     </TopButton>
   )
