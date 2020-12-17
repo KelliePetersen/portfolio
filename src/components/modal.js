@@ -49,9 +49,15 @@ const NavLink = styled.a`
   font-weight: bold;
   display: inline-block;
   margin: 10px 0;
+  transition: color 0.25s;
+  
   @media ${device.tablet} and (min-height: 750px) {
     font-size: 2.25rem;
     margin: 15px 0;
+  }
+
+  &:hover, &:focus {
+    color: ${props => props.theme.secondary};
   }
 `
 
