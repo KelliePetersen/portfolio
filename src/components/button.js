@@ -46,6 +46,14 @@ const ButtonStyle = styled.a`
     font-size: 1.125rem;
   }
 
+  ${({modal}) => modal && `
+    display: none;
+    @media ${device.tablet} and (min-height: 750px) {
+      display: inline-block;
+      margin-top: 80px;
+    }
+  `}
+
   &:hover, &:focus {
     padding: 22.5px 70px 22.5px 30px;
     transition: background 0.75s, padding 0.25s;
@@ -66,8 +74,8 @@ const ButtonStyle = styled.a`
   }
 `
 
-const Button = ({ children, href, style }) => (
-  <ButtonStyle type="button" href={href} style={style}>
+const Button = ({ children, href, modal, style }) => (
+  <ButtonStyle type="button" href={href} modal={modal} style={style}>
     {children}<Arrow />
   </ButtonStyle>
 )

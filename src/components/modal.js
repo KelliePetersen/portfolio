@@ -63,14 +63,6 @@ const Email = styled(NavLink)`
   }
 `
 
-const Contact = styled(Button)`
-  display: none;
-  @media ${device.tablet} and (min-height: 750px) {
-    display: inline-block;
-    margin-top: 80px;
-  }
-`
-
 const Modal = ({ modalOpen, setModalOpen }) => {
   const [windowOffset, setWindowOffset] = useState(0)
   
@@ -97,7 +89,7 @@ const Modal = ({ modalOpen, setModalOpen }) => {
           <li><NavLink white href="#contact" onClick={() => setModalOpen(false)}>Say Hello.</NavLink></li>
           <li><NavLink href={downloadResume} download>Resume.</NavLink></li>
           <li><NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink></li>
-          <li><Contact href="mailto:hello@kelliepetersen.com">GET IN TOUCH</Contact></li>
+          <li><Button modal="true" href="mailto:hello@kelliepetersen.com">GET IN TOUCH</Button></li>
           <li><Email white href="mailto:hello@kelliepetersen.com">hello@kelliepetersen.com</Email></li>
         </NavList>
       </nav>
