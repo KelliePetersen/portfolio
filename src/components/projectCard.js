@@ -33,6 +33,12 @@ const ImageWrapper = styled.div`
   max-height: 300px;
   @media ${device.tablet} {
     height: 40vw;
+    max-height: 450px;
+  }
+  @media ${device.desktop} {
+    max-height: 500px;
+  }
+  @media ${device.desktopL} {
     max-height: 625px;
   }
 `
