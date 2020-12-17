@@ -19,35 +19,30 @@ const NavList = styled.ul`
   margin: 0;
 `
 
-const NavListItem = styled.li`
-  margin: 0;
-`
-
-const ExternalLink = styled.a`
-  color: #b3b3b3;
-  text-decoration: none;
-`
-
 const NavLink = styled.a`
-  color: ${props => props.theme.color};
+  color: ${props => props.white ? props.theme.color : "#b3b3b3"};
   text-decoration: none;
+  transition: color 0.25s;
+  &:hover, &:focus {
+    color: ${props => props.theme.secondary};
+  }
 `
 
 const Nav = ({ spaced }) => {
   return (
     <NavBar spaced={spaced}>
       <NavList>
-        <NavListItem style={{margin: "0 60px"}}>
-          <ExternalLink href={downloadResume} download>Resume.</ExternalLink>
-        </NavListItem>
-        <NavListItem>
-          <ExternalLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</ExternalLink>
-          {/* <ExternalLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</ExternalLink> */}
-        </NavListItem>
+        <li style={{margin: "0 60px"}}>
+          <NavLink href={downloadResume} download>Resume.</NavLink>
+        </li>
+        <li style={{margin: 0}}>
+          <NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink>
+          {/* <NavLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</NavLink> */}
+        </li>
       </NavList>
       <NavList>
-        <NavListItem style={{margin: "0 60px"}}><NavLink href="#projects">My Work.</NavLink></NavListItem>
-        <NavListItem><NavLink href="#contact">Say Hello.</NavLink></NavListItem>
+        <li style={{margin: "0 60px"}}><NavLink white href="#projects">My Work.</NavLink></li>
+        <li style={{margin: 0}}><NavLink white href="#contact">Say Hello.</NavLink></li>
       </NavList>
     </NavBar>
   )
