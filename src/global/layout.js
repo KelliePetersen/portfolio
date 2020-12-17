@@ -20,7 +20,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   position: relative;
-  max-width: 1720px;
+  max-width: 100vw;
   margin: 0 30px;
   padding: 0 0 20px;
   min-height: 100vh;
@@ -38,6 +38,10 @@ const Wrapper = styled.div`
     margin: 0 100px;
   }
   @media ${device.desktopL} {
+    margin: 0 90px;
+  }
+  @media ${device.widescreen} {
+    max-width: 2000px;
     margin: 0 auto;
   }
 `

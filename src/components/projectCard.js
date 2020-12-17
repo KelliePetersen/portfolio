@@ -40,6 +40,8 @@ const ImageWrapper = styled.div`
   }
   @media ${device.desktopL} {
     max-height: 625px;
+    max-width: 700px;
+    margin: 0 0 0 auto;
   }
 `
 

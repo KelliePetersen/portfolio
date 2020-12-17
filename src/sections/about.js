@@ -34,6 +34,7 @@ const Container = styled.div`
   margin: 0 auto;
   @media ${device.desktop} {
     width: 100%;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
   }

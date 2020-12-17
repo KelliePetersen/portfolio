@@ -29,10 +29,8 @@ const Container = styled.header`
   @media ${device.laptopL} {
     padding: 20px 100px;
   }
-  @media ${device.desktop} {
-    max-width: 1920px;
-    left: 50%;
-    transform: translateX(-50%);
+  @media ${device.widescreen} {
+    padding: 20px calc((100vw - 2000px)/2);
   }
 `
 
