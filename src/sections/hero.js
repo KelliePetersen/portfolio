@@ -21,6 +21,9 @@ const Wrapper = styled.div`
     background-repeat: no-repeat;
     background-position: left center;
   }
+  @media ${device.desktop} {
+    background-repeat: repeat;
+  }
 `
 
 const Container = styled.div`
