@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import Heading from "../components/heading"
 import Subheading from "../components/subheading"
-import Button from '../components/button'
+import { Button } from '../components/button'
 import Paragraph from '../components/paragraph'
 import { device } from "../global/mediaQueries"
 

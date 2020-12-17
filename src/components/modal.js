@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
-import Button from './button'
+import { Button } from './button'
 import downloadResume from '../downloads/resume.pdf' 
 import SocialMedia from './socialMedia'
 

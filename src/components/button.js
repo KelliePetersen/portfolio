@@ -75,9 +75,9 @@ const ButtonStyle = styled.a`
 `
 
 const Button = ({ children, href, modal, style }) => (
-  <ButtonStyle type="button" href={href} modal={modal} style={style}>
+  <ButtonStyle href={href} modal={modal} style={style}>
     {children}<Arrow />
   </ButtonStyle>
 )
 
-export default Button;
+export { Button, ButtonStyle, Arrow };
