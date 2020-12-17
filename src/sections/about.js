@@ -115,14 +115,12 @@ const About = () => {
           <span> NextJS</span>. I use Node and Express for the backend. I'm also familiar with WordPress and PHP.</Paragraph>
         </div>
         <Grid>
-        {data.allFile.edges.map((file, index) => {
-          return (
+          {data.allFile.edges.map((file, index) => (
             <GridItem key={`svg-${index}`}>
               <Tooltip>{file.node.name}</Tooltip>
-              <img src={`${file.node.publicURL}`} alt={file.node.name} style={{marginBottom: 0}} />
+              <img src={`${file.node.publicURL}`} alt={`${file.node.name} icon`} style={{marginBottom: 0}} />
             </GridItem>
-          )
-        })}
+          ))}
         </Grid>
       </Container>
     </Wrapper>
