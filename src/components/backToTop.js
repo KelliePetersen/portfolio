@@ -22,22 +22,22 @@ const TopButton = styled.a`
     right: 55px;
   }
 
-  ${({visibility, fixed}) => visibility && `
-    display: ${fixed ? "block" : "none"};
-    @media ${device.tablet} {
-      display: ${fixed ? "none" : "block"};
-    }
-  `}
-
   &:hover ${Arrow}, &:focus ${Arrow} {
     border-color: ${props => props.theme.tertiary};
     border-image: ${props => props.theme.gradient};
     border-image-slice: 1;
     transform: rotate(45deg) scale(1.1);
   }
+  
+  ${({visibility, fixed}) => visibility && `
+    display: ${fixed ? "block" : "none"};
+    @media ${device.tablet} {
+      display: ${fixed ? "none" : "block"};
+    }
+  `}
 `
 
-const BackToTop = ({ fixed }) => {
+const BackToTop = ({ fixed, style }) => {
   const [visibility, setVisibility] = useState(false)
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const BackToTop = ({ fixed }) => {
   }, [])
 
   return (
-    <TopButton fixed={fixed} visibility={visibility ? 1 : 0} href="#" aria-label="back to top of page">
+    <TopButton fixed={fixed} visibility={visibility ? 1 : 0} style={style} href="#" aria-label="back to top of page">
       <Arrow />
     </TopButton>
   )

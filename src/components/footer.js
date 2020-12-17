@@ -59,7 +59,7 @@ const Footer = () => (
     <Nav />
     <Social><SocialMedia /></Social>
     <Copyright>© Copyright {new Date().getFullYear()} &bull; Kellie Petersen. <span>All Rights Reserved.</span></Copyright>
-    <div style={{margin: "0 0 0 auto" }} ><BackToTop /></div>
+    <BackToTop style={{ display: "block", margin: "0 0 0 auto" }}/>
   </Wrapper>
 )
 
