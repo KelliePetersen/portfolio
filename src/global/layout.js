@@ -10,6 +10,7 @@ import "./layout.css"
 
 const Container = styled.div`
   width: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background: ${props => props.theme.background};
@@ -22,6 +23,10 @@ const Wrapper = styled.div`
   max-width: 1720px;
   margin: 0 30px;
   padding: 0 0 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media ${device.mobile} {
     margin: 0 50px;
