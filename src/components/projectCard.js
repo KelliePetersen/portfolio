@@ -76,7 +76,7 @@ const ProjectCard = ({ title, role, summary, description, image, link }) => {
         <Heading as="h3">{title}</Heading>
         <Summary>{summary}</Summary>
         <Description>{description}</Description>
-        <ProjectLink href={link} target="_blank">VIEW WEBSITE</ProjectLink>
+        <ProjectLink href={link} target="_blank" rel="noreferrer">VIEW WEBSITE</ProjectLink>
       </TextWrapper>
     </Container>
   )
