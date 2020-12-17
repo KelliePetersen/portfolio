@@ -21,6 +21,9 @@ const TopButton = styled.a`
   @media ${device.mobile} {
     right: 55px;
   }
+  @media ${device.tablet} {
+    display: ${props => props.fixed ? "none" : "block"};
+  }
 
   &:hover ${Arrow}, &:focus ${Arrow} {
     border-color: ${props => props.theme.tertiary};
@@ -31,9 +34,6 @@ const TopButton = styled.a`
   
   ${({visibility, fixed}) => visibility && `
     display: ${fixed ? "block" : "none"};
-    @media ${device.tablet} {
-      display: ${fixed ? "none" : "block"};
-    }
   `}
 `
 
