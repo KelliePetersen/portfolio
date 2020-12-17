@@ -51,11 +51,14 @@ const Grid = styled.div`
   @media ${device.tablet} {
     grid-auto-rows: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 580px;
+    width: 520px;
   }
   @media ${device.desktop} {
     margin-left: 50px;
     column-gap: 20px;
+  }
+  @media ${device.desktopL} {
+    width: 580px;
   }
 `
 
