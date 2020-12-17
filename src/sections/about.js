@@ -43,7 +43,6 @@ const Grid = styled.div`
   display: grid;
   margin-left: -20px;
   width: calc(100% + 20px);
-  max-width: 435px;
   grid-auto-rows: 75px;
   grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
   column-gap: 15px;
@@ -53,7 +52,6 @@ const Grid = styled.div`
     grid-auto-rows: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 580px;
-    max-width: 100%;
   }
   @media ${device.desktop} {
     margin-left: 50px;
