@@ -75,13 +75,17 @@ const Modal = ({ modalOpen, setModalOpen }) => {
   const [windowOffset, setWindowOffset] = useState(0)
   
   useEffect(() => {
-      if (modalOpen) {
-        setWindowOffset(window.scrollY)
-        document.body.setAttribute('style', `position: fixed; top: -${windowOffset}px`)
-      } else {
-        document.body.setAttribute('style', '')
+    if (modalOpen && !windowOffset) {
+      setWindowOffset(window.scrollY)
+      document.body.setAttribute('style', `position: fixed; top: -${window.scrollY}px; width: 100vw;`)
+    }
+    if (!modalOpen) {
+      document.body.setAttribute('style', '')
+      if (windowOffset) {
         window.scrollTo(0, windowOffset)
+        setWindowOffset(0)
       }
+    }
   }, [modalOpen, windowOffset])
   
   return (
