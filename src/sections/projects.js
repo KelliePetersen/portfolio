@@ -26,10 +26,12 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Awaken Beauty",
+    title: "Awakening Beauty",
     role: ["Design", "Development"],
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor.",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna.",
+    summary: "A premier hair salon located in North Georgia, USA. Multi-page website listing services and information.",
+    description: `Awakening Beauty is a premier hair salon located in North Georgia, USA. 
+    In this project, I designed and developed a multi-page website highlighting their services and 
+    listing all important information about their salon.`,
     image: "awaken.jpg",
     link: "https://kelliepetersen.github.io/awakeningbeauty/"
   },
