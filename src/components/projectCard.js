@@ -50,7 +50,10 @@ const TextWrapper = styled.div`
 `
 
 const Summary = styled(Paragraph)`
-  max-width: 300px;
+  max-width: 400px;
+  @media ${device.tablet} {
+    max-width: 350px;
+  }
   @media ${device.laptop} {
     display: none;
   }
