@@ -6,7 +6,7 @@ const Paragraph = styled.p`
   line-height: 1.75;
   letter-spacing: 0.5px;
   color: ${props => props.theme.grey};
-  max-width: 500px;
+  max-width: 550px;
   
   @media ${device.laptop} {
     font-size: 1.125rem;
