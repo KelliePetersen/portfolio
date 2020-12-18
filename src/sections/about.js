@@ -122,7 +122,7 @@ const About = () => {
           {data.allFile.edges.map((file, index) => (
             <GridItem key={`svg-${index}`}>
               <Tooltip>{file.node.name}</Tooltip>
-              <img src={`${file.node.publicURL}`} alt={`${file.node.name} icon`} style={{marginBottom: 0}} />
+              <img src={`${file.node.publicURL}`} alt={`${file.node.name} icon`} style={{marginBottom: 0, width: '100%', height: '100%'}} />
             </GridItem>
           ))}
         </Grid>
