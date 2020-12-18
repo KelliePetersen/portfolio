@@ -19,8 +19,9 @@ const projectsData = [
     id: 1,
     title: "Parceley",
     role: ["Design", "Development"],
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor.",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna.",
+    summary: "Parceley is a meal delivery app that provides vegan and cruelty-free meal options from approved restaurants.",
+    description: `Parceley is a meal delivery app that provides vegan and cruelty-free meal options from approved restaurants.
+    It was built using Gatsby, React, and SASS and is currently hosted on Netlify.`,
     image: "parceley.jpg",
     link: "https://lucid-kalam-c6958e.netlify.app/"
   },
