@@ -37,8 +37,9 @@ const projectsData = [
     id: 3,
     title: "Rapha Walk",
     role: ["Design", "Development"],
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor.",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit mattis turpis ut auctor. Quisque nunc enim, blandit vestibulum consequat quis, maximus ac magna.",
+    summary: "Rapha Walk raises funds for a non-profit medical centre. This website allowed people to purchase tickets and donate to Rapha Clinic.",
+    description: `Each year, the Rapha Walk raises funds for Rapha Clinic, a non-profit medical centre helping families across Georgia, USA.
+    I designed and developed a website that allowed people to purchase tickets and donate to Rapha Clinic.`,
     image: "raphawalk.jpg",
     link: "https://kelliepetersen.github.io/rapha-walk/"
   }
