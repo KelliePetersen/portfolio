@@ -113,10 +113,11 @@ const About = () => {
         <div>
           <Subheading>ABOUT ME</Subheading>
           <Heading large>Hi, I'm Kellie.</Heading>
-          <Paragraph>I'm a <span>front-end developer</span> and hobbyist designer working at Parchot. 
-          I value readable and maintainable code.</Paragraph>
+          <Paragraph>I'm a <span>front-end developer</span> and aspiring designer currently working at Parchot. 
+          I value making accessible websites and apps with readable code.</Paragraph>
           <Paragraph>My focus is vanilla <span>JavaScript</span> and <span>React</span>, including <span>Gatsby</span> and 
-          <span> NextJS</span>. I use Node and Express for the backend. I'm also familiar with WordPress and PHP.</Paragraph>
+          <span> NextJS</span>. I use Node, Express and MongoDB for the backend. I'm also familiar with CMS like WordPress 
+          and Strapi, and displaying data with D3.</Paragraph>
         </div>
         <Grid>
           {data.allFile.edges.map((file, index) => (
