@@ -42,6 +42,9 @@ const HeadingContainer = styled.div`
   }
   @media ${device.desktop} {
     margin-left: 70px;
+    max-width: 600px;
+  }
+  @media ${device.desktopL} {
     max-width: 700px;
   }
 `
@@ -53,8 +56,11 @@ const PageHeading = styled(Heading)`
     font-size: 3rem;
   }
   @media ${device.desktop} {
-    font-size: 4rem;
     margin: 20px 0 35px;
+    font-size: 3.5rem;
+  }
+  @media ${device.desktopL} {
+    font-size: 4rem;
   }
 `
 
