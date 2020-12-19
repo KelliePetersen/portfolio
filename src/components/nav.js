@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
-import downloadResume from '../downloads/resume.pdf' 
+// import downloadResume from '../downloads/resume.pdf' 
 
 const NavBar = styled.nav`
   display: none;
@@ -33,9 +33,9 @@ const Nav = ({ spaced }) => {
     <NavBar spaced={spaced}>
       <NavList>
         <li style={{margin: "0 60px"}}>
-          <NavLink href={downloadResume} download>Resume.</NavLink>
+          {/* <NavLink href={downloadResume} download>Resume.</NavLink>
         </li>
-        <li style={{margin: 0}}>
+        <li style={{margin: 0}}> */}
           <NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink>
           {/* <NavLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</NavLink> */}
         </li>
