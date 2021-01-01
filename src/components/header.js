@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 import Nav from "./nav"
@@ -24,7 +24,8 @@ const Container = styled.header`
   @media ${device.laptop} {
     top: 0;
     padding: 20px 75px;
-    background-color: ${props => props.theme.background};
+    background-color: ${props => props.bgColor ? props.theme.background : "rgba(0,0,0,0)"};
+    // transition: background-color 0.5s;
   }
   @media ${device.laptopL} {
     padding: 20px 100px;
@@ -35,11 +36,18 @@ const Container = styled.header`
 `
 
 const Header = () => {
+  const [navStyle, setNavStyle] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
+
+  useEffect(() => {
+    let windowState = () => (window.scrollY > 25) ? setNavStyle(true) : setNavStyle(false)
+    windowState()
+    document.addEventListener('scroll', windowState)
+  }, [])
 
   return (
     <>
-      <Container>
+      <Container bgColor={navStyle}>
         <Logo setModalOpen={setModalOpen}  />
         <Nav spaced />
         <MenuButton modalOpen={modalOpen} setModalOpen={setModalOpen} />
