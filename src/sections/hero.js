@@ -78,17 +78,17 @@ const HeadingContainer = styled.div`
 `
 
 const PageHeading = styled(Heading)`
-  font-size: 2.25rem;
-  margin: 20px 0 40px;
+  font-size: 1.75rem;
+  margin: 20px 0 30px;
   @media ${device.tablet} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   @media ${device.desktop} {
-    margin: 20px 0 50px;
-    font-size: 3.5rem;
+    margin: 20px 0 40px;
+    font-size: 2.5rem;
   }
   @media ${device.desktopL} {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 `
 
@@ -108,9 +108,9 @@ const Hero = () => {
       <StarBackground />
       <ImageWrapper><Image filename="hero" traced="true" loading="eager" alt="Simplistic drawing of 2 planets and 2 moons in grayscale"></Image></ImageWrapper>
       <Container>
-        <Subheading normal>HI, I'M KELLIE PETERSEN</Subheading>
+        <Subheading normal>KELLIE PETERSEN &bull; BRISBANE</Subheading>
         <HeadingContainer>
-          <PageHeading as="h1">Frontend react &amp; javascript developer.</PageHeading>
+          <PageHeading as="h1">I build stellar websites and lightspeed apps using JavaScript &amp; React.</PageHeading>
           <Button href="#projects">MY WORK</Button>
         </HeadingContainer>
       </Container>
