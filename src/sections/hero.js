@@ -51,12 +51,12 @@ const HeadingContainer = styled.div`
 
 const PageHeading = styled(Heading)`
   font-size: 2.25rem;
-  margin: 30px 0 40px;
+  margin: 20px 0 40px;
   @media ${device.tablet} {
     font-size: 3rem;
   }
   @media ${device.desktop} {
-    margin: 20px 0 35px;
+    margin: 20px 0 50px;
     font-size: 3.5rem;
   }
   @media ${device.desktopL} {
@@ -78,9 +78,9 @@ const Hero = () => {
   return (
     <Wrapper id="home">
       <Container>
-        <Subheading normal>JAVASCRIPT DEVELOPER</Subheading>
+        <Subheading normal>HI, I'M KELLIE PETERSEN</Subheading>
         <HeadingContainer>
-          <PageHeading as="h1">Bask in my total shocking tagline you.</PageHeading>
+          <PageHeading as="h1">Frontend react &amp; javascript developer.</PageHeading>
           <Button href="#projects">MY WORK</Button>
         </HeadingContainer>
       </Container>
