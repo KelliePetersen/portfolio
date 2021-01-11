@@ -23,7 +23,7 @@ const projectsData = [
     description: `Parceley is a meal delivery app that provides vegan and cruelty-free meal options from approved restaurants.
     It was built using Gatsby, React, and SASS and is currently hosted on Netlify.`,
     image: "parceley.jpg",
-    link: "https://lucid-kalam-c6958e.netlify.app/"
+    link: "https://parceley.netlify.app/"
   },
   {
     id: 2,
