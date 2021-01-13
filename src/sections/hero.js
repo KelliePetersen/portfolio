@@ -35,11 +35,16 @@ const ImageWrapper = styled.div`
     top: 40%;
     transform: translateY(-50%);
     width: 40vw;
+    max-width: 570px;
+  }
+  @media ${device.laptop} {
+    top: 50%;
+  }
+  @media ${device.desktop} {
+    right: 100px;
   }
   @media ${device.desktopL} {
-    top: 50%;
     right: 200px;
-    width: 570px;
   }
   
 `
