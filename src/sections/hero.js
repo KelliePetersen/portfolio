@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import Image from "../components/image"
 import Heading from "../components/heading"
 import Subheading from "../components/subheading"
 import { Button } from '../components/button'
@@ -24,6 +25,23 @@ const Wrapper = styled.div`
   @media ${device.desktop} {
     background-repeat: repeat;
   }
+`
+const ImageWrapper = styled.div`
+  display: none;
+  @media ${device.tablet} {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 40vw;
+  }
+  @media ${device.desktopL} {
+    top: 50%;
+    right: 200px;
+    width: 570px;
+  }
+  
 `
 
 const Container = styled.div`
@@ -77,6 +95,7 @@ const SocialContainer = styled.div`
 const Hero = () => {
   return (
     <Wrapper id="home">
+      <ImageWrapper><Image filename="planets" alt="Simplistic drawing of 2 planets and 2 moons in grayscale"></Image></ImageWrapper>
       <Container>
         <Subheading normal>HI, I'M KELLIE PETERSEN</Subheading>
         <HeadingContainer>
