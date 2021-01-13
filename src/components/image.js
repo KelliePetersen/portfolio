@@ -31,7 +31,7 @@ const Image = ({filename, alt, loading}) => (
       }
 
       const imageFluid = image.node.childImageSharp.fluid
-      return <Img alt={alt} fluid={imageFluid} loading={loading || "lazy"} style={{height: "100%", opacity: "0.75"}} />
+      return <Img alt={alt} fluid={imageFluid} loading={loading || "lazy"} style={{height: "100%"}} />
     }}
   />
 )

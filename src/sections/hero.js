@@ -100,7 +100,7 @@ const SocialContainer = styled.div`
 const Hero = () => {
   return (
     <Wrapper id="home">
-      <ImageWrapper><Image filename="planets" alt="Simplistic drawing of 2 planets and 2 moons in grayscale"></Image></ImageWrapper>
+      <ImageWrapper><Image filename="hero" alt="Simplistic drawing of 2 planets and 2 moons in grayscale"></Image></ImageWrapper>
       <Container>
         <Subheading normal>HI, I'M KELLIE PETERSEN</Subheading>
         <HeadingContainer>
