@@ -32,12 +32,14 @@ const Nav = ({ spaced }) => {
   return (
     <NavBar spaced={spaced}>
       <NavList>
+        {/* <li style={{margin: "0 60px"}}>
+          <NavLink href={downloadResume} download>Resume.</NavLink>
+        </li> */}
         <li style={{margin: "0 60px"}}>
-          {/* <NavLink href={downloadResume} download>Resume.</NavLink>
-        </li>
-        <li style={{margin: 0}}> */}
           <NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink>
-          {/* <NavLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</NavLink> */}
+        </li>
+        <li style={{margin: 0}}>
+          <NavLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</NavLink>
         </li>
       </NavList>
       <NavList>
