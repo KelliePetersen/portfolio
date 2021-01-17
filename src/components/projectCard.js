@@ -32,6 +32,8 @@ const ImageWrapper = styled.div`
   height: calc(100vw - 60px);
   max-height: 300px;
   opacity: 0.75;
+  border-radius: 20px;
+  overflow: hidden;
   @media ${device.tablet} {
     height: 40vw;
     max-height: 450px;
