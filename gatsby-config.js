@@ -22,8 +22,8 @@ module.exports = {
         name: `Kellie Petersen Portfolio`,
         short_name: `KPetersen`,
         start_url: `/`,
-        background_color: `#3aa390`,
-        theme_color: `#3aa390`,
+        background_color: `#1c1c1c`,
+        theme_color: `#1c1c1c`,
         display: `minimal-ui`,
         icon: `src/images/logo-black.png`, // This path is relative to the root of the site.
       },
