@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
-import ProjectCard from '../components/projectCard'
+import ProjectCard from "../components/projectCard"
 
 const Wrapper = styled.div`
   width: 100%;

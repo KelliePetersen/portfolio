@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react"
 import styled from "styled-components"
 import Image from "./image"
 import Heading from "./heading"
 import Subheading from "./subheading"
 import Paragraph from "./paragraph"
-import ProjectLink from './projectLink'
+import ProjectLink from "./projectLink"
 import { device } from "../global/mediaQueries"
 
 const Container = styled.div`
@@ -78,7 +78,7 @@ const ProjectCard = ({ title, role, summary, description, image, link }) => {
     <Container>
       <ImageWrapper><Image filename={image} alt={title}></Image></ImageWrapper>
       <TextWrapper>
-        <Subheading>{role.join(' / ').toUpperCase()}</Subheading>
+        <Subheading>{role.join(" / ").toUpperCase()}</Subheading>
         <Heading as="h3">{title}</Heading>
         <Summary>{summary}</Summary>
         <Description>{description}</Description>

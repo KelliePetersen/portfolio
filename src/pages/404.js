@@ -19,8 +19,8 @@ const NotFoundPage = () => (
     <SEO title="Oops! Page does not exist" />
     <Container>
       <Heading>Page not found</Heading>
-      <Paragraph>Uh oh! You may have searched for a page that doesn't exist, or I messed something up. Hopefully this is your fault.</Paragraph>
-      <ButtonStyle as={Link} to="/" style={{margin: '30px auto 0'}}>
+      <Paragraph>Uh oh! You may have searched for a page that doesn"t exist, or I messed something up. Hopefully this is your fault.</Paragraph>
+      <ButtonStyle as={Link} to="/" style={{margin: "30px auto 0"}}>
         Go Home<Arrow />
       </ButtonStyle>
     </Container>

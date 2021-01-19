@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
-import downloadResume from '../downloads/kellie_petersen_resume.pdf' 
+import downloadResume from "../downloads/kellie_petersen_resume.pdf" 
 
 const NavBar = styled.nav`
   display: none;

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from "react"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 
@@ -43,7 +43,7 @@ const BackToTop = ({ fixed, style }) => {
   useEffect(() => {
     let windowState = () => (window.scrollY > 500) ? setVisibility(true) : setVisibility(false)
     windowState();
-    document.addEventListener('scroll', windowState)
+    document.addEventListener("scroll", windowState)
   }, [])
 
   return (

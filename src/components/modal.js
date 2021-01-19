@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { useMediaQuery } from 'react-responsive'
+import React, { useState, useEffect } from "react"
+import { useMediaQuery } from "react-responsive"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
-import { Button } from './button'
-import downloadResume from '../downloads/kellie_petersen_resume.pdf' 
-import SocialMedia from './socialMedia'
+import { Button } from "./button"
+import downloadResume from "../downloads/kellie_petersen_resume.pdf" 
+import SocialMedia from "./socialMedia"
 
 const Container = styled.div`
   position: fixed;
@@ -84,10 +84,10 @@ const Modal = ({ modalOpen, setModalOpen }) => {
   useEffect(() => {
     if (modalOpen && !windowOffset) {
       setWindowOffset(window.scrollY)
-      document.body.setAttribute('style', `position: fixed; top: -${window.scrollY}px; width: 100vw;`)
+      document.body.setAttribute("style", `position: fixed; top: -${window.scrollY}px; width: 100vw;`)
     }
     if (!modalOpen) {
-      document.body.setAttribute('style', '')
+      document.body.setAttribute("style", "")
       if (windowOffset) {
         window.scrollTo(0, windowOffset)
         setWindowOffset(0)

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 import styled from "styled-components"
-import LogoSVG from '../images/logo.svg'
+import LogoSVG from "../images/logo.svg"
 
 const LogoLink = styled.a`
   margin: 0;

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
-import GitHub from '../images/github.svg';
-import GitLab from '../images/gitlab.svg';
-import LinkedIn from '../images/linkedin.svg';
+import GitHub from "../images/github.svg";
+import GitLab from "../images/gitlab.svg";
+import LinkedIn from "../images/linkedin.svg";
 
 const Social = styled.a`
   width: 50px;
@@ -58,7 +58,7 @@ const SocialMedia = ({ modal }) => {
   return (
     <Wrapper modal={modal}>
       <SocialLink link="https://www.linkedin.com/in/kelliepetersen" name={LinkedIn} />
-      <div style={{margin: '0 20px'}}>
+      <div style={{margin: "0 20px"}}>
         <SocialLink link="https://www.gitlab.com/kelliepetersen" name={GitLab} />
       </div>
       <SocialLink link="https://www.github.com/kelliepetersen" name={GitHub} />

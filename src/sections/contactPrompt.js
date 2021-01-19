@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react"
 import styled from "styled-components"
 import Heading from "../components/heading"
 import Subheading from "../components/subheading"
-import { Button } from '../components/button'
-import Paragraph from '../components/paragraph'
+import { Button } from "../components/button"
+import Paragraph from "../components/paragraph"
 import { device } from "../global/mediaQueries"
 
 const Wrapper = styled.section`
@@ -57,7 +57,7 @@ const ContactPrompt = () => {
         Feel free to contact me through social media or email me at 
           <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.
         </Paragraph>
-        <Button href="mailto:hello@kelliepetersen.com" style={{margin: '25px auto 0'}}>GET IN TOUCH</Button>
+        <Button href="mailto:hello@kelliepetersen.com" style={{margin: "25px auto 0"}}>GET IN TOUCH</Button>
       </Container>
     </Wrapper>
   )

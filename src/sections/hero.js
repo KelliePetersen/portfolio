@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react"
 import styled from "styled-components"
 import Image from "../components/image"
 import Heading from "../components/heading"
 import Subheading from "../components/subheading"
-import { Button } from '../components/button'
+import { Button } from "../components/button"
 import { device } from "../global/mediaQueries"
-import SocialMedia from '../components/socialMedia'
-import img from '../images/stars100.svg';
+import SocialMedia from "../components/socialMedia"
+import img from "../images/stars100.svg";
 
 const Wrapper = styled.div`
   position: relative;

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import Heading from '../components/heading'
-import Subheading from '../components/subheading'
-import Paragraph from '../components/paragraph'
+import Heading from "../components/heading"
+import Subheading from "../components/subheading"
+import Paragraph from "../components/paragraph"
 import { device } from "../global/mediaQueries"
 
 const Wrapper = styled.section`
@@ -124,7 +124,7 @@ const About = () => {
           {data.allFile.edges.map((file, index) => (
             <GridItem key={`svg-${index}`}>
               <Tooltip>{file.node.name}</Tooltip>
-              <img src={`${file.node.publicURL}`} alt={`${file.node.name} icon`} style={{marginBottom: 0, width: '100%', height: '100%'}} />
+              <img src={`${file.node.publicURL}`} alt={`${file.node.name} icon`} style={{marginBottom: 0, width: "100%", height: "100%"}} />
             </GridItem>
           ))}
         </Grid>
