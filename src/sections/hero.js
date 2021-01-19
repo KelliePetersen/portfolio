@@ -21,7 +21,6 @@ const Wrapper = styled.div`
 
 const StarBackground = styled.div`
   background-image: url(${img});
-  background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
@@ -29,6 +28,9 @@ const StarBackground = styled.div`
   left: 0;
   right: 0;
   opacity: 0.5;
+  @media ${device.tablet} {
+    background-position: center;
+  }
 `
 
 const ImageWrapper = styled.div`
