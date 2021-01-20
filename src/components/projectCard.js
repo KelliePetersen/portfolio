@@ -4,7 +4,7 @@ import Image from "./image"
 import Heading from "./heading"
 import Subheading from "./subheading"
 import Paragraph from "./paragraph"
-import ProjectLink from "./projectLink"
+import {Button} from "./button"
 import { device } from "../global/mediaQueries"
 
 const Container = styled.div`
@@ -64,6 +64,7 @@ const Summary = styled(Paragraph)`
 
 const Description = styled(Paragraph)`
   display: none;
+  margin-bottom: 40px;
   @media ${device.laptop} {
     max-width: 400px;
     display: block;
@@ -82,7 +83,7 @@ const ProjectCard = ({ title, role, summary, description, image, link }) => {
         <Heading as="h3">{title}</Heading>
         <Summary>{summary}</Summary>
         <Description>{description}</Description>
-        <ProjectLink href={link} target="_blank" rel="noreferrer">VIEW WEBSITE</ProjectLink>
+        <Button href={link} small="true" target="_blank" rel="noreferrer">VIEW LIVE</Button>
       </TextWrapper>
     </Container>
   )
