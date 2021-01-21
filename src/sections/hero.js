@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Image from "../components/image"
 import Heading from "../components/heading"
 import Subheading from "../components/subheading"
-import { Button } from "../components/button"
+import Button from "../components/button"
 import { device } from "../global/mediaQueries"
 import SocialMedia from "../components/socialMedia"
 import img from "../images/stars100.svg";
@@ -113,7 +113,7 @@ const Hero = () => {
         <Subheading normal>KELLIE PETERSEN &bull; BRISBANE</Subheading>
         <HeadingContainer>
           <PageHeading as="h1">I build stellar websites and lightspeed apps using JavaScript &amp; React.</PageHeading>
-          <Button href="#projects">MY WORK</Button>
+          <Button href="#projects">SEE MY WORK</Button>
         </HeadingContainer>
       </Container>
       <SocialContainer><SocialMedia /></SocialContainer>
