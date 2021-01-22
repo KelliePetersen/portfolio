@@ -4,7 +4,8 @@ import Image from "./image"
 import Heading from "./heading"
 import Subheading from "./subheading"
 import Paragraph from "./paragraph"
-import {Button} from "./button"
+import Button from "./button"
+import {SimpleLink} from "./simpleLink"
 import { device } from "../global/mediaQueries"
 
 const Container = styled.div`
@@ -74,6 +75,10 @@ const Description = styled(Paragraph)`
   }
 `
 
+const ButtonGrid = styled.div`
+  display: flexbox;
+`
+
 const ProjectCard = ({ title, role, summary, description, image, link }) => {
   return (
     <Container>
@@ -83,7 +88,10 @@ const ProjectCard = ({ title, role, summary, description, image, link }) => {
         <Heading as="h3">{title}</Heading>
         <Summary>{summary}</Summary>
         <Description>{description}</Description>
-        <Button href={link} small="true" target="_blank" rel="noreferrer">VIEW LIVE</Button>
+        <ButtonGrid>
+          <Button href={link} small="true" target="_blank" rel="noreferrer">VIEW SITE</Button>
+          <SimpleLink href={link} small="true" target="_blank" rel="noreferrer" style={{marginLeft: '30px'}}>VIEW CODE</SimpleLink>
+        </ButtonGrid>
       </TextWrapper>
     </Container>
   )
