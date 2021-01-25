@@ -79,7 +79,7 @@ const ButtonGrid = styled.div`
   display: flexbox;
 `
 
-const ProjectCard = ({ title, role, summary, description, image, link }) => {
+const ProjectCard = ({ title, role, summary, description, image, link, github }) => {
   return (
     <Container>
       <ImageWrapper><Image filename={image} alt={title}></Image></ImageWrapper>
@@ -90,7 +90,7 @@ const ProjectCard = ({ title, role, summary, description, image, link }) => {
         <Description>{description}</Description>
         <ButtonGrid>
           <Button href={link} small="true" target="_blank" rel="noreferrer">VIEW SITE</Button>
-          <SimpleLink href={link} small="true" target="_blank" rel="noreferrer" style={{marginLeft: '30px'}}>VIEW CODE</SimpleLink>
+          <SimpleLink href={github} small="true" target="_blank" rel="noreferrer" style={{marginLeft: '30px'}}>VIEW CODE</SimpleLink>
         </ButtonGrid>
       </TextWrapper>
     </Container>

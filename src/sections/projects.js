@@ -23,7 +23,8 @@ const projectsData = [
     description: `Parceley is a meal delivery app that provides vegan and cruelty-free meal options from approved restaurants.
     It was built using Gatsby, React, and SASS and is currently hosted on Netlify.`,
     image: "parceley.jpg",
-    link: "https://parceley.netlify.app/"
+    link: "https://parceley.netlify.app/",
+    github: "https://github.com/KelliePetersen/parceley"
   },
   {
     id: 2,
@@ -34,7 +35,8 @@ const projectsData = [
     In this project, I designed and developed a multi-page website highlighting their services and 
     listing all important information about their salon.`,
     image: "awaken.jpg",
-    link: "https://kelliepetersen.github.io/awakeningbeauty/"
+    link: "https://kelliepetersen.github.io/awakeningbeauty/",
+    github: "https://github.com/KelliePetersen/awakeningbeauty"
   },
   {
     id: 3,
@@ -44,7 +46,8 @@ const projectsData = [
     description: `Each year, the Rapha Walk raises funds for Rapha Clinic, a non-profit medical centre helping families across Georgia, USA.
     I designed and developed a website that allowed people to purchase tickets and donate to Rapha Clinic.`,
     image: "raphawalk.jpg",
-    link: "https://kelliepetersen.github.io/rapha-walk/"
+    link: "https://kelliepetersen.github.io/rapha-walk/",
+    github: "https://github.com/KelliePetersen/rapha-walk"
   }
 ]
 
