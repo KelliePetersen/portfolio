@@ -28,8 +28,10 @@ const StarBackground = styled.div`
   left: 0;
   right: 0;
   opacity: 0.5;
+  background-size: cover;
   @media ${device.tablet} {
     background-position: center;
+    background-size: initial;
   }
 `
 
