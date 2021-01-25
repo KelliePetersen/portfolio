@@ -16,7 +16,7 @@ const ButtonStyle = styled.a`
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1.5px;
-  padding: 17.5px 25px 17.5px 25px;
+  padding: 17.5px 27.5px 17.5px 27.5px;
   transition: color 0.25s, background-image 0.25s;
   overflow: hidden;
 
@@ -54,7 +54,7 @@ const ButtonStyle = styled.a`
 
   ${({small, theme}) => small && `
     font-size: 0.875rem;
-    padding: 15px 22.5px 15px 22.5px;
+    padding: 15px 25px 15px 25px;
 
     @media ${device.tablet} {
       font-size: 1rem;

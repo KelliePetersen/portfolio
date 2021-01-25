@@ -5,7 +5,7 @@ import { device } from "../global/mediaQueries"
 const Arrow = styled.span`
   position: absolute;
   top: 50%;
-  left: 42%;
+  left: 45%;
   transform: translate(-50%, -50%) rotate(45deg);
   width: 12px;
   height: 12px;
@@ -18,17 +18,23 @@ const Arrow = styled.span`
   @media ${device.tablet} {
     width: 14px;
     height: 14px;
+    left: 42%;
   }
 `
 
 const Background = styled.span`
-  position: relative;
   display: block;
-  width: 40px;
-  height: 40px;
+  position: relative;
+  width: 30px;
+  height: 30px;
   background-color: ${props => props.theme.color};
-  margin-left: 15px;
+  margin-left: 10px;
   border-radius: 50%;
+  @media ${device.laptop} {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+  }
 `
 
 const ButtonStyle = styled.a`

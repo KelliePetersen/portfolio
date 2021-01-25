@@ -76,7 +76,13 @@ const Description = styled(Paragraph)`
 `
 
 const ButtonGrid = styled.div`
-  display: flexbox;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: max-content;
+  column-gap: 15px;
+  @media ${device.tablet} {
+    column-gap: 25px;
+  }
 `
 
 const ProjectCard = ({ title, role, summary, description, image, link, github }) => {
@@ -90,7 +96,7 @@ const ProjectCard = ({ title, role, summary, description, image, link, github })
         <Description>{description}</Description>
         <ButtonGrid>
           <Button href={link} small="true" target="_blank" rel="noreferrer">VIEW SITE</Button>
-          <SimpleLink href={github} small="true" target="_blank" rel="noreferrer" style={{marginLeft: '30px'}}>VIEW CODE</SimpleLink>
+          <SimpleLink href={github} small="true" target="_blank" rel="noreferrer">VIEW CODE</SimpleLink>
         </ButtonGrid>
       </TextWrapper>
     </Container>
