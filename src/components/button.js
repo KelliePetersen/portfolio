@@ -53,10 +53,14 @@ const ButtonStyle = styled.a`
   `}
 
   ${({small, theme}) => small && `
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     padding: 15px 25px 15px 25px;
 
     @media ${device.tablet} {
+      font-size: 0.875rem;
+      padding: 20px 35px 20px 35px;
+    }
+    @media ${device.laptop} {
       font-size: 1rem;
       padding: 20px 40px 20px 40px;
     }

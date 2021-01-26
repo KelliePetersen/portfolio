@@ -71,10 +71,10 @@ const ButtonStyle = styled.a`
   }
 
   ${({small}) => small && `
-    font-size: 0.875rem;
+    font-size: 0.75rem;
 
     @media ${device.tablet} {
-      font-size: 1rem;
+      font-size: 0.875rem;
     }
   `}
 `
