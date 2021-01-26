@@ -5,16 +5,12 @@ const Subheading = styled.p`
   font-size: 0.75rem;
   word-spacing: 3px;
   letter-spacing: 3px;
-  margin: 0;
   width: max-content;
+  margin: ${props => props.centered ? "0 auto" : "0"};;
   font-weight: ${props => props.normal ? "400" : "bold"};
   color: ${props => props.normal ? "#bbb" : "#aaa"};
 
-  @media ${device.tablet} {
-    font-size: ${props => props.normal ? "1rem" : "0.875rem"};
-  }
   @media ${device.laptopL} {
-    font-size: 0.75rem;
     letter-spacing: ${props => props.normal ? "3px" : "5px"};
     word-spacing: ${props => props.normal ? "3px" : "5px"};
   }
