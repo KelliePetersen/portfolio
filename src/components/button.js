@@ -20,7 +20,7 @@ const ButtonStyle = styled.a`
   transition: color 0.25s, background-image 0.25s;
   overflow: hidden;
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     font-size: 1.125rem;
     padding: 22.5px 45px 22.5px 45px;
   }
@@ -57,7 +57,7 @@ const ButtonStyle = styled.a`
     padding: 15px 25px 15px 25px;
 
     @media ${device.tablet} {
-      font-size: 0.875rem;
+      font-size: 0.75rem;
       padding: 20px 35px 20px 35px;
     }
     @media ${device.laptop} {

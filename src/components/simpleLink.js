@@ -74,6 +74,9 @@ const ButtonStyle = styled.a`
     font-size: 0.75rem;
 
     @media ${device.tablet} {
+      font-size: 0.75rem;
+    }
+    @media ${device.laptop} {
       font-size: 0.875rem;
     }
   `}
