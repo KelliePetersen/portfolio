@@ -6,17 +6,14 @@ import GitLab from "../images/gitlab.svg";
 import LinkedIn from "../images/linkedin.svg";
 
 const Social = styled.a`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: block;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 40px;
+  background-size: 30px;
   transition: transform 0.25s;
 
-  @media ${device.tablet} {
-    background-size: 35px;
-  }
   @media ${device.laptop} {
     width: 35px;
     height: 35px;
