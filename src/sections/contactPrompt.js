@@ -61,13 +61,13 @@ const ContactPrompt = () => {
   return (
     <Wrapper id="contact">
       <Container>
-        <Subheading style={{margin: "0 auto"}}>CONTACT</Subheading>
+        <Subheading centered>CONTACT</Subheading>
         <ContactHeading large>Say Hello.</ContactHeading>
         <ContactParagraph>Let me know your thoughts. 
         Feel free to contact me through social media or email me at 
           <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.
         </ContactParagraph>
-        <Button href="mailto:hello@kelliepetersen.com" style={{margin: "25px auto 0"}}>GET IN TOUCH</Button>
+        <Button href="mailto:hello@kelliepetersen.com" centered>GET IN TOUCH</Button>
       </Container>
     </Wrapper>
   )
