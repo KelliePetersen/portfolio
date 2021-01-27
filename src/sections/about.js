@@ -126,10 +126,11 @@ const About = () => {
         <div>
           <Subheading>ABOUT ME</Subheading>
           <Heading large>Hi, I'm Kellie.</Heading>
-          <Paragraph>I'm a <span>front-end developer</span> and aspiring designer currently working at Parchot. 
-          I value making accessible websites and apps with readable code.</Paragraph>
+          <Paragraph>I'm a self taught developer with 3 years experience in developing and launching websites. 
+          My core values are making functional, accessible products with easy-to-read code.</Paragraph>
           <Paragraph>My focus is vanilla <span>JavaScript</span> and <span>React</span>, including <span>Gatsby</span> and 
-          <span> NextJS</span>. I use Node, Express and MongoDB for the backend. I'm also familiar with CMS like WordPress 
+          <span> NextJS</span>. I style websites with a variety of libraries, such as <span>SASS</span> and <span>Styled Components</span>. 
+          I use Express and MongoDB for the backend. I'm familiar with WordPress 
           and Strapi, and displaying data with D3.</Paragraph>
         </div>
         <Grid>
