@@ -19,6 +19,7 @@ const Button = styled.a`
   transition: color 0.25s, background-image 0.25s;
   overflow: hidden;
   z-index: 5;
+  margin: ${props => props.centered ? "25px auto 0" : "0"};
 
   @media ${device.desktopL} {
     font-size: 1.125rem;
@@ -51,10 +52,6 @@ const Button = styled.a`
       display: inline-block;
       margin-top: 50px;
     }
-  `}
-
-  ${({centered}) => centered && `
-    margin: 25px auto 0;
   `}
 
   ${({small, theme}) => small && `

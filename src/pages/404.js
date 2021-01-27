@@ -5,7 +5,7 @@ import Layout from "../global/layout"
 import SEO from "../global/seo"
 import Heading from "../components/heading"
 import Paragraph from "../components/paragraph"
-import { ButtonStyle, Background, Arrow } from "../components/simpleLink"
+import Button from "../components/button"
 
 const Container = styled.div`
   margin: 20vh auto 0;
@@ -18,11 +18,9 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title="Oops! Page does not exist" />
     <Container>
-      <Heading>Page not found</Heading>
-      <Paragraph>Uh oh! You may have searched for a page that doesn"t exist, or I messed something up. Hopefully this is your fault.</Paragraph>
-      <ButtonStyle as={Link} to="/" style={{margin: "30px auto 0"}}>
-        Go Home<Background><Arrow /></Background>
-      </ButtonStyle>
+      <Heading>Page does not exist</Heading>
+      <Paragraph>Uh oh! The page you searched for does not exist.</Paragraph>
+      <Button as={Link} to="/" centered="true">Go Home</Button>
     </Container>
   </Layout>
 )
