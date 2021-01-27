@@ -42,7 +42,7 @@ const ImageWrapper = styled.div`
     height: 40vw;
     max-height: 425px;
   }
-  @media ${device.tabletL} {
+  @media ${device.laptop} {
     max-width: 500px;
     margin: 0 0 0 auto;
   }
