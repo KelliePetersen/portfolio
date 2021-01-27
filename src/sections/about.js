@@ -54,14 +54,12 @@ const Grid = styled.div`
   row-gap: 15px;
   margin-top: 60px;
   @media ${device.tablet} {
-    grid-auto-rows: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 520px;
   }
   @media ${device.laptopL} {
     margin-left: 50px;
     width: 450px;
-    grid-auto-rows: 75px;
   }
   @media ${device.desktopL} {
     column-gap: 20px;
@@ -91,12 +89,6 @@ const GridItem = styled.div`
   position: relative;
   transform: scale(0.8);
 
-  @media ${device.tablet} {
-    transform: scale(1);
-  }
-  @media ${device.laptop} {
-    transform: scale(0.8);
-  }
   @media ${device.desktopL} {
     transform: scale(1);
   }
@@ -104,6 +96,12 @@ const GridItem = styled.div`
   &:hover ${Tooltip} {
     display: block;
   }
+`
+
+const GridImage = styled.img`
+  marginBottom: 0;
+  width: 100%;
+  height: 100%;
 `
 
 const About = () => {
@@ -134,10 +132,10 @@ const About = () => {
           and Strapi, and displaying data with D3.</Paragraph>
         </div>
         <Grid>
-          {data.allFile.edges.map((file, index) => (
-            <GridItem key={`svg-${index}`}>
+          {data.allFile.edges.map(file => (
+            <GridItem key={file.node.name}>
               <Tooltip>{file.node.name}</Tooltip>
-              <img src={`${file.node.publicURL}`} alt={`${file.node.name} icon`} style={{marginBottom: 0, width: "100%", height: "100%"}} />
+              <GridImage src={`${file.node.publicURL}`} alt={`${file.node.name} icon`} />
             </GridItem>
           ))}
         </Grid>
