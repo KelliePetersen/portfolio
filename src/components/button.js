@@ -64,8 +64,10 @@ const ButtonStyle = styled.a`
       padding: 20px 35px 20px 35px;
     }
     @media ${device.laptop} {
-      font-size: 1rem;
       padding: 20px 40px 20px 40px;
+    }
+    @media ${device.desktopL} {
+      font-size: 1rem;
     }
 
     &:after {
