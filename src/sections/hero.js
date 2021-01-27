@@ -17,6 +17,15 @@ const Wrapper = styled.div`
   @media ${device.tablet} {
     max-height: 100vw;
   }
+  @media ${device.laptopL} {
+    max-height: 800px;
+  }
+  @media ${device.desktopL} {
+    max-height: 1100px;
+  }
+  @media ${device.widescreen} {
+    max-height: 1500px;
+  }
 `
 
 const StarBackground = styled.div`
@@ -29,7 +38,7 @@ const StarBackground = styled.div`
   right: 0;
   opacity: 0.5;
   background-size: cover;
-  @media ${device.tablet} {
+  @media ${device.desktopL} {
     background-position: center;
     background-size: initial;
   }
@@ -43,17 +52,22 @@ const ImageWrapper = styled.div`
     right: 30px;
     top: 40%;
     transform: translateY(-50%);
-    width: 40vw;
-    max-width: 570px;
+    width: 42vw;
+    max-width: 500px;
+    padding: 10px;
   }
   @media ${device.laptop} {
     top: 50%;
   }
-  @media ${device.desktop} {
+  @media ${device.laptopL} {
     right: 100px;
+  }
+  @media ${device.desktop} {
+    right: 150px;
   }
   @media ${device.desktopL} {
     right: 200px;
+    max-width: 600px;
   }
   
 `
@@ -67,7 +81,7 @@ const Container = styled.div`
 const HeadingContainer = styled.div`
   max-width: 450px;
   @media ${device.tablet} {
-    max-width: 550px;
+    max-width: 525px;
   }
   @media ${device.laptop} {
     margin-left: 50px;
@@ -88,8 +102,8 @@ const PageHeading = styled(Heading)`
     font-size: 2rem;
   }
   @media ${device.desktop} {
-    margin: 20px 0 40px;
-    font-size: 2.5rem;
+    margin: 20px 0 30px;
+    font-size: 2.375rem;
   }
   @media ${device.desktopL} {
     font-size: 3rem;
