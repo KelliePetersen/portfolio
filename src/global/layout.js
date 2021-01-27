@@ -35,7 +35,7 @@ const Wrapper = styled.div`
     margin: 0 75px;
   }
   @media ${device.laptopL} {
-    margin: 0 100px;
+    margin: 0 50px;
   }
   @media ${device.desktopL} {
     margin: 0 90px;
