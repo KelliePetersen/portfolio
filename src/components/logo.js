@@ -1,16 +1,21 @@
 import React from "react"
 import styled from "styled-components"
 import LogoSVG from "../images/logo.svg"
+import { device } from "../global/mediaQueries"
 
 const LogoLink = styled.a`
   margin: 0;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   display: block;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50px;
+  background-size: 95%;
   position: relative;
+  @media ${device.desktopL} {
+    width: 55px;
+    height: 55px;
+  }
 `
 
 const Background = styled.span`
