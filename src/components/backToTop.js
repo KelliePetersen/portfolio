@@ -42,8 +42,8 @@ const BackToTop = ({ fixed, style }) => {
 
   useEffect(() => {
     let windowState = () => (window.scrollY > 500) ? setVisibility(true) : setVisibility(false)
-    windowState();
     document.addEventListener("scroll", windowState)
+    return () => document.removeEventListener("scroll", windowState)
   }, [])
 
   return (
