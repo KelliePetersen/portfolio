@@ -13,7 +13,10 @@ const Subheading = styled.p`
   @media ${device.tablet} {
     font-size: ${props => props.normal ? "1rem" : "0.875rem"};
   }
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
+    font-size: ${props => props.normal ? "0.875rem" : "0.75rem"};
+  }
+  @media ${device.desktopL} {
     font-size: 1rem;
     letter-spacing: ${props => props.normal ? "3px" : "5px"};
     word-spacing: ${props => props.normal ? "3px" : "5px"};
