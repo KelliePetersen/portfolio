@@ -28,7 +28,10 @@ const Container = styled.header`
     // transition: background-color 0.5s;
   }
   @media ${device.laptopL} {
-    padding: 20px 100px;
+    padding: 15px 50px;
+  }
+  @media ${device.desktopL} {
+    padding: 15px 90px;
   }
   @media ${device.widescreen} {
     padding: 20px calc((100vw - 2000px)/2);
