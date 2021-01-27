@@ -19,6 +19,7 @@ const ButtonStyle = styled.a`
   padding: 17.5px 27.5px 17.5px 27.5px;
   transition: color 0.25s, background-image 0.25s;
   overflow: hidden;
+  z-index: 5;
 
   @media ${device.laptopL} {
     padding: 17.5px 30px 17.5px 30px;
@@ -38,6 +39,7 @@ const ButtonStyle = styled.a`
     background-color: ${props => props.theme.secondary};
     background-image: ${props => props.theme.gradient};
     transition: opacity 0.25s;
+    z-index: -1;
   }
 
   &:hover, &:focus {
@@ -83,6 +85,7 @@ const ButtonStyle = styled.a`
       bottom: 3px;
       background-color: ${theme.background};
       border-radius: 50px;
+      z-index: -1;
     }
 
     &:hover, &:focus {
@@ -93,7 +96,7 @@ const ButtonStyle = styled.a`
 
 const Button = ({ children, href, small, modal, centered, style, target, rel }) => (
   <ButtonStyle href={href} small={small} modal={modal} centered={centered} style={style} target={target} rel={rel}>
-    <span style={{zIndex: "3", position: "relative"}}>{children}</span>
+    {children}
   </ButtonStyle>
 )
 
