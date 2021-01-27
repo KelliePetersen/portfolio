@@ -5,20 +5,20 @@ import { device } from "../global/mediaQueries"
 const Arrow = styled.span`
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 42%;
   transform: translate(-50%, -50%) rotate(45deg);
   width: 12px;
   height: 12px;
-  border: 4px solid ${props => props.theme.background};
+  border: 3.75px solid ${props => props.theme.background};
   border-left: 0px;
   border-bottom: 0px;
   border-radius: 3px;
   transition: border-color 0.25s;
   z-index: 3;
-  @media ${device.tablet} {
+  @media ${device.desktopL} {
     width: 14px;
     height: 14px;
-    left: 42%;
+    border-width: 4px;
   }
 `
 
@@ -30,7 +30,7 @@ const Background = styled.span`
   background-color: ${props => props.theme.color};
   margin-left: 10px;
   border-radius: 50%;
-  @media ${device.laptop} {
+  @media ${device.desktopL} {
     width: 40px;
     height: 40px;
     margin-left: 15px;
@@ -76,7 +76,7 @@ const ButtonStyle = styled.a`
     @media ${device.tablet} {
       font-size: 0.75rem;
     }
-    @media ${device.laptop} {
+    @media ${device.desktopL} {
       font-size: 0.875rem;
     }
   `}
