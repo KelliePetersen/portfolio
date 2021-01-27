@@ -33,11 +33,14 @@ const Container = styled.div`
   width: max-content;
   max-width: 100%;
   margin: 0 auto;
-  @media ${device.desktop} {
+  @media ${device.laptopL} {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
+  }
+  @media ${device.desktopL} {
+    max-width: 1400px;
   }
 `
 
@@ -55,12 +58,15 @@ const Grid = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 520px;
   }
-  @media ${device.desktop} {
+  @media ${device.laptopL} {
     margin-left: 50px;
-    column-gap: 20px;
+    width: 450px;
+    grid-auto-rows: 75px;
   }
   @media ${device.desktopL} {
+    column-gap: 20px;
     width: 580px;
+    grid-auto-rows: 100px;
   }
 `
 
@@ -86,6 +92,12 @@ const GridItem = styled.div`
   transform: scale(0.8);
 
   @media ${device.tablet} {
+    transform: scale(1);
+  }
+  @media ${device.laptop} {
+    transform: scale(0.8);
+  }
+  @media ${device.desktopL} {
     transform: scale(1);
   }
 
