@@ -1,8 +1,7 @@
-import React from "react"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 
-const ButtonStyle = styled.a`
+const Button = styled.a`
   display: flex;
   align-items: center;
   width: max-content;
@@ -16,14 +15,11 @@ const ButtonStyle = styled.a`
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1.5px;
-  padding: 17.5px 27.5px 17.5px 27.5px;
+  padding: 17.5px 30px 17.5px 30px;
   transition: color 0.25s, background-image 0.25s;
   overflow: hidden;
   z-index: 5;
 
-  @media ${device.laptopL} {
-    padding: 17.5px 30px 17.5px 30px;
-  }
   @media ${device.desktopL} {
     font-size: 1.125rem;
     padding: 22.5px 45px 22.5px 45px;
@@ -66,8 +62,7 @@ const ButtonStyle = styled.a`
     padding: 15px 25px 15px 25px;
 
     @media ${device.tablet} {
-      font-size: 0.75rem;
-      padding: 20px 35px 20px 35px;
+      padding: 17.5px 30px 17.5px 30px;
     }
     @media ${device.laptop} {
       padding: 20px 40px 20px 40px;
@@ -93,11 +88,5 @@ const ButtonStyle = styled.a`
     }
   `}
 `
-
-const Button = ({ children, href, small, modal, centered, style, target, rel }) => (
-  <ButtonStyle href={href} small={small} modal={modal} centered={centered} style={style} target={target} rel={rel}>
-    {children}
-  </ButtonStyle>
-)
 
 export default Button;
