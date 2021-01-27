@@ -13,10 +13,11 @@ const Heading = styled.h2`
     margin: 20px 0 30px;
   }
   @media ${device.laptopL} {
-    margin: 30px 0;
+    margin: 20px 0;
   }
-  @media ${device.desktop} {
+  @media ${device.desktopL} {
     font-size: ${props => props.large ? "3rem" : "2.5rem"};
+    margin: 30px 0;
   }
 `
 
