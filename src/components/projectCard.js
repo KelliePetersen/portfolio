@@ -17,9 +17,12 @@ const Container = styled.div`
     column-gap: 50px;
     align-items: center;
   }
-  @media ${device.desktop} {
-    margin: 150px 100px;
+  @media ${device.laptopL} {
     column-gap: 75px;
+  }
+  @media ${device.desktop} {
+    margin: 125px;
+    column-gap: 90px;
   }
   @media ${device.desktopL} {
     margin: 150px;
@@ -37,7 +40,11 @@ const ImageWrapper = styled.div`
   overflow: hidden;
   @media ${device.tablet} {
     height: 40vw;
-    max-height: 450px;
+    max-height: 425px;
+  }
+  @media ${device.tabletL} {
+    max-width: 500px;
+    margin: 0 0 0 auto;
   }
   @media ${device.desktop} {
     max-height: 500px;
@@ -45,7 +52,6 @@ const ImageWrapper = styled.div`
   @media ${device.desktopL} {
     max-height: 625px;
     max-width: 700px;
-    margin: 0 0 0 auto;
   }
 `
 
@@ -69,9 +75,11 @@ const Description = styled(Paragraph)`
   @media ${device.laptop} {
     max-width: 400px;
     display: block;
+    margin-bottom: 30px;
   }
-  @media ${device.laptopL} {
+  @media ${device.desktopL} {
     max-width: 450px;
+    margin-bottom: 40px;
   }
 `
 
