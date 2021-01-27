@@ -77,7 +77,7 @@ const ButtonStyle = styled.a`
       font-size: 0.75rem;
     }
     @media ${device.desktopL} {
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
   `}
 `
