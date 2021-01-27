@@ -8,6 +8,10 @@ const Paragraph = styled.p`
   color: ${props => props.theme.grey};
   max-width: 500px;
   
+  @media ${device.laptop} {
+    font-size: 0.9125rem;
+    max-width: 455px;
+  }
   @media ${device.desktopL} {
     max-width: 550px;
     font-size: 1.125rem;
