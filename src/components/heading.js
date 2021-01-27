@@ -13,6 +13,7 @@ const Heading = styled.h2`
     margin: 20px 0 30px;
   }
   @media ${device.laptopL} {
+    font-size: ${props => props.large ? "2.25rem" : "2rem"};
     margin: 20px 0;
   }
   @media ${device.desktopL} {
