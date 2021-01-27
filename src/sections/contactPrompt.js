@@ -19,9 +19,12 @@ const Wrapper = styled.section`
     padding: 70px 50px;
   }
   @media ${device.laptop} {
-    padding: 100px 75px;
+    padding: 85px 75px;
   }
   @media ${device.laptopL} {
+    padding: 100px 100px;
+  }
+  @media ${device.desktopL} {
     padding: 125px 100px;
   }
 `
@@ -30,10 +33,17 @@ const Container = styled.div`
   text-align: center;
 `
 
-const HeadingContainer = styled.div`
+const ContactHeading = styled(Heading)`
   margin: 10px 0 20px;
   @media ${device.laptop} {
-    margin: 20px 0;
+    margin: 15px 0;
+  }
+`
+
+const ContactParagraph = styled(Paragraph)`
+  margin: 20px auto;
+  @media ${device.laptop} {
+    margin: 20px auto 30px;
   }
 `
 
@@ -52,11 +62,11 @@ const ContactPrompt = () => {
     <Wrapper id="contact">
       <Container>
         <Subheading style={{margin: "0 auto"}}>CONTACT</Subheading>
-        <HeadingContainer><Heading large style={{margin: "0"}}>Say Hello.</Heading></HeadingContainer>
-        <Paragraph style={{margin: "20px auto"}}>Let me know your thoughts. 
+        <ContactHeading large>Say Hello.</ContactHeading>
+        <ContactParagraph>Let me know your thoughts. 
         Feel free to contact me through social media or email me at 
           <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.
-        </Paragraph>
+        </ContactParagraph>
         <Button href="mailto:hello@kelliepetersen.com" style={{margin: "25px auto 0"}}>GET IN TOUCH</Button>
       </Container>
     </Wrapper>
