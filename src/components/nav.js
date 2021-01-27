@@ -17,6 +17,19 @@ const NavList = styled.ul`
   display: flex;
   list-style-type: none;
   margin: 0;
+  @media ${device.laptopL} {
+    font-size: 0.8125rem;
+  }
+  @media ${device.desktopL} {
+    font-size: 1rem;
+  }
+`
+
+const NavListItem = styled.li`
+  margin: 5px 40px;
+  @media ${device.desktop} {
+    margin: 5px 60px;
+  }
 `
 
 const NavLink = styled.a`
@@ -32,19 +45,19 @@ const Nav = ({ spaced }) => {
   return (
     <NavBar spaced={spaced}>
       <NavList>
-        <li style={{margin: "0 60px"}}>
+        <NavListItem>
           <NavLink href={downloadResume} download>Resume.</NavLink>
-        </li>
-        <li style={{marginRight: "60px"}}>
+        </NavListItem>
+        <NavListItem style={{marginLeft: 0}}>
           <NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink>
-        </li>
-        <li style={{margin: 0}}>
+        </NavListItem>
+        <NavListItem style={{margin: "5px 0"}}>
           <NavLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</NavLink>
-        </li>
+        </NavListItem>
       </NavList>
       <NavList>
-        <li style={{margin: "0 60px"}}><NavLink white href="#projects">My Work.</NavLink></li>
-        <li style={{margin: 0}}><NavLink white href="#contact">Say Hello.</NavLink></li>
+        <NavListItem><NavLink white href="#projects">My Work.</NavLink></NavListItem>
+        <NavListItem style={{margin: "5px 0"}}><NavLink white href="#contact">Say Hello.</NavLink></NavListItem>
       </NavList>
     </NavBar>
   )
