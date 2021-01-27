@@ -15,6 +15,11 @@ const Social = styled.a`
   transition: transform 0.25s;
 
   @media ${device.laptop} {
+    width: 30px;
+    height: 30px;
+    background-size: 25px;
+  }
+  @media ${device.desktopL} {
     width: 35px;
     height: 35px;
     background-size: 28px;
