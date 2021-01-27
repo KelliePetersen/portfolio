@@ -4,7 +4,7 @@ const size = {
   laptop: "1024px",
   laptopL: "1280px",
   desktop: "1440px",
-  desktopL: "1920px",
+  desktopL: "1820px",
   widescreen: "2100px"
 }
 
