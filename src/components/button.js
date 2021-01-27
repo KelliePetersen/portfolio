@@ -55,6 +55,10 @@ const ButtonStyle = styled.a`
     }
   `}
 
+  ${({centered}) => centered && `
+    margin: 25px auto 0;
+  `}
+
   ${({small, theme}) => small && `
     font-size: 0.75rem;
     padding: 15px 25px 15px 25px;
@@ -87,8 +91,8 @@ const ButtonStyle = styled.a`
   `}
 `
 
-const Button = ({ children, href, small, modal, style, target, rel }) => (
-  <ButtonStyle href={href} small={small} modal={modal} style={style} target={target} rel={rel}>
+const Button = ({ children, href, small, modal, centered, style, target, rel }) => (
+  <ButtonStyle href={href} small={small} modal={modal} centered={centered} style={style} target={target} rel={rel}>
     <span style={{zIndex: "3", position: "relative"}}>{children}</span>
   </ButtonStyle>
 )
