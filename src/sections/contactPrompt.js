@@ -63,8 +63,8 @@ const ContactPrompt = () => {
       <Container>
         <Subheading as="h2" centered>CONTACT</Subheading>
         <ContactHeading large>Say Hello.</ContactHeading>
-        <ContactParagraph>Let me know your thoughts. 
-        Feel free to contact me through social media or email me at 
+        <ContactParagraph>If you'd like to get in touch, feel free to contact me through 
+          <Email href="https://www.linkedin.com/in/kelliepetersen" target="_blank" rel="noreferrer" aria-label="view my LinkedIn page on a new tab"> LinkedIn</Email> or email me at 
           <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.
         </ContactParagraph>
         <Button href="mailto:hello@kelliepetersen.com" centered>GET IN TOUCH</Button>
