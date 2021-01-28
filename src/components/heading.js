@@ -9,12 +9,8 @@ const Heading = styled.h2`
   letter-spacing: 0.5px;
 
   @media ${device.laptop} {
-    font-size: ${props => props.large ? "2.5rem" : "2.25rem"};
-    margin: 20px 0 30px;
-  }
-  @media ${device.laptopL} {
     font-size: ${props => props.large ? "2.25rem" : "2rem"};
-    margin: 20px 0;
+    margin: 20px 0 30px;
   }
   @media ${device.desktopL} {
     font-size: ${props => props.large ? "3rem" : "2.5rem"};
