@@ -12,10 +12,14 @@ const Container = styled.div`
   display: grid;
   row-gap: 20px;
   margin: 0 auto 100px;
+  @media ${device.mobile} {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+    align-items: center;
+  }
   @media ${device.tablet} {
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-    align-items: center;
   }
   @media ${device.laptopL} {
     column-gap: 75px;
