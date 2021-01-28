@@ -41,13 +41,13 @@ const Nav = ({ spaced }) => {
     <NavBar spaced={spaced}>
       <NavList>
         <NavListItem>
-          <NavLink without  href={Resume} target="_blank" rel="noopener noreferrer" download>Resume.</NavLink>
+          <NavLink href={Resume} target="_blank" rel="noopener noreferrer" aria-label="download my resume pdf" download>Resume.</NavLink>
         </NavListItem>
         <NavListItem noMargin>
-          <NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink>
+          <NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer" aria-label="view the source code of my Portfolio on Github.com">Source Code.</NavLink>
         </NavListItem>
         {/* <NavListItem>
-          <NavLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</NavLink>
+          <NavLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer" aria-label="visit my husband's website on a new tab">My Other Half.</NavLink>
         </NavListItem> */}
       </NavList>
       <NavList>

@@ -103,8 +103,8 @@ const ProjectCard = ({ title, role, summary, description, image, link, github })
         <Summary>{summary}</Summary>
         <Description>{description}</Description>
         <ButtonGrid>
-          <Button href={link} small="true" target="_blank" rel="noreferrer">VIEW SITE</Button>
-          <SimpleLink href={github} small="true" target="_blank" rel="noreferrer">VIEW CODE</SimpleLink>
+          <Button href={link} small="true" target="_blank" rel="noreferrer" aria-label={`view the ${title} website on a new tab`}>VIEW SITE</Button>
+          <SimpleLink href={github} small="true" target="_blank" rel="noreferrer" label={`view ${title} source code on Github`}>VIEW CODE</SimpleLink>
         </ButtonGrid>
       </TextWrapper>
     </Container>

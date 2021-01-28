@@ -82,8 +82,8 @@ const ButtonStyle = styled.a`
   `}
 `
 
-const SimpleLink = ({ children, href, small, style, target, rel }) => (
-  <ButtonStyle href={href} small={small} style={style} target={target} rel={rel}>
+const SimpleLink = ({ children, href, label, small, style, target, rel }) => (
+  <ButtonStyle href={href} aria-label={label} small={small} style={style} target={target} rel={rel}>
     {children}
     <Background><Arrow /></Background>
   </ButtonStyle>
