@@ -6,12 +6,14 @@ import GitLab from "../images/gitlab.svg";
 import LinkedIn from "../images/linkedin.svg";
 
 const Social = styled.a`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: block;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 30px;
+  background-size: 25px;
+  background-image: url(${props => props.backgroundImage});
+  margin: ${props => props.padded ? "0 20px" : 0};
   transition: transform 0.25s;
 
   @media ${device.laptop} {
@@ -52,20 +54,12 @@ const Wrapper = styled.div`
   `}
 `
 
-const SocialLink = ({ link, name }) => (
-  <Social href={link} style={{backgroundImage: `url(${name})`}} aria-label={name} target="_blank" rel="noreferrer" />
+const SocialMedia = ({ modal }) => (
+  <Wrapper modal={modal}>
+    <Social href="https://www.linkedin.com/in/kelliepetersen" backgroundImage={LinkedIn} aria-label="LinkedIn" target="_blank" rel="noreferrer" />
+    <Social href="https://www.gitlab.com/kelliepetersen" backgroundImage={GitLab} aria-label="GitLab" target="_blank" rel="noreferrer" padded />
+    <Social href="https://www.github.com/kelliepetersen" backgroundImage={GitHub} aria-label="GitHub" target="_blank" rel="noreferrer" />
+  </Wrapper>
 )
-
-const SocialMedia = ({ modal }) => {
-  return (
-    <Wrapper modal={modal}>
-      <SocialLink link="https://www.linkedin.com/in/kelliepetersen" name={LinkedIn} />
-      <div style={{margin: "0 20px"}}>
-        <SocialLink link="https://www.gitlab.com/kelliepetersen" name={GitLab} />
-      </div>
-      <SocialLink link="https://www.github.com/kelliepetersen" name={GitHub} />
-    </Wrapper>
-  )
-}
 
 export default SocialMedia
