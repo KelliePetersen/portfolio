@@ -3,7 +3,7 @@ import { useMediaQuery } from "react-responsive"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 import Button from "./button"
-import downloadResume from "../downloads/kellie_petersen_resume.pdf" 
+import Resume from "../../static/kellie_petersen_resume.pdf" 
 import SocialMedia from "./socialMedia"
 
 const Container = styled.div`
@@ -102,7 +102,7 @@ const Modal = ({ modalOpen, setModalOpen }) => {
         <NavList>
           <li><NavLink white href="#projects" onClick={() => setModalOpen(false)}>My Work.</NavLink></li>
           <li><NavLink white href="#contact" onClick={() => setModalOpen(false)}>Say Hello.</NavLink></li>
-          <li><NavLink href={downloadResume} download>Resume.</NavLink></li>
+          <li><NavLink href={Resume} download>Resume.</NavLink></li>
           <li><NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink></li>
           <li><Button modal="true" href="mailto:hello@kelliepetersen.com">GET IN TOUCH</Button></li>
           <li><Email white href="mailto:hello@kelliepetersen.com">hello@kelliepetersen.com</Email></li>
