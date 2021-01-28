@@ -8,6 +8,7 @@ const Subheading = styled.p`
   width: max-content;
   margin: ${props => props.centered ? "0 auto" : "0"};;
   font-weight: ${props => props.normal ? "400" : "bold"};
+  font-family: ${props => props.theme.textFont};
   color: ${props => props.normal ? "#bbb" : "#aaa"};
 
   @media ${device.laptopL} {

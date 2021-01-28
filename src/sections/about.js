@@ -122,7 +122,7 @@ const About = () => {
     <Wrapper>
       <Container>
         <div>
-          <Subheading>ABOUT ME</Subheading>
+          <Subheading as="h2">ABOUT ME</Subheading>
           <Heading large>Hi, I'm Kellie.</Heading>
           <Paragraph>I'm a self taught developer with 3 years experience in developing and launching websites. 
           My core values are making functional, accessible products with easy-to-read code.</Paragraph>

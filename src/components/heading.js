@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 
-const Heading = styled.h2`
+const Heading = styled.p`
   font-family: ${props => props.theme.headingFont};
   font-size: ${props => props.large ? "2rem" : "1.75rem"};
   margin: ${props => props.large ? "20px 0 30px" : "10px 0 15px"};

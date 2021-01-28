@@ -126,9 +126,9 @@ const Hero = () => {
       <StarBackground />
       <ImageWrapper><Image filename="hero" traced="true" loading="eager" alt="Simplistic drawing of 2 planets and 2 moons in grayscale"></Image></ImageWrapper>
       <Container>
-        <Subheading normal>KELLIE PETERSEN &bull; BRISBANE</Subheading>
+        <Subheading as="h1" normal>KELLIE PETERSEN &bull; BRISBANE</Subheading>
         <HeadingContainer>
-          <PageHeading as="h1">I build stellar websites and lightspeed apps using JavaScript &amp; React.</PageHeading>
+          <PageHeading>I build stellar websites and lightspeed apps using JavaScript &amp; React.</PageHeading>
           <Button href="#projects">SEE MY WORK</Button>
         </HeadingContainer>
       </Container>

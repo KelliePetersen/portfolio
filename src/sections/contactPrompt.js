@@ -61,7 +61,7 @@ const ContactPrompt = () => {
   return (
     <Wrapper id="contact">
       <Container>
-        <Subheading centered>CONTACT</Subheading>
+        <Subheading as="h2" centered>CONTACT</Subheading>
         <ContactHeading large>Say Hello.</ContactHeading>
         <ContactParagraph>Let me know your thoughts. 
         Feel free to contact me through social media or email me at 
