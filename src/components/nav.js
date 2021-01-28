@@ -17,19 +17,14 @@ const NavList = styled.ul`
   display: flex;
   list-style-type: none;
   margin: 0;
-  @media ${device.laptopL} {
-    font-size: 0.8125rem;
-  }
+  font-size: 0.8125rem;
   @media ${device.desktopL} {
     font-size: 1rem;
   }
 `
 
 const NavListItem = styled.li`
-  margin: 5px 40px;
-  @media ${device.desktop} {
-    margin: 5px 60px;
-  }
+  margin: ${props => props.noMargin ? "5px 0" : "5px 60px"};
 `
 
 const NavLink = styled.a`
@@ -48,16 +43,16 @@ const Nav = ({ spaced }) => {
         <NavListItem>
           <NavLink href={downloadResume} download>Resume.</NavLink>
         </NavListItem>
-        <NavListItem style={{marginLeft: 0}}>
+        <NavListItem noMargin>
           <NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer">Source Code.</NavLink>
         </NavListItem>
-        <NavListItem style={{margin: "5px 0"}}>
+        {/* <NavListItem>
           <NavLink href="https://www.ewanpetersen.com" target="_blank" rel="noreferrer">My Other Half.</NavLink>
-        </NavListItem>
+        </NavListItem> */}
       </NavList>
       <NavList>
         <NavListItem><NavLink white href="#projects">My Work.</NavLink></NavListItem>
-        <NavListItem style={{margin: "5px 0"}}><NavLink white href="#contact">Say Hello.</NavLink></NavListItem>
+        <NavListItem noMargin><NavLink white href="#contact">Say Hello.</NavLink></NavListItem>
       </NavList>
     </NavBar>
   )
