@@ -14,10 +14,12 @@ const Arrow = styled.div`
 
 const TopButton = styled.a`
   position: ${props => props.fixed ? "fixed" : ""};
+  margin: ${props => props.fixed ? "0" : "0 0 0 auto"};
   display: none;
   bottom: 15px;
   right: 35px;
   z-index: 20;
+
   @media ${device.mobile} {
     right: 55px;
   }
@@ -37,7 +39,7 @@ const TopButton = styled.a`
   `}
 `
 
-const BackToTop = ({ fixed, style }) => {
+const BackToTop = ({ fixed }) => {
   const [visibility, setVisibility] = useState(false)
 
   useEffect(() => {
@@ -47,7 +49,7 @@ const BackToTop = ({ fixed, style }) => {
   }, [])
 
   return (
-    <TopButton fixed={fixed} visibility={visibility ? 1 : 0} style={style} href="#" aria-label="back to top of page">
+    <TopButton fixed={fixed} visibility={visibility ? 1 : 0} href="#" aria-label="back to top of page">
       <Arrow />
     </TopButton>
   )
