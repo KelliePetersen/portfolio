@@ -1,8 +1,9 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import LogoSVG from "../images/logo.svg"
 
-const LogoLink = styled.a`
+const LogoLink = styled(Link)`
   margin: 0;
   width: 50px;
   height: 50px;
@@ -29,7 +30,7 @@ const LogoLink = styled.a`
 `
 
 const Logo = ({ setModalOpen }) => (
-  <LogoLink href="#" aria-label="Logo home page" onClick={() => setModalOpen(false)}></LogoLink>
+  <LogoLink to="/" aria-label="Logo home page" onClick={() => setModalOpen(false)}></LogoLink>
 )
 
 export default Logo
