@@ -49,6 +49,16 @@ const ButtonStyle = styled.a`
     }
   `}
 
+  ${({small}) => small && `
+    font-size: 0.875rem;
+    padding: 15px 20px 15px 22.5px;
+
+    @media ${device.tablet} {
+      font-size: 1rem;
+      padding: 20px 25px 20px 30px;
+    }
+  `}
+
   &:before {
     content: "";
     position: absolute;
@@ -74,9 +84,9 @@ const ButtonStyle = styled.a`
 
 `
 
-const Button = ({ children, href, modal, style }) => (
-  <ButtonStyle href={href} modal={modal} style={style}>
-    <span style={{zIndex: "5"}}>{children}</span><Arrow />
+const Button = ({ children, href, small, modal, style }) => (
+  <ButtonStyle href={href} small={small} modal={modal} style={style}>
+    <span style={{zIndex: "3"}}>{children}</span><Arrow />
   </ButtonStyle>
 )
 
