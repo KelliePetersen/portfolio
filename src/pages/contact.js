@@ -13,9 +13,11 @@ const Wrapper = styled.div`
   position: relative;
   width: 100%;
   min-height: 100vh;
+  margin-bottom: 100px;
   
   @media ${device.tablet} {
     max-height: 100vw;
+    margin-bottom: 0;
   }
   @media ${device.laptopL} {
     max-height: 800px;
@@ -42,6 +44,8 @@ const Container = styled.div`
     margin-top: 0;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+    width: 80vw;
+    max-width: 1200px;
   }
 `
 
@@ -54,7 +58,7 @@ const InfoWrapper = styled.div`
 
 const PageHeading = styled(Heading)`
   font-size: 2rem;
-  margin-bottom: 0;
+  margin: 0;
   @media ${device.desktop} {
     font-size: 3rem;
   }
