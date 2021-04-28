@@ -8,6 +8,7 @@ import Paragraph from "../components/paragraph"
 import StarBackground from "../components/starBackground"
 import SocialMedia from "../components/socialMedia"
 import ContactForm from "../components/contactForm"
+import CactusSVG from "../images/cactus.svg";
 
 const Wrapper = styled.div`
   position: relative;
@@ -82,6 +83,21 @@ const ContactParagraph = styled(Paragraph)`
   max-width: 475px;
 `
 
+const Cactus = styled.div`
+  display: none;
+  @media ${device.laptop} {
+    display: block;
+    width: 120px;
+    height: 150px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(${CactusSVG});
+    margin-top: 80px;
+  }
+`
+
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
@@ -93,6 +109,7 @@ const ContactPage = () => (
           <ContactParagraph>You can email me directly at <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.
           Feel free to message me about anything. I'm currently available for freelance work and full-time positions.</ContactParagraph>
           <SocialMedia noMargin />
+          <Cactus />
         </InfoWrapper>
         <ContactForm />
       </Container>
