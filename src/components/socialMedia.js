@@ -35,7 +35,7 @@ const Wrapper = styled.div`
   margin: 0 auto 25px;
   width: max-content;
   @media ${device.tablet} {
-    margin: 0 0 0 auto;
+    margin: ${props => props.noMargin ? "0" : "0 0 0 auto"};
   }
   ${({modal}) => modal && `
     display: none;
@@ -49,8 +49,8 @@ const Wrapper = styled.div`
   `}
 `
 
-const SocialMedia = ({ modal }) => (
-  <Wrapper modal={modal}>
+const SocialMedia = ({ modal, noMargin }) => (
+  <Wrapper modal={modal} noMargin={noMargin}>
     <Social href="https://www.linkedin.com/in/kelliepetersen" backgroundImage={LinkedIn} aria-label="LinkedIn" target="_blank" rel="noreferrer" />
     <Social href="https://www.gitlab.com/kelliepetersen" backgroundImage={GitLab} aria-label="GitLab" target="_blank" rel="noreferrer" padded />
     <Social href="https://www.github.com/kelliepetersen" backgroundImage={GitHub} aria-label="GitHub" target="_blank" rel="noreferrer" />
