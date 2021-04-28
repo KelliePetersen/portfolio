@@ -76,7 +76,7 @@ const ContactTextArea = styled(BaseInputStyle)`
 
 const ContactForm = () => (
   <Wrapper>
-    <form method="post">
+    <form method="post" data-netlify="true">
       <ContactLabel htmlFor="name">Name
         <ContactInput type="text" name="name" id="name" required/>
       </ContactLabel>
