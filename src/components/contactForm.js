@@ -4,6 +4,7 @@ import { device } from "../global/mediaQueries"
 import Button from "../components/button"
 
 const Wrapper = styled.div`
+  max-width: 550px;
   @media ${device.laptop} {
     background-color: ${props => props.theme.lightBackground};
     padding: 50px;
@@ -24,7 +25,6 @@ const ContactLabel = styled.label`
 const BaseInputStyle = styled.input`
   display: block;
   width: 100%;
-  max-width: 450px;
   color: white;
   background-color: transparent;
   outline: none;
@@ -32,8 +32,8 @@ const BaseInputStyle = styled.input`
 `
 
 const ContactInput = styled(BaseInputStyle)`
-  border-bottom: 1px solid #bbb;
-  margin-bottom: 20px;
+  border-bottom: 1px solid #777;
+  margin-bottom: 40px;
   transition: border-color 0.25s;
   
   &:hover {
@@ -45,24 +45,24 @@ const ContactInput = styled(BaseInputStyle)`
 `
 
 const ContactTextArea = styled(BaseInputStyle)`
-  background-color: #bbb;
+  background-color: #777;
   background-image: repeating-linear-gradient(
     to bottom, 
     ${props => props.theme.background}, 
-    ${props => props.theme.background} calc(1rem + 3px), 
-    rgba(0,0,0,0) calc(1rem + 3px),
-    rgba(0,0,0,0) calc(1rem + 4px)
+    ${props => props.theme.background} calc(1rem + 4px), 
+    rgba(0,0,0,0) calc(1rem + 4px),
+    rgba(0,0,0,0) calc(1rem + 5px)
   );
-  line-height: 1.45;
+  line-height: 1.5;
   transition: background-color 0.25s;
 
   @media ${device.laptop} {
     background-image: repeating-linear-gradient(
       to bottom, 
       ${props => props.theme.lightBackground}, 
-      ${props => props.theme.lightBackground} calc(1rem + 3px), 
-      rgba(0,0,0,0) calc(1rem + 3px),
-      rgba(0,0,0,0) calc(1rem + 4px)
+      ${props => props.theme.lightBackground} calc(1rem + 4px), 
+      rgba(0,0,0,0) calc(1rem + 4px),
+      rgba(0,0,0,0) calc(1rem + 5px)
     );
   }
   
@@ -84,9 +84,9 @@ const ContactForm = () => (
         <ContactInput type="email" name="email" id="email" required/>
       </ContactLabel>
       <ContactLabel htmlFor="message">Message
-        <ContactTextArea as="textarea" name="message" id="message" rows="5" required></ContactTextArea>
+        <ContactTextArea as="textarea" name="message" id="message" rows="4" required></ContactTextArea>
       </ContactLabel>
-      <Button as="button" type="submit" margin="40px 0 0 auto">SEND MESSAGE</Button>
+      <Button as="button" type="submit" tiny margin="40px 0 0 auto">SEND MESSAGE</Button>
     </form>
   </Wrapper>
 )
