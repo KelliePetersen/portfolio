@@ -36,13 +36,14 @@ const Container = styled.div`
   max-width: 80vw;
   display: grid;
   row-gap: 40px;
-  margin: 150px auto 0;
+  margin: 0 auto;
+  padding-top: 150px;
   @media ${device.laptop} {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0;
+    padding-top: 0;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     width: 80vw;
