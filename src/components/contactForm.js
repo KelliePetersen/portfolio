@@ -76,9 +76,9 @@ const ContactTextArea = styled(BaseInputStyle)`
 
 const ContactForm = () => (
   <Wrapper>
-    <form method="POST" name="contact" data-netlify="true">
-      <ContactLabel htmlFor="name">Name
-        <ContactInput type="text" name="name" id="name" required/>
+    <form method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+      <ContactLabel htmlFor="person">Name
+        <ContactInput type="text" name="person" id="person" required/>
       </ContactLabel>
       <ContactLabel htmlFor="email">Email
         <ContactInput type="email" name="email" id="email" required/>
@@ -86,6 +86,7 @@ const ContactForm = () => (
       <ContactLabel htmlFor="message">Message
         <ContactTextArea as="textarea" name="message" id="message" rows="4" required></ContactTextArea>
       </ContactLabel>
+      <input type="hidden" name="form-name" value="contact" />
       <Button as="button" type="submit" tiny margin="40px 0 0 auto">SEND MESSAGE</Button>
     </form>
   </Wrapper>
