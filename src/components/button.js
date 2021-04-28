@@ -48,6 +48,13 @@ const Button = styled.a`
     opacity: 0;
   }
 
+  ${({tiny}) => tiny && `
+    @media ${device.desktopL} {
+      font-size: 0.875rem;
+      padding: 20px 35px 20px 35px;
+    }
+  `}
+
   ${({modal}) => modal && `
     display: none;
     @media ${device.tablet} and (min-height: 750px) {
