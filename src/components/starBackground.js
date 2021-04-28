@@ -1,3 +1,7 @@
+import styled from "styled-components"
+import { device } from "../global/mediaQueries"
+import img from "../images/stars100.svg"
+
 const StarBackground = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
