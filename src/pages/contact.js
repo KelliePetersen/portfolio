@@ -12,8 +12,7 @@ import ContactForm from "../components/contactForm"
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 500px;
+  min-height: 100vh;
   
   @media ${device.tablet} {
     max-height: 100vw;
@@ -36,8 +35,11 @@ const Container = styled.div`
   transform: translate(-50%, -50%);
   width: max-content;
   max-width: 80vw;
+  display: grid;
+  row-gap: 40px;
+  margin-top: 100px;
   @media ${device.laptop} {
-    display: grid;
+    margin-top: 0;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
