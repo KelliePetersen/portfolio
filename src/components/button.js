@@ -9,17 +9,19 @@ const Button = styled.a`
   color: ${props => props.theme.color};
   text-decoration: none;
   background-color: ${props => props.theme.color};
+  border: transparent;
   border-radius: 50px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
   font-family: ${props => props.theme.headingFont};
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: bold;
   letter-spacing: 1.5px;
-  padding: 17.5px 30px 17.5px 30px;
+  padding: 20px 35px 20px 35px;
   transition: color 0.25s, background-image 0.25s;
   overflow: hidden;
   z-index: 5;
-  margin: ${props => props.centered ? "25px auto 0" : "0"};
+  cursor: pointer;
+  margin: ${props => props.centered ? "25px auto 0" : props.margin || 0};
 
   @media ${device.desktopL} {
     font-size: 1.125rem;
@@ -45,6 +47,13 @@ const Button = styled.a`
   &:hover:before {
     opacity: 0;
   }
+
+  ${({tiny}) => tiny && `
+    @media ${device.desktopL} {
+      font-size: 0.875rem;
+      padding: 20px 35px 20px 35px;
+    }
+  `}
 
   ${({modal}) => modal && `
     display: none;

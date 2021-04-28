@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
 import { useMediaQuery } from "react-responsive"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
@@ -101,7 +102,7 @@ const Modal = ({ modalOpen, setModalOpen }) => {
       <nav>
         <NavList>
           <li><NavLink white href="#projects" onClick={() => setModalOpen(false)}>My Work.</NavLink></li>
-          <li><NavLink white href="#contact" onClick={() => setModalOpen(false)}>Say Hello.</NavLink></li>
+          <li><NavLink white as={Link} to="/contact" onClick={() => setModalOpen(false)}>Say Hello.</NavLink></li>
           <li><NavLink href={Resume} aria-label="download my resume pdf" download>Resume.</NavLink></li>
           <li><NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer" aria-label="view the source code of my Portfolio on Github.com">Source Code.</NavLink></li>
           <li><Button modal="true" href="mailto:hello@kelliepetersen.com">GET IN TOUCH</Button></li>

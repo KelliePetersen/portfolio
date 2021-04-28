@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 import Resume from "../../static/kellie_petersen_resume.pdf" 
@@ -52,7 +53,7 @@ const Nav = ({ spaced }) => {
       </NavList>
       <NavList>
         <NavListItem><NavLink white href="#projects">My Work.</NavLink></NavListItem>
-        <NavListItem noMargin><NavLink white href="#contact">Say Hello.</NavLink></NavListItem>
+        <NavListItem noMargin><NavLink as={Link} white to="/contact">Say Hello.</NavLink></NavListItem>
       </NavList>
     </NavBar>
   )

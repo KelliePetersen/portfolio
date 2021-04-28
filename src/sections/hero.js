@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import Image from "../components/image"
 import Heading from "../components/heading"
@@ -129,7 +130,7 @@ const Hero = () => {
         <Subheading as="h1" normal>KELLIE PETERSEN &bull; BRISBANE</Subheading>
         <HeadingContainer>
           <PageHeading>I build stellar websites and lightspeed apps using JavaScript &amp; React.</PageHeading>
-          <Button href="#projects">SEE MY WORK</Button>
+          <Button as={Link} to="/contact">GET IN TOUCH</Button>
         </HeadingContainer>
       </Container>
       <SocialContainer><SocialMedia /></SocialContainer>
