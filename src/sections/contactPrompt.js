@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import Heading from "../components/heading"
 import Subheading from "../components/subheading"
@@ -67,7 +68,7 @@ const ContactPrompt = () => {
           <Email href="https://www.linkedin.com/in/kelliepetersen" target="_blank" rel="noreferrer" aria-label="view my LinkedIn page on a new tab"> LinkedIn</Email> or email me at 
           <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.
         </ContactParagraph>
-        <Button href="mailto:hello@kelliepetersen.com" centered>GET IN TOUCH</Button>
+        <Button as={Link} to="/contact" centered>GET IN TOUCH</Button>
       </Container>
     </Wrapper>
   )
