@@ -5,9 +5,9 @@ import SEO from "../global/seo"
 import { device } from "../global/mediaQueries"
 import Heading from "../components/heading"
 import Paragraph from "../components/paragraph"
-import Button from "../components/button"
 import StarBackground from "../components/starBackground"
 import SocialMedia from "../components/socialMedia"
+import ContactForm from "../components/contactForm"
 
 const Wrapper = styled.div`
   position: relative;
@@ -87,7 +87,7 @@ const ContactPage = () => (
           Feel free to message me about anything. I'm currently available for freelance work and full-time positions.</ContactParagraph>
           <SocialMedia noMargin />
         </InfoWrapper>
-        <div><Button>SEND MESSAGE</Button></div>
+        <ContactForm />
       </Container>
     </Wrapper>
   </Layout>
