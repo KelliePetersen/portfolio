@@ -15,13 +15,13 @@ const ContactLabel = styled.label`
   display: block;
   position: relative;
   bottom: -15px;
-  color: ${props => props.required ? "red" : "#ccc"};
-  font-size: 0.875em;
+  color: ${props => props.required ? "red" : "white"};
+  font-size: 0.875rem;
   letter-spacing: 0.5px;
   transition: bottom 0.3s;
 `
 
-const ContactInput = styled.input`
+const BaseInputStyle = styled.input`
   display: block;
   width: 100%;
   max-width: 450px;
@@ -29,14 +29,48 @@ const ContactInput = styled.input`
   background-color: transparent;
   outline: none;
   border: none;
+`
+
+const ContactInput = styled(BaseInputStyle)`
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
-
+  
   &:hover {
     border-color: white;
   }
   &:focus {
     border-color: ${props => props.theme.secondary};
+  }
+`
+
+const ContactTextArea = styled(BaseInputStyle)`
+  background-image: repeating-linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0), 
+    rgba(0,0,0,0) calc(1rem + 3px), 
+    #ccc calc(1rem + 3px),
+    #ccc calc(1rem + 4px)
+  );
+  margin-top: 10px;
+  line-height: 1.45;
+  
+  &:hover {
+    background-image: repeating-linear-gradient(
+      to bottom, 
+      rgba(0,0,0,0), 
+      rgba(0,0,0,0) calc(1rem + 3px), 
+      white calc(1rem + 3px),
+      white calc(1rem + 4px)
+    );
+  }
+  &:focus {
+    background-image: repeating-linear-gradient(
+      to bottom, 
+      rgba(0,0,0,0), 
+      rgba(0,0,0,0) calc(1rem + 3px), 
+      ${props => props.theme.secondary} calc(1rem + 3px),
+      ${props => props.theme.secondary} calc(1rem + 4px)
+    );
   }
 `
 
@@ -50,9 +84,9 @@ const ContactForm = () => (
         <ContactInput type="email" name="email" id="email" required/>
       </ContactLabel>
       <ContactLabel htmlFor="message">Message
-        <textarea name="message" id="message" rows="5" required></textarea>
+        <ContactTextArea as="textarea" name="message" id="message" rows="5" required></ContactTextArea>
       </ContactLabel>
-      <Button as="button" type="submit">SEND MESSAGE</Button>
+      <Button as="button" type="submit" margin="40px 0 0 auto">SEND MESSAGE</Button>
     </form>
   </Wrapper>
 )
