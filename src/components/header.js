@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <>
       <Container bgColor={navStyle}>
-        <Logo setModalOpen={setModalOpen}  />
+        <Logo to="/" aria-label="Logo home page" onClick={() => setModalOpen(false)} />
         <Nav spaced />
         <MenuButton modalOpen={modalOpen} setModalOpen={setModalOpen} />
       </Container>

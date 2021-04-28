@@ -16,7 +16,7 @@ const Wrapper = styled.footer`
   }
 `
 
-const LogoFooter = styled.div`
+const FooterLogo = styled(Logo)`
   display: none;
   @media ${device.tablet} {
     display: block;
@@ -63,7 +63,7 @@ const Copyright = styled.p`
 
 const Footer = () => (
   <Wrapper>
-    <LogoFooter><Logo /></LogoFooter>
+    <FooterLogo to="/" aria-label="Logo home page" />
     <NavWrapper><Nav /></NavWrapper>
     <Social><SocialMedia /></Social>
     <Copyright>© Copyright {new Date().getFullYear()} &bull; Kellie Petersen. <span>All Rights Reserved.</span></Copyright>
