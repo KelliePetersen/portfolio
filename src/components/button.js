@@ -49,6 +49,8 @@ const Button = styled.a`
   }
 
   ${({tiny}) => tiny && `
+    font-size: 0.75rem;
+    padding: 17.5px 30px 17.5px 30px;
     @media ${device.desktopL} {
       font-size: 0.875rem;
       padding: 20px 35px 20px 35px;
