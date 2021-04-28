@@ -32,8 +32,9 @@ const BaseInputStyle = styled.input`
 `
 
 const ContactInput = styled(BaseInputStyle)`
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #bbb;
   margin-bottom: 20px;
+  transition: border-color 0.25s;
   
   &:hover {
     border-color: white;
@@ -44,33 +45,32 @@ const ContactInput = styled(BaseInputStyle)`
 `
 
 const ContactTextArea = styled(BaseInputStyle)`
+  background-color: #bbb;
   background-image: repeating-linear-gradient(
     to bottom, 
-    rgba(0,0,0,0), 
-    rgba(0,0,0,0) calc(1rem + 3px), 
-    #ccc calc(1rem + 3px),
-    #ccc calc(1rem + 4px)
+    ${props => props.theme.background}, 
+    ${props => props.theme.background} calc(1rem + 3px), 
+    rgba(0,0,0,0) calc(1rem + 3px),
+    rgba(0,0,0,0) calc(1rem + 4px)
   );
-  margin-top: 10px;
   line-height: 1.45;
-  
-  &:hover {
+  transition: background-color 0.25s;
+
+  @media ${device.laptop} {
     background-image: repeating-linear-gradient(
       to bottom, 
-      rgba(0,0,0,0), 
-      rgba(0,0,0,0) calc(1rem + 3px), 
-      white calc(1rem + 3px),
-      white calc(1rem + 4px)
+      ${props => props.theme.lightBackground}, 
+      ${props => props.theme.lightBackground} calc(1rem + 3px), 
+      rgba(0,0,0,0) calc(1rem + 3px),
+      rgba(0,0,0,0) calc(1rem + 4px)
     );
   }
+  
+  &:hover {
+    background-color: white;
+  }
   &:focus {
-    background-image: repeating-linear-gradient(
-      to bottom, 
-      rgba(0,0,0,0), 
-      rgba(0,0,0,0) calc(1rem + 3px), 
-      ${props => props.theme.secondary} calc(1rem + 3px),
-      ${props => props.theme.secondary} calc(1rem + 4px)
-    );
+    background-color: ${props => props.theme.secondary};
   }
 `
 
