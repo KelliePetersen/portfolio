@@ -9,6 +9,7 @@ const Button = styled.a`
   color: ${props => props.theme.color};
   text-decoration: none;
   background-color: ${props => props.theme.color};
+  border: transparent;
   border-radius: 50px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
   font-family: ${props => props.theme.headingFont};
