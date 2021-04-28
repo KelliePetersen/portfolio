@@ -39,6 +39,7 @@ const Container = styled.div`
   @media ${device.laptop} {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
   }
 `
 

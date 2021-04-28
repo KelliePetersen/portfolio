@@ -13,8 +13,18 @@ const Wrapper = styled.div`
 
 const ContactForm = () => (
   <Wrapper>
-    hi what up boo
-    <Button>SEND MESSAGE</Button>
+    <form method="post">
+      <label htmlFor="name">Name
+        <input type="text" name="name" id="name" required/>
+      </label>
+      <label htmlFor="email">Email
+        <input type="email" name="email" id="email" required/>
+      </label>
+      <label htmlFor="message">Message
+        <textarea name="message" id="message" rows="5" required></textarea>
+      </label>
+      <Button as="button" type="submit">SEND MESSAGE</Button>
+    </form>
   </Wrapper>
 )
 
