@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   position: relative;
   width: 100%;
   min-height: 100vh;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   
   @media ${device.tablet} {
     max-height: 100vw;
@@ -32,17 +32,17 @@ const Wrapper = styled.div`
 `
 
 const Container = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: max-content;
   max-width: 80vw;
   display: grid;
   row-gap: 40px;
-  margin-top: 100px;
+  margin: 150px auto 0;
   @media ${device.laptop} {
-    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     width: 80vw;

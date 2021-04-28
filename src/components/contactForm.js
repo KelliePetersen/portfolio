@@ -87,7 +87,7 @@ const ContactForm = () => (
         <ContactTextArea as="textarea" name="message" id="message" rows="4" required></ContactTextArea>
       </ContactLabel>
       <input type="hidden" name="form-name" value="contact" />
-      <Button as="button" type="submit" tiny margin="40px 0 0 auto">SEND MESSAGE</Button>
+      <Button as="button" type="submit" tiny margin="50px 0 0 auto">SEND MESSAGE</Button>
     </form>
   </Wrapper>
 )
