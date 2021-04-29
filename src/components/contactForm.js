@@ -19,7 +19,11 @@ const ContactLabel = styled.label`
   color: ${props => props.required ? "red" : "white"};
   font-size: 0.875rem;
   letter-spacing: 0.5px;
-  transition: bottom 0.3s;
+  transition: bottom 0.3s, color 0.3s;
+
+  &:focus-within {
+    color: ${props => props.theme.secondary};
+  }
 `
 
 const BaseInputStyle = styled.input`
@@ -39,7 +43,7 @@ const ContactInput = styled(BaseInputStyle)`
   &:hover {
     border-color: white;
   }
-  &:focus {
+  &:focus, &:focus-visible {
     border-color: ${props => props.theme.secondary};
   }
 `
@@ -69,7 +73,7 @@ const ContactTextArea = styled(BaseInputStyle)`
   &:hover {
     background-color: white;
   }
-  &:focus {
+  &:focus, &:focus-visible {
     background-color: ${props => props.theme.secondary};
   }
 `
