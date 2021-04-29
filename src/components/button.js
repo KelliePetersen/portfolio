@@ -44,7 +44,7 @@ const Button = styled.a`
   &:hover, &:focus {
     color: ${props => props.theme.background};
   }
-  &:hover:before {
+  &:hover:before, &:focus:before {
     opacity: 0;
   }
 
