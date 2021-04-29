@@ -22,11 +22,14 @@ const Social = styled.a`
     background-size: 28px;
   }
 
-  &:hover, &:focus {
+  &:hover {
     transform: scale(1.1);
   }
-  &:focus {
+  &:focus, focus-visible {
     outline: 2px dashed ${props => props.theme.secondary};
+  }
+  &:focus:not(:focus-visible) {
+    outline: none;
   }
 `
 
