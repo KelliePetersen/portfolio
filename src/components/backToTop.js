@@ -2,14 +2,14 @@ import React, {useState, useEffect} from "react"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 
-const Arrow = styled.div`
+const Arrow = styled.span`
+  display: block;
   position: relative;
   width: 30px;
   height: 30px;
   border-top: 3px solid ${props => props.theme.grey};
   border-left: 3px solid ${props => props.theme.grey};
   transform: rotate(45deg);
-  transition: transform 0.25s;
 `
 
 const TopButton = styled.a`
@@ -27,11 +27,20 @@ const TopButton = styled.a`
     display: ${props => props.fixed ? "none" : "block"};
   }
 
-  &:hover ${Arrow}, &:focus ${Arrow} {
+  &:focus ${Arrow}, 
+  &:focus-visible ${Arrow}, 
+  &:hover ${Arrow}, 
+  &:hover:focus:not(:focus-visible) ${Arrow} 
+  {
     border-color: ${props => props.theme.tertiary};
     border-image: ${props => props.theme.gradient};
     border-image-slice: 1;
-    transform: rotate(45deg) scale(1.1);
+  }
+
+  &:focus:not(:focus-visible) ${Arrow} {
+    border-color: ${props => props.theme.grey};
+    border-image: linear-gradient(${props => props.theme.grey}, ${props => props.theme.grey});
+    border-image-slice: 1;
   }
   
   ${({visibility, fixed}) => visibility && `
