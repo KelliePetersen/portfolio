@@ -86,42 +86,23 @@ const ContactTextArea = styled(BaseInputStyle)`
   }
 `
 
-const Popup = styled.p`
-  display: block;
-  visibility: ${props => props.visible ? "visible" : "hidden"};
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-weight: bold;
-  color: ${props => props.theme.primary};
-  opacity: ${props => props.visible ? 1 : 0};
-  transition: opacity 0.25s;
-`
-
 const ContactForm = () => {
   const [values, setValues] = useState({
     person: '',
     email: '',
     message: ''
   })
-  const [formSubmitted, setFormSubmitted] = useState(false)
 
   const handleChange = e => {
     setValues({ 
       ...values, 
       [e.target.name]: e.target.value 
     })
-    setFormSubmitted(false)
-  }
-
-  const handleSubmit = e => {
-    e.preventDefault()
-    setFormSubmitted(true)
   }
 
   return (
     <Wrapper>
-      <Form method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+      <Form method="POST" action="/contact" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
         <ContactLabel htmlFor="person">Name
           <ContactInput 
             type="text" 
@@ -154,7 +135,6 @@ const ContactForm = () => {
           />
         </ContactLabel>
         <input type="hidden" name="form-name" value="contact" />
-        <Popup visible={formSubmitted}>Message sent!</Popup>
         <Button as="button" type="submit" tiny margin="50px 0 0 auto">SEND MESSAGE</Button>
       </Form>
     </Wrapper>
