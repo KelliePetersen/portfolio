@@ -590,3 +590,6 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+[data-reach-skip-link]:focus {
+  z-index: 30
+}

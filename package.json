@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kellie Petersen <kellieapetersen@gmail.com>",
   "dependencies": {
+    "@reach/skip-nav": "^0.15.0",
     "babel-plugin-styled-components": "^1.11.1",
     "fontsource-lato": "^3.0.9",
     "fontsource-manrope": "^3.0.5",

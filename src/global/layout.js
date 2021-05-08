@@ -1,4 +1,6 @@
 import React from "react"
+import { SkipNavLink, SkipNavContent } from "@reach/skip-nav";
+import "@reach/skip-nav/styles.css";
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Header from "../components/header"
@@ -51,7 +53,9 @@ const Layout = ({ children }) => {
     <Theme>
       <Container>
         <Wrapper>
+          <SkipNavLink />
           <Header />
+          <SkipNavContent />
           <main>{children}</main>
           <BackToTop fixed="true" />
           <Footer />
