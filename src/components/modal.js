@@ -18,12 +18,10 @@ const Container = styled.div`
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0.6s;
-  transition-delay: 0.25s;
   
   ${({modal}) => modal && `
   visibility: visible;
   opacity: 1;
-  transition-delay: 0s;
   `}
 `
 
