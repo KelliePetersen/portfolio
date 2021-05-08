@@ -59,9 +59,9 @@ const Button = styled.a`
 
   ${({modal}) => modal && `
     display: none;
-    @media ${device.tablet} and (min-height: 750px) {
+    @media (min-height: 550px) {
       display: inline-block;
-      margin-top: 50px;
+      margin-top: 20px;
     }
   `}
 
