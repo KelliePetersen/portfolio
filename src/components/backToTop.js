@@ -18,7 +18,7 @@ const TopButton = styled.a`
   display: none;
   bottom: 15px;
   right: 35px;
-  z-index: 20;
+  z-index: 10;
 
   @media ${device.mobile} {
     right: 55px;

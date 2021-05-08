@@ -14,7 +14,7 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: ${props => props.theme.lightBackground};
-  z-index: 10;
+  z-index: 15;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0.6s;
@@ -103,7 +103,7 @@ const Modal = ({ modalOpen, setModalOpen }) => {
           <li><NavLink white as={Link} to="/contact" onClick={() => setModalOpen(false)}>Say Hello.</NavLink></li>
           <li><NavLink href={Resume} aria-label="download my resume pdf" download>Resume.</NavLink></li>
           <li><NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer" aria-label="view the source code of my Portfolio on Github.com">Source Code.</NavLink></li>
-          <li><Button modal="true" href="mailto:hello@kelliepetersen.com">GET IN TOUCH</Button></li>
+          <li><Button as={Link} to="/contact" modal="true">GET IN TOUCH</Button></li>
           <li><Email white href="mailto:hello@kelliepetersen.com">hello@kelliepetersen.com</Email></li>
         </NavList>
       </nav>
