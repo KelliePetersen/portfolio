@@ -53,7 +53,7 @@ const Nav = ({ spaced }) => {
       </NavList>
       <NavList>
         <NavListItem><NavLink white href="#projects">My Work.</NavLink></NavListItem>
-        <NavListItem noMargin><NavLink as={Link} white to="/contact">Say Hello.</NavLink></NavListItem>
+        <NavListItem noMargin><NavLink as={Link} white="true" to="/contact">Say Hello.</NavLink></NavListItem>
       </NavList>
     </NavBar>
   )

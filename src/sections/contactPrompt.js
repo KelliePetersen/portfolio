@@ -68,7 +68,7 @@ const ContactPrompt = () => {
           <Email href="https://www.linkedin.com/in/kelliepetersen" target="_blank" rel="noreferrer" aria-label="view my LinkedIn page on a new tab"> LinkedIn</Email> or email me at 
           <Email href="mailto:hello@kelliepetersen.com"> hello@kelliepetersen.com</Email>.
         </ContactParagraph>
-        <Button as={Link} to="/contact" centered>GET IN TOUCH</Button>
+        <Button as={Link} to="/contact" centered="true">GET IN TOUCH</Button>
       </Container>
     </Wrapper>
   )
