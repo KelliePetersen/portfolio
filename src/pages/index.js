@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../global/seo"
+import Seo from "../global/seo"
 import Layout from "../global/layout"
 import Hero from "../sections/hero"
 import About from "../sections/about"
@@ -8,7 +8,7 @@ import ContactPrompt from "../sections/contactPrompt"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo title="Home" />
     <Hero />
     <About />
     <Projects />

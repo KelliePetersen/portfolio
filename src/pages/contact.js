@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../global/layout"
-import SEO from "../global/seo"
+import Seo from "../global/seo"
 import { device } from "../global/mediaQueries"
 import Heading from "../components/heading"
 import Paragraph from "../components/paragraph"
@@ -101,7 +101,7 @@ const Cactus = styled.div`
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact" />
+    <Seo title="Contact" />
     <Wrapper>
       <StarBackground />
       <Container>
