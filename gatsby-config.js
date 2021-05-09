@@ -15,6 +15,7 @@ module.exports = {
     description: `Front End developer specialising in JavaScript, React, Gatsby and NextJS.`,
     siteUrl: `https://www.kelliepetersen.com`,
     author: `Kellie Petersen`,
+    googleSiteVerification: `gNTqSTRkyZl-vvQlcXbfM-FuHnLilb4lFK50-vUBpFA`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
