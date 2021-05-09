@@ -1,7 +1,7 @@
 // gatsby-plugin-robots.txt snippet to disable crawlers for Netlify deploy previews
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://www.example.com',
+  URL: NETLIFY_SITE_URL = 'https://www.kelliepetersen.com',
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV
 } = process.env;
@@ -19,6 +19,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.kelliepetersen.com`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
