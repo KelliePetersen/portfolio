@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Kellie Petersen - Front End React Developer`,
     description: `Front End developer specialising in JavaScript, React, Gatsby and NextJS.`,
+    siteUrl: `https://www.kelliepetersen.com`,
     author: `Kellie Petersen`,
   },
   plugins: [
@@ -15,6 +16,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
