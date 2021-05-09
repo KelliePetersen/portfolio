@@ -8,7 +8,7 @@ import ContactPrompt from "../sections/contactPrompt"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Home" googleSiteVerification="gNTqSTRkyZl-vvQlcXbfM-FuHnLilb4lFK50-vUBpFA" />
     <Hero />
     <About />
     <Projects />
