@@ -101,7 +101,7 @@ const Cactus = styled.div`
 
 const ContactPage = () => (
   <Layout>
-    <Seo title="Contact" />
+    <Seo title="Contact" description="Get in touch with Kellie Petersen using the provided contact form, or just contact her directly through email and social media." />
     <Wrapper>
       <StarBackground />
       <Container>
