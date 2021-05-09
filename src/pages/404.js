@@ -18,7 +18,7 @@ const NotFoundPage = () => (
   <Layout>
     <Seo title="Oops! Page does not exist" />
     <Container>
-      <Heading>Page does not exist</Heading>
+      <Heading as="h1">Page does not exist</Heading>
       <Paragraph>Uh oh! The page you searched for does not exist.</Paragraph>
       <Button as={Link} to="/" centered="true">Go Home</Button>
     </Container>
