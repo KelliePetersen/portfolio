@@ -1,0 +1,2 @@
+# Redirect Netlify subdomain to primary domain to prevent duplicate content flag
+https://kelliepetersen.netlify.com/* https://www.kelliepetersen.com/:splat 301!
