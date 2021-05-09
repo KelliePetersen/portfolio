@@ -102,7 +102,7 @@ const ContactForm = () => {
 
   return (
     <Wrapper>
-      <Form method="POST" action="/contact" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+      <Form method="POST" action="/thanks" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
         <ContactLabel htmlFor="person">Name
           <ContactInput 
             type="text" 
