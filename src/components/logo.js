@@ -3,28 +3,49 @@ import styled from "styled-components"
 import LogoSVG from "../images/logo.svg"
 
 const Logo = styled(Link)`
+  display: block;
+  position: relative;
   margin: 0;
   width: 50px;
   height: 50px;
-  display: block;
-  background-image: url(${LogoSVG});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 95%;
-  position: relative;
+  border-radius: 50%;
+  background-color: ${props => props.theme.background};
+  background-image: ${props => props.theme.gradient};
 
-  &:before {
+  &:before, &:after {
     content: "";
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    background-color: ${props => props.theme.background};
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border-radius: 50%;
-    z-index: -1;
+  }
+
+  &:before {
+    background-color: white;
+    z-index: 3;
+    transition: opacity 0.25s;
+  }
+
+  &:after {
+    background-image: url(${LogoSVG});
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 5;
+  }
+
+  &:focus:before, 
+  &:focus-visible:before, 
+  &:hover:before, 
+  &:hover:focus:not(:focus-visible):before 
+  {
+    opacity: 0;
+  }
+
+  &:focus:not(:focus-visible):before {
+    opacity: 1;
   }
 `
 
