@@ -42,7 +42,7 @@ const Nav = ({ spaced }) => {
     <NavBar spaced={spaced}>
       <NavList>
         <NavListItem>
-          <NavLink href={Resume} target="_blank" rel="noopener noreferrer" aria-label="download my resume pdf" download>Resume.</NavLink>
+          <NavLink href={Resume} target="_blank" rel="noopener noreferrer" aria-label="download my resume pdf" download>Resume. [PDF]</NavLink>
         </NavListItem>
         <NavListItem noMargin>
           <NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer" aria-label="view the source code of my Portfolio on Github.com">Source Code.</NavLink>

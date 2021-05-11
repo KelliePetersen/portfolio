@@ -101,9 +101,9 @@ const Modal = ({ modalOpen, setModalOpen }) => {
         <NavList>
           <li><NavLink white href="#projects" onClick={() => setModalOpen(false)}>My Work.</NavLink></li>
           <li><NavLink white="true" as={Link} to="/contact" onClick={() => setModalOpen(false)}>Say Hello.</NavLink></li>
-          <li><NavLink href={Resume} aria-label="download my resume pdf" download>Resume.</NavLink></li>
           <li><NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer" aria-label="view the source code of my Portfolio on Github.com">Source Code.</NavLink></li>
-          <li><Button as={Link} to="/contact" modal="true">GET IN TOUCH</Button></li>
+          <li><NavLink href={Resume} aria-label="download my resume pdf" download>Resume. [PDF]</NavLink></li>
+          <li><Button as={Link} to="/contact" modal="true" onClick={() => setModalOpen(false)}>GET IN TOUCH</Button></li>
           <li><Email white href="mailto:hello@kelliepetersen.com">hello@kelliepetersen.com</Email></li>
         </NavList>
       </nav>
