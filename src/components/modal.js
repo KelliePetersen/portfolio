@@ -4,7 +4,6 @@ import { useMediaQuery } from "react-responsive"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 import Button from "./button"
-import Resume from "../../static/kellie_petersen_resume.pdf" 
 import SocialMedia from "./socialMedia"
 
 const Container = styled.div`
@@ -102,7 +101,7 @@ const Modal = ({ modalOpen, setModalOpen }) => {
           <li><NavLink white href="#projects" onClick={() => setModalOpen(false)}>My Work.</NavLink></li>
           <li><NavLink white="true" as={Link} to="/contact" onClick={() => setModalOpen(false)}>Say Hello.</NavLink></li>
           <li><NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer" aria-label="view the source code of my Portfolio on Github.com">Source Code.</NavLink></li>
-          <li><NavLink href={Resume} aria-label="download my resume pdf" download>Resume. [PDF]</NavLink></li>
+          <li><NavLink href="kellie_petersen_resume.pdf" aria-label="download my resume pdf" download>Resume. [PDF]</NavLink></li>
           <li><Button as={Link} to="/contact" modal="true" onClick={() => setModalOpen(false)}>GET IN TOUCH</Button></li>
           <li><Email white href="mailto:hello@kelliepetersen.com">hello@kelliepetersen.com</Email></li>
         </NavList>

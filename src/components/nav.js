@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
-import Resume from "../../static/kellie_petersen_resume.pdf" 
 
 const NavBar = styled.nav`
   display: none;
@@ -42,7 +41,7 @@ const Nav = ({ spaced }) => {
     <NavBar spaced={spaced}>
       <NavList>
         <NavListItem>
-          <NavLink href={Resume} target="_blank" rel="noopener noreferrer" aria-label="download my resume pdf" download>Resume. [PDF]</NavLink>
+          <NavLink href="kellie_petersen_resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="download my resume pdf" download>Resume. [PDF]</NavLink>
         </NavListItem>
         <NavListItem noMargin>
           <NavLink href="https://github.com/KelliePetersen/portfolio" target="_blank" rel="noreferrer" aria-label="view the source code of my Portfolio on Github.com">Source Code.</NavLink>
