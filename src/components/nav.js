@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import styled from "styled-components"
 import { device } from "../global/mediaQueries"
 
@@ -51,7 +52,7 @@ const Nav = ({ spaced }) => {
         </NavListItem> */}
       </NavList>
       <NavList>
-        <NavListItem><NavLink white href="#projects">My Work.</NavLink></NavListItem>
+        <NavListItem><NavLink as={AnchorLink} white="true" to="/#projects">My Work.</NavLink></NavListItem>
         <NavListItem noMargin><NavLink as={Link} white="true" to="/contact">Say Hello.</NavLink></NavListItem>
       </NavList>
     </NavBar>

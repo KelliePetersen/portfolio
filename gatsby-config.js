@@ -35,6 +35,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
