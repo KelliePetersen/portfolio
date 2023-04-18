@@ -41,7 +41,7 @@ const NavLink = styled.a`
 const Nav = ({ spaced }) => (
   <NavBar spaced={spaced}>
     <NavList>
-      <NavListItem>
+      {/* <NavListItem>
         <NavLink
           href="kellie_petersen_resume.pdf"
           target="_blank"
@@ -51,8 +51,8 @@ const Nav = ({ spaced }) => (
         >
           Resume. [PDF]
         </NavLink>
-      </NavListItem>
-      <NavListItem noMargin>
+      </NavListItem> */}
+      <NavListItem>
         <NavLink
           href="https://github.com/KelliePetersen/portfolio"
           target="_blank"
